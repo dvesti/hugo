@@ -1,4 +1,4 @@
-baseURL = " https://dvesti.github.io/site-hugo"
+baseURL = "https://dvesti.github.io/site-hugo"
 languageCode = "ru-ru"
 title = "Мой Hugo сайт"
 theme = "etch"
