@@ -51,6 +51,16 @@
   </url>
   
   <url>
+    <loc>https://dvesti.github.io/site-hugo/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://dvesti.github.io/site-hugo/fixed/mpage/</loc>
   </url>
   
@@ -60,6 +70,10 @@
   
   <url>
     <loc>https://dvesti.github.io/site-hugo/fixed/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/series/</loc>
   </url>
   
   <url>

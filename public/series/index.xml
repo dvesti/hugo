@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Мой Hugo сайт</title>
-    <link>https://dvesti.github.io/site-hugo/tags/</link>
-    <description>Recent content in Tags on Мой Hugo сайт</description>
+    <title>Series on Мой Hugo сайт</title>
+    <link>https://dvesti.github.io/site-hugo/series/</link>
+    <description>Recent content in Series on Мой Hugo сайт</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     <copyright>&amp;copy; Copyright 2017 Your name</copyright>
     
-	<atom:link href="https://dvesti.github.io/site-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dvesti.github.io/site-hugo/series/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

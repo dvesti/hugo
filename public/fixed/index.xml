@@ -6,91 +6,41 @@
     <description>Recent content in Fixeds on Мой Hugo сайт</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
+    <copyright>&amp;copy; Copyright 2017 Your name</copyright>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/fixed/index.xml" rel="self" type="application/rss+xml" />
     
     
-    
-    
-    
-    
-    
     <item>
-      <title>Privet</title>
-      <link>https://dvesti.github.io/site-hugo/post/2020-05-14-privet/</link>
-      <pubDate>Thu, 14 May 2020 18:05:23 +0300</pubDate>
+      <title>About</title>
+      <link>https://dvesti.github.io/site-hugo/fixed/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/2020-05-14-privet/</guid>
-      <description>Всех приветствую 14 мая 2020!
-И 18-го &amp;ndash; тоже!
-и уже 20-е
-20-05-2020 &amp;ndash; 15:00
-24-05-2020 &amp;ndash; 19:00
-из публик самой хуги &amp;ndash; 24-05-2020 19-40</description>
+      <guid>https://dvesti.github.io/site-hugo/fixed/about/</guid>
+      <description>In the novel, The Strange Case of Dr. Jeykll and Mr. Hyde, Mr. Poole is Dr. Jekyll&amp;rsquo;s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It&amp;rsquo;s made by @mdo.
+There are currently two themes built on Poole:
+ Hyde Lanyon  Learn more and contribute on GitHub.
+Setup Some fun facts about the setup of this project include:
+ Built for Jekyll Developed on GitHub and hosted for free on GitHub Pages Coded with Sublime Text 2, an amazing code editor Designed and developed while listening to music like Blood Bros Trilogy  Have questions or suggestions?</description>
     </item>
     
-    
-    
     <item>
-      <title>A</title>
-      <link>https://dvesti.github.io/site-hugo/post/2020-05-13-a/</link>
-      <pubDate>Wed, 13 May 2020 02:04:31 +0300</pubDate>
+      <title>Another Fixed Page</title>
+      <link>https://dvesti.github.io/site-hugo/fixed/altab/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/2020-05-13-a/</guid>
-      <description>Это &amp;ndash; тест</description>
+      <guid>https://dvesti.github.io/site-hugo/fixed/altab/</guid>
+      <description>This is just another example of a fixed page, to demonstrate ordered elements in the sidebar.</description>
     </item>
     
-    
-    
     <item>
-      <title>Привет из XXI века</title>
-      <link>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</link>
-      <pubDate>Tue, 12 May 2020 21:44:45 +0300</pubDate>
+      <title>A Menu Page Using Hugo Menu Templates</title>
+      <link>https://dvesti.github.io/site-hugo/fixed/mpage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</guid>
-      <description>Kумушки от камушек - 2020</description>
+      <guid>https://dvesti.github.io/site-hugo/fixed/mpage/</guid>
+      <description>This is example of a page from site menu. Pages from &amp;lsquo;main&amp;rsquo; menu appear just above the fixed pages from sidebar. Checkout official documentation about Menu Templates.</description>
     </item>
-    
-    
-    
-    <item>
-      <title>Introducing Lanyon</title>
-      <link>https://dvesti.github.io/site-hugo/post/2014-01-02-introducing-lanyon/</link>
-      <pubDate>Thu, 02 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/post/2014-01-02-introducing-lanyon/</guid>
-      <description>Lanyon is an unassuming Jekyll theme that places content first by tucking away navigation in a hidden drawer. It&amp;rsquo;s based on Poole, the Jekyll butler.
-Built on Poole Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by @mdo. Poole, and every theme built on it (like Lanyon here) includes the following:
- Complete Jekyll setup included (layouts, config, 404, RSS feed, posts, and example page) Mobile friendly design and development Easily scalable text and component sizing with rem units in the CSS Support for a wide gamut of HTML elements Related posts (time-based, because Jekyll) below each post Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)  Lanyon features In addition to the features of Poole, Lanyon adds the following:</description>
-    </item>
-    
-    
-    
-    <item>
-      <title>Example content</title>
-      <link>https://dvesti.github.io/site-hugo/post/2014-01-01-example-content/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/post/2014-01-01-example-content/</guid>
-      <description>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
- Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
- Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.</description>
-    </item>
-    
-    
-    
-    <item>
-      <title>What&#39;s Jekyll?</title>
-      <link>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</link>
-      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</guid>
-      <description>тяф Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From the project&amp;rsquo;s readme:
- Jekyll is a simple, blog aware, static site generator. It takes a template directory [&amp;hellip;] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</description>
-    </item>
-    
-    
-    
     
   </channel>
 </rss>

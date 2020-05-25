@@ -6,14 +6,10 @@
     <description>Recent content in Posts on Мой Hugo сайт</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
+    <copyright>&amp;copy; Copyright 2017 Your name</copyright>
     <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    
-    
-    
     
     
     <item>
@@ -30,8 +26,6 @@
 из публик самой хуги &amp;ndash; 24-05-2020 19-40</description>
     </item>
     
-    
-    
     <item>
       <title>A</title>
       <link>https://dvesti.github.io/site-hugo/post/2020-05-13-a/</link>
@@ -41,8 +35,6 @@
       <description>Это &amp;ndash; тест</description>
     </item>
     
-    
-    
     <item>
       <title>Привет из XXI века</title>
       <link>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</link>
@@ -51,8 +43,6 @@
       <guid>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</guid>
       <description>Kумушки от камушек - 2020</description>
     </item>
-    
-    
     
     <item>
       <title>Introducing Lanyon</title>
@@ -65,8 +55,6 @@ Built on Poole Poole is the Jekyll Butler, serving as an upstanding and effectiv
  Complete Jekyll setup included (layouts, config, 404, RSS feed, posts, and example page) Mobile friendly design and development Easily scalable text and component sizing with rem units in the CSS Support for a wide gamut of HTML elements Related posts (time-based, because Jekyll) below each post Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)  Lanyon features In addition to the features of Poole, Lanyon adds the following:</description>
     </item>
     
-    
-    
     <item>
       <title>Example content</title>
       <link>https://dvesti.github.io/site-hugo/post/2014-01-01-example-content/</link>
@@ -78,8 +66,6 @@ Built on Poole Poole is the Jekyll Butler, serving as an upstanding and effectiv
  Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.</description>
     </item>
     
-    
-    
     <item>
       <title>What&#39;s Jekyll?</title>
       <link>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</link>
@@ -89,9 +75,6 @@ Built on Poole Poole is the Jekyll Butler, serving as an upstanding and effectiv
       <description>тяф Jekyll is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From the project&amp;rsquo;s readme:
  Jekyll is a simple, blog aware, static site generator. It takes a template directory [&amp;hellip;] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.</description>
     </item>
-    
-    
-    
     
   </channel>
 </rss>
