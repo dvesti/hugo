@@ -2,7 +2,7 @@ baseURL = "https://dvesti.github.io/site-hugo"
 languageCode = "ru-ru"
 title = "Мой Hugo"
 #theme = "etch"
-theme = "whiteplain"
+theme = "even"
 
 # Disqus shortname
 disqusShortname = "Shortname"
