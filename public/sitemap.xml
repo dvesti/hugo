@@ -3,14 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://dvesti.github.io/site-hugo/fixed/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dvesti.github.io/site-hugo/fixed/altab/</loc>
-  </url>
-  
-  <url>
     <loc>https://dvesti.github.io/site-hugo/post/</loc>
     <lastmod>2020-05-14T18:05:23+03:00</lastmod>
   </url>
@@ -61,15 +53,7 @@
   </url>
   
   <url>
-    <loc>https://dvesti.github.io/site-hugo/fixed/mpage/</loc>
-  </url>
-  
-  <url>
     <loc>https://dvesti.github.io/site-hugo/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://dvesti.github.io/site-hugo/fixed/</loc>
   </url>
   
   <url>
