@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Мой Hugo сайт</title>
+    <title>Тэги на Мой Hugo</title>
     <link>https://example.org/tags/</link>
     <description>Recent content in Tags on Мой Hugo сайт</description>
     <generator>Hugo -- gohugo.io</generator>
