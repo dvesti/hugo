@@ -22,13 +22,15 @@ copyright = "&copy; Copyright 2020 Dvesti"
 
 # This is displayer in About page.
 [params.author]
-  name = "Your name"
+  name = "Dvesti"
   # Gravatar or Abatar image
   gravatar = "Gravatar email or MD5 Hash"
   #avatar = "/path/to/avatar"
 
   twitter = "Twitter username"
   facebook = "Facebook username"
+  vk = "VK username"
+  ok = "OK username"
   googleplus = "Googleplus username"
   instagram = "Instagram username"
   tumblr = "Tumblr username"
@@ -89,7 +91,7 @@ copyright = "&copy; Copyright 2020 Dvesti"
 
 # Footer Menu
 [[menu.footer]]
-  name = "About"
+  name = "О нас"
   weight = 1
   identifier = "about"
   url = "/about/"

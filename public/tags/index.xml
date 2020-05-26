@@ -6,10 +6,20 @@
     <description>Recent content in Tags on Мой Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
-    <copyright>&amp;copy; Copyright 2017 Your name</copyright>
+    <copyright>&amp;copy; Copyright 2020 Dvesti</copyright>
+    <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test</title>
+      <link>https://dvesti.github.io/site-hugo/tags/test/</link>
+      <pubDate>Thu, 14 May 2020 18:05:23 +0300</pubDate>
+      
+      <guid>https://dvesti.github.io/site-hugo/tags/test/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
