@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://dvesti.github.io/site-hugo/post/jane-theme-preview/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dvesti.github.io/site-hugo/categories/</loc>
     <lastmod>2020-05-14T18:05:23+03:00</lastmod>
   </url>
@@ -43,6 +48,181 @@
   </url>
   
   <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/docs/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/index/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/math/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/math/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/math-preview/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/preview/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/tag-6/</loc>
+    <lastmod>2019-03-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/image/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/image-preview/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/shortcodes/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/shortcodes/</loc>
+    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/tag-7/</loc>
+    <lastmod>2018-03-04T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/footnote/</loc>
+    <lastmod>2018-03-01T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/doc-footnote-preview/</loc>
+    <lastmod>2018-03-01T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/markdown/</loc>
+    <lastmod>2018-03-01T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/tag-11/</loc>
+    <lastmod>2018-03-01T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/english/</loc>
+    <lastmod>2017-08-31T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/english/</loc>
+    <lastmod>2017-08-31T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/english-preview/</loc>
+    <lastmod>2017-08-31T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/tag-2/</loc>
+    <lastmod>2017-08-31T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/test/</loc>
+    <lastmod>2017-08-30T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/this-is-a-very-long-title/</loc>
+    <lastmod>2017-08-30T15:43:48+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/creating-a-new-theme/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/development/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/development/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/go/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/golang/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/golang/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/templates/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/themes/</loc>
+    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/goisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/hugoisforlovers/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/hugo/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/migrate-from-jekyll/</loc>
+    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dvesti.github.io/site-hugo/post/2014-01-02-introducing-lanyon/</loc>
     <lastmod>2014-01-02T00:00:00+00:00</lastmod>
   </url>
@@ -55,6 +235,26 @@
   <url>
     <loc>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</loc>
     <lastmod>2013-12-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/syntax-highlighting/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/categories/syntax-highlighting/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/post/syntax-highlighting/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/tags/tag-5/</loc>
+    <lastmod>2017-08-30T16:01:23+08:00</lastmod>
   </url>
   
   <url>

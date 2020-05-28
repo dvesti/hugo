@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Math Preview - Мой Hugo</title>
+  <meta property="og:title" content="Math Preview - Мой Hugo" />
+  <meta name="twitter:title" content="Math Preview - Мой Hugo" />
+  <meta name="description" content="KaTeX and MathJax Comparison Demo, currently processed as KaTex">
+  <meta property="og:description" content="KaTeX and MathJax Comparison Demo, currently processed as KaTex">
+  <meta name="twitter:description" content="KaTeX and MathJax Comparison Demo, currently processed as KaTex">
+  <meta name="author" content="Dvesti"/>
+  <meta property="og:site_name" content="Мой Hugo" />
+  <meta property="og:url" content="https://dvesti.github.io/site-hugo/post/math-preview/" />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.71.0" />
+
+  <link rel="stylesheet" href="/site-hugo/css/style.css" media="all" />
+  <link rel="stylesheet" href="/site-hugo/css/syntax.css" media="all" />
+  <link rel="stylesheet" href="/site-hugo/css/custom.css" media="all" />
+
+  <script src="/site-hugo/js/script.js"></script>
+  <script src="/site-hugo/js/custom.js"></script>
+  <script defer src="/site-hugo/js/fontawesome.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-navi">
+    <h1 class="site-title"><a href="/site-hugo/">Мой Hugo</a></h1>
+    <ul class="site-navi-items">
+      <li class="site-navi-item-categories"><a href="/site-hugo/categories/" title="Категории">Категории</a></li>
+      <li class="site-navi-item-tags"><a href="/site-hugo/tags/" title="Тэги">Тэги</a></li>
+      <li class="site-navi-item-archives"><a href="/site-hugo/archives/" title="Архив">Архив</a></li>
+      <li class="site-navi-item-about"><a href="/site-hugo/about/" title="О нас">О нас</a></li>
+      <li class="site-navi-item-"><a href="" title="docs">docs</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="site-header-bottom">
+
+  <div class="main" role="main">
+    <article class="article">
+      
+      
+      <h1 class="article-title">Math Preview</h1>
+      
+      <hr class="article-title-bottom">
+      <ul class="article-meta">
+        <li class="article-meta-date"><time>March 4, 2019</time></li>
+        <li class="article-meta-categories">
+          <a href="/site-hugo/categories/docs/">
+            <i class="fas fa-folder"></i>
+            docs
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-categories">
+          <a href="/site-hugo/categories/math/">
+            <i class="fas fa-folder"></i>
+            math
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-categories">
+          <a href="/site-hugo/categories/index/">
+            <i class="fas fa-folder"></i>
+            index
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/site-hugo/tags/preview/">
+            <i class="fas fa-tag"></i>
+            preview
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/site-hugo/tags/math/">
+            <i class="fas fa-tag"></i>
+            math
+          </a>&nbsp;
+        </li>
+        <li class="article-meta-tags">
+          <a href="/site-hugo/tags/tag-6/">
+            <i class="fas fa-tag"></i>
+            tag-6
+          </a>&nbsp;
+        </li>
+      </ul>
+      
+<aside class="toc">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#repeating-fractions">Repeating fractions</a></li>
+    <li><a href="#summation-notation">Summation notation</a></li>
+    <li><a href="#sum-of-a-series">Sum of a Series</a></li>
+    <li><a href="#product-notation">Product notation</a></li>
+    <li><a href="#inline-math">Inline math</a></li>
+    <li><a href="#greek-letters">Greek Letters</a></li>
+    <li><a href="#arrows">Arrows</a></li>
+    <li><a href="#symbols">Symbols</a></li>
+    <li><a href="#calculus">Calculus</a></li>
+    <li><a href="#lorenz-equations">Lorenz Equations</a></li>
+    <li><a href="#cross-product">Cross Product</a></li>
+    <li><a href="#accents">Accents</a></li>
+    <li><a href="#stretchy-brackets">Stretchy brackets</a></li>
+    <li><a href="#evaluation-at-limits">Evaluation at limits</a></li>
+    <li><a href="#case-definitions">Case definitions</a></li>
+    <li><a href="#maxwells-equations">Maxwell&rsquo;s Equations</a></li>
+    <li><a href="#statistics">Statistics</a></li>
+    <li><a href="#fractions-on-fractions">Fractions on fractions</a></li>
+    <li><a href="#n-th-root">n-th root</a></li>
+    <li><a href="#matrices">Matrices</a></li>
+    <li><a href="#punctuation">Punctuation</a></li>
+  </ul>
+</nav>
+</aside>
+      <p><a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">KaTeX and MathJax Comparison Demo, currently processed as KaTex</a></p>
+<h2 id="repeating-fractions">Repeating fractions</h2>
+<p>$$
+\frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
+$$</p>
+<h2 id="summation-notation">Summation notation</h2>
+<p>$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$</p>
+<h2 id="sum-of-a-series">Sum of a Series</h2>
+<p>I broke up the next two examples into separate lines so it behaves better on a mobile phone. That&rsquo;s why they include \displaystyle.</p>
+<p>$$
+\displaystyle\sum_{i=1}^{k+1}i
+$$</p>
+<p>$$
+\displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
+$$</p>
+<p>$$
+\displaystyle= \frac{k(k+1)}{2}+k+1
+$$</p>
+<p>$$
+\displaystyle= \frac{k(k+1)+2(k+1)}{2}
+$$</p>
+<p>$$
+\displaystyle= \frac{(k+1)(k+2)}{2}
+$$</p>
+<p>$$
+\displaystyle= \frac{(k+1)((k+1)+1)}{2}
+$$</p>
+<h2 id="product-notation">Product notation</h2>
+<p>$$
+\displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1.
+$$</p>
+<h2 id="inline-math">Inline math</h2>
+<p>And here is some in-line math: $$ k_{n+1} = n^2 + k_n^2 - k_{n-1} $$ , followed by some more text.</p>
+<h2 id="greek-letters">Greek Letters</h2>
+<p>$$
+\Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
+\alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
+$$</p>
+<h2 id="arrows">Arrows</h2>
+<p>$$
+\gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
+$$</p>
+<p>$$
+\Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
+\leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
+$$</p>
+<p>$$
+\Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
+$$</p>
+<p>$$
+\rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
+$$</p>
+<h2 id="symbols">Symbols</h2>
+<p>$$
+\surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup
+$$</p>
+<p>$$
+\bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle
+$$</p>
+<h2 id="calculus">Calculus</h2>
+<p>$$
+\int u \frac{dv}{dx},dx=uv-\int \frac{du}{dx}v,dx
+$$</p>
+<p>$$
+f(x) = \int_{-\infty}^\infty \hat f(\xi),e^{2 \pi i \xi x}
+$$</p>
+<p>$$
+\oint \vec{F} \cdot d\vec{s}=0
+$$</p>
+<h2 id="lorenz-equations">Lorenz Equations</h2>
+<p>$$
+\begin{aligned} \dot{x} &amp; = \sigma(y-x) \ \dot{y} &amp; = \rho x - y - xz \ \dot{z} &amp; = -\beta z + xy \end{aligned}
+$$</p>
+<h2 id="cross-product">Cross Product</h2>
+<p>This works in KaTeX, but the separation of fractions in this environment is not so good.</p>
+<p>$$
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+$$</p>
+<p>Here&rsquo;s a workaround: make the fractions smaller with an extra class that targets the spans with &ldquo;mfrac&rdquo; class (makes no difference in the MathJax case):</p>
+<p>$$
+\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
+$$</p>
+<h2 id="accents">Accents</h2>
+<p>$$
+\hat{x}\ \vec{x}\ \ddot{x}
+$$</p>
+<h2 id="stretchy-brackets">Stretchy brackets</h2>
+<p>$$
+\left(\frac{x^2}{y^3}\right)
+$$</p>
+<h2 id="evaluation-at-limits">Evaluation at limits</h2>
+<p>$$
+\left.\frac{x^3}{3}\right|_0^1
+$$</p>
+<h2 id="case-definitions">Case definitions</h2>
+<p>$$
+f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}
+$$</p>
+<h2 id="maxwells-equations">Maxwell&rsquo;s Equations</h2>
+<p>$$
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \ \nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+$$</p>
+<p>These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\). as you can see here:</p>
+<p>$$
+\begin{aligned} \nabla \times \vec{\mathbf{B}} -, \frac1c, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \[1em] \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \[0.5em] \nabla \times \vec{\mathbf{E}}, +, \frac1c, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \[1em] \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+$$</p>
+<h2 id="statistics">Statistics</h2>
+<p>Definition of combination:</p>
+<p>$$
+\frac{n!}{k!(n-k)!} = {^n}C_k
+{n \choose k}
+$$</p>
+<h2 id="fractions-on-fractions">Fractions on fractions</h2>
+<p>$$
+\frac{\frac{1}{x}+\frac{1}{y}}{y-z}
+$$</p>
+<h2 id="n-th-root">n-th root</h2>
+<p>$$
+\sqrt[n]{1+x+x^2+x^3+\ldots}
+$$</p>
+<h2 id="matrices">Matrices</h2>
+<p>$$
+\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\ a_{21} &amp; a_{22} &amp; a_{23}\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix}
+\begin{bmatrix} 0 &amp; \cdots &amp; 0 \ \vdots &amp; \ddots &amp; \vdots \ 0 &amp; \cdots &amp; 0 \end{bmatrix}
+$$</p>
+<h2 id="punctuation">Punctuation</h2>
+<p>$$
+f(x) = \sqrt{1+x} \quad (x \ge -1)
+f(x) \sim x^2 \quad (x\to\infty)
+$$</p>
+<p>Now with punctuation:</p>
+<p>$$
+f(x) = \sqrt{1+x}, \quad x \ge -1
+f(x) \sim x^2, \quad x\to\infty
+$$</p>
+    </article>
+
+    
+
+    <div class="disqus-comments">
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+
+    <ul class="pager article-pager">
+      <li class="pager-newer">
+          <a href="/site-hugo/post/2020-05-13-privetstvie/" data-toggle="tooltip" data-placement="top" title="Привет из XXI века">&lt; Newer</a>
+      </li>
+      <li class="pager-older">
+        <a href="/site-hugo/post/image-preview/" data-toggle="tooltip" data-placement="top" title="Image Preview">Older &gt;</a>
+      </li>
+    </ul>
+  </div>
+
+
+<div class="site-footer">
+  <div class="copyright">&copy; Copyright 2020 Dvesti</div>
+  <ul class="site-footer-items">
+    <li class="site-footer-item-about"><a href="/site-hugo/about/" title="О нас">О нас</a></li>
+  </ul>
+  <div class="powerdby">
+    Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
+  </div>
+</div>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'Toracking ID', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+</body>
+</html>
