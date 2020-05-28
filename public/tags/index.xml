@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Мой Hugo</title>
+    <title>Tags on Jane - A super concise theme for Hugo</title>
     <link>https://dvesti.github.io/site-hugo/tags/</link>
-    <description>Recent content in Tags on Мой Hugo</description>
+    <description>Recent content in Tags on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; Copyright 2020 Dvesti</copyright>
+    <language>en</language>
     <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -189,15 +188,6 @@
       <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
       <guid>https://dvesti.github.io/site-hugo/tags/syntax-highlighting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-5</title>
-      <link>https://dvesti.github.io/site-hugo/tags/tag-5/</link>
-      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/tag-5/</guid>
       <description></description>
     </item>
     

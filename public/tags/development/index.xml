@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on Мой Hugo</title>
+    <title>development on Jane - A super concise theme for Hugo</title>
     <link>https://dvesti.github.io/site-hugo/tags/development/</link>
-    <description>Recent content in development on Мой Hugo</description>
+    <description>Recent content in development on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    <copyright>&amp;copy; Copyright 2020 Dvesti</copyright>
+    <language>en</language>
     <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/tags/development/index.xml" rel="self" type="application/rss+xml" />
