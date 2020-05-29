@@ -94,7 +94,7 @@ You can change the complete/incomplete state by click the checkbox before the it
 
 ## Syntax Highlighting
 
-```js
+```wp
 function helloWorld () {
   alert("Hello, World!")
 }
