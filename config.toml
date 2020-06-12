@@ -50,9 +50,10 @@ defaultContentLanguage = "en"           # Default language to use
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
-  name = "external-link"
+  name = "Search"
   weight = 50
-  url = "https://gohugo.io"
+  identifier = "search"
+  url = "/search/"
 
 
 [params]
