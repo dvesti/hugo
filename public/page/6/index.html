@@ -157,6 +157,10 @@
               </li>
             
               <li>
+                <a href="https://dvesti.github.io/site-hugo/post/shortcodes-preview/">Shortcodes Preview</a>
+              </li>
+            
+              <li>
                 <a href="https://dvesti.github.io/site-hugo/post/image-preview/">Image Preview</a>
               </li>
             
@@ -333,6 +337,10 @@
               </li>
             
               <li>
+                <a href="https://dvesti.github.io/site-hugo/post/shortcodes-preview/">Shortcodes Preview</a>
+              </li>
+            
+              <li>
                 <a href="https://dvesti.github.io/site-hugo/post/image-preview/">Image Preview</a>
               </li>
             
@@ -376,15 +384,16 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/site-hugo/post/syntax-highlighting/">Syntax Highlighting</a>
+      <a class="post-link" href="/site-hugo/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2011-08-30" class="post-time">
-        2011-08-30
+      <time datetime="2014-03-10" class="post-time">
+        2014-03-10
       </time>
       <div class="post-category">
-          <a href="https://dvesti.github.io/site-hugo/categories/syntax-highlighting/"> Syntax Highlighting </a>
+          <a href="https://dvesti.github.io/site-hugo/categories/development/"> Development </a>
+          <a href="https://dvesti.github.io/site-hugo/categories/golang/"> golang </a>
           <a href="https://dvesti.github.io/site-hugo/categories/index/"> index </a>
           
         </div>
@@ -397,14 +406,78 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p>More detail: <a href="https://gohugo.io/content-management/syntax-highlighting/">Syntax Highlighting | Hugo</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">helloWorld</span> () {
-  <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Hello, World!&#34;</span>)
-}
-</code></pre></div>
+      Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.
     </div>
     <div class="read-more">
-      <a href="/site-hugo/post/syntax-highlighting/" class="read-more-link">Read more</a>
+      <a href="/site-hugo/post/migrate-from-jekyll/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/site-hugo/post/2014-01-02-introducing-lanyon/">Introducing Lanyon</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2014-01-02" class="post-time">
+        2014-01-02
+      </time>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      Lanyon is an unassuming Jekyll theme that places content first by tucking away navigation in a hidden drawer. It&rsquo;s based on Poole, the Jekyll butler.
+Built on Poole Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by @mdo. Poole, and every theme built on it (like Lanyon here) includes the following:
+ Complete Jekyll setup included (layouts, config, 404, RSS feed, posts, and example page) Mobile friendly design and development Easily scalable text and component sizing with rem units in the CSS Support for a wide gamut of HTML elements Related posts (time-based, because Jekyll) below each post Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)  Lanyon features In addition to the features of Poole, Lanyon adds the following:
+    </div>
+    <div class="read-more">
+      <a href="/site-hugo/post/2014-01-02-introducing-lanyon/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/site-hugo/post/2014-01-01-example-content/">Example content</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2014-01-01" class="post-time">
+        2014-01-01
+      </time>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+ Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+ Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
+    </div>
+    <div class="read-more">
+      <a href="/site-hugo/post/2014-01-01-example-content/" class="read-more-link">Read more</a>
     </div>
     
   </div>
@@ -458,6 +531,10 @@
       
       <li  class="active" >
         <a href="/site-hugo/page/6/">6</a>
+      </li>
+      
+      <li >
+        <a href="/site-hugo/page/7/">7</a>
       </li>
       
     </ul>
