@@ -101,6 +101,5 @@ defaultContentLanguage = "en"           # Default language to use
     r-codeforces = "http://localhost:1313"
     s-mastodon = "http://localhost:1313"
 
-  [outputs]
-    post = [ "HTML", "JSON"]
-	 page = [ "HTML"]
+ [outputs]
+    post = ["JSON", "HTML"]
