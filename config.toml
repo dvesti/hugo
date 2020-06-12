@@ -101,5 +101,5 @@ defaultContentLanguage = "en"           # Default language to use
     s-mastodon = "http://localhost:1313"
 
   [outputs]
-    home = [ "HTML", "JSON"]
-	 page = [ "HTML"]
+    post = [ "HTML", "JSON"]
+	 page = [ "HTML", "JSON"]

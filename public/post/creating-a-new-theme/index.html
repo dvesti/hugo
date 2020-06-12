@@ -33,7 +33,7 @@ We&amp;rsquo;ll start with creating a new site with a very basic template." />
 
 
 
-<meta name="generator" content="Hugo 0.71.0" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 <link rel="canonical" href="https://dvesti.github.io/site-hugo/post/creating-a-new-theme/" />
@@ -797,12 +797,12 @@ in 1 ms
 <h3 id="make-a-static-home-page">Make a Static Home Page</h3>
 <p>Right now, that page is empty because we don&rsquo;t have any content and we don&rsquo;t have any logic in the template. Let&rsquo;s change that by adding some text to the template.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;hugo says hello!&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 
 $
@@ -823,23 +823,23 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff  78 Sep 29 21:26 public/index.html
 
 $ cat public/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;hugo says hello!&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
+&lt;/html&gt;
 </code></pre></div><h4 id="live-reload-">Live Reload +</h4>
 <p>Note: If you&rsquo;re running the server with the <code>--watch</code> option, you&rsquo;ll see different content in the file:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ cat public/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;hugo says hello!&lt;/<span style="color:#f92672">p</span>&gt;
-&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;&lt;script src=&#34;http://&#39;</span>
-        <span style="color:#f92672">+</span> (<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">host</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;localhost&#39;</span>).<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;:&#39;</span>)[<span style="color:#ae81ff">0</span>]
-    <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;</span>
-        <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;script&gt;&#39;</span>)&lt;/<span style="color:#f92672">script</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;p&gt;hugo says hello!&lt;/p&gt;
+&lt;script&gt;document.write(&#39;&lt;script src=&#34;http://&#39;
+        + (location.host || &#39;localhost&#39;).split(&#39;:&#39;)[0]
+    + &#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;
+        + &#39;script&gt;&#39;)&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div><p>When you use <code>--watch</code>, the Live Reload script is added by Hugo. Look for live reload in the documentation to see what it does and how to disable it.</p>
 <h3 id="build-a-dynamic-home-page">Build a &ldquo;Dynamic&rdquo; Home Page</h3>
 <p>&ldquo;Dynamic home page?&rdquo; Hugo&rsquo;s a static web site generator, so this seems an odd thing to say. I mean let&rsquo;s have the home page automatically reflect the content in the site every time Hugo builds it. We&rsquo;ll use iteration in the template to do that.</p>
@@ -850,7 +850,7 @@ $ cat public/index.html
 INFO: 2014/09/29 Using config file: /Users/quoha/Sites/zafta/config.toml
 INFO: 2014/09/29 attempting to create  post/first.md of post
 INFO: 2014/09/29 curpath: /Users/quoha/Sites/zafta/themes/zafta/archetypes/default.md
-ERROR: 2014/09/29 Unable to Cast &lt;<span style="color:#f92672">nil</span>&gt; to map[string]interface{}
+ERROR: 2014/09/29 Unable to Cast &lt;nil&gt; to map[string]interface{}
 
 $
 </code></pre></div><p>That wasn&rsquo;t very nice, was it?</p>
@@ -939,14 +939,14 @@ $
 <h3 id="add-content-to-the-homepage">Add Content to the Homepage</h3>
 <p>The home page will contain a list of posts. Let&rsquo;s update its template to add the posts that we just created. The logic in the template will run every time we build the site.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
   {{ range first 10 .Data.Pages }}
-    &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
   {{ end }}
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 
 $
@@ -980,16 +980,16 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/index.html
 -rw-r--r--  1 quoha  staff   0 Sep 29 22:23 public/post/second/index.html
 $ cat public/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-    &lt;<span style="color:#f92672">h1</span>&gt;second&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;second&lt;/h1&gt;
 
-    &lt;<span style="color:#f92672">h1</span>&gt;first&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;first&lt;/h1&gt;
 
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 $
 </code></pre></div><p>Congratulations, the home page shows the title of the two posts. The posts themselves are still empty, but let&rsquo;s take a moment to appreciate what we&rsquo;ve done. Your template now generates output dynamically. Believe it or not, by inserting the range command inside of those curly braces, you&rsquo;ve learned everything you need to know to build a theme. All that&rsquo;s really left is understanding which template will be used to generate each content file and becoming familiar with the commands for the template engine.</p>
 <p>And, if that were entirely true, this tutorial would be much shorter. There are a few things to know that will make creating a new template much easier. Don&rsquo;t worry, though, that&rsquo;s all to come.</p>
@@ -1004,16 +1004,16 @@ $
 <p>Please see the Hugo documentation on template rendering for all the details on determining which template to use. And, as the docs mention, if you&rsquo;re building a single page application (SPA) web site, you can delete all of the other templates and work with just the default single page. That&rsquo;s a refreshing amount of joy right there.</p>
 <h4 id="update-the-template-file">Update the Template File</h4>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/_default/single.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">title</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;{{ .Title }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
   {{ .Content }}
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 
 $
@@ -1039,43 +1039,43 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:40 public/post/second/index.html
 
 $ cat public/post/first/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">title</span>&gt;first&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">h1</span>&gt;first&lt;/<span style="color:#f92672">h1</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;my first post&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;first&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;first&lt;/h1&gt;
+  &lt;p&gt;my first post&lt;/p&gt;
 
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
 $ cat public/post/second/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
-  &lt;<span style="color:#f92672">title</span>&gt;second&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">h1</span>&gt;second&lt;/<span style="color:#f92672">h1</span>&gt;
-  &lt;<span style="color:#f92672">p</span>&gt;my second post&lt;/<span style="color:#f92672">p</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;second&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;second&lt;/h1&gt;
+  &lt;p&gt;my second post&lt;/p&gt;
 
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 $
 </code></pre></div><p>Notice that the posts now have content. You can go to localhost:1313/post/first to verify.</p>
 <h3 id="linking-to-content">Linking to Content</h3>
 <p>The posts are on the home page. Let&rsquo;s add a link from there to the post. Since this is the home page, we&rsquo;ll update its template.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
   {{ range first 10 .Data.Pages }}
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;&lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ .Title }}&lt;/a&gt;&lt;/h1&gt;
   {{ end }}
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div><p>Build the web site and verify the results.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ rm -rf public
 $ hugo --verbose
@@ -1098,16 +1098,16 @@ $ find public -type f -name &#39;*.html&#39; | xargs ls -l
 -rw-r--r--  1 quoha  staff  128 Sep 29 22:44 public/post/second/index.html
 
 $ cat public/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
 
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/post/second/&#34;</span>&gt;second&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;&lt;a href=&#34;/post/second/&#34;&gt;second&lt;/a&gt;&lt;/h1&gt;
 
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/post/first/&#34;</span>&gt;first&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
+    &lt;h1&gt;&lt;a href=&#34;/post/first/&#34;&gt;first&lt;/a&gt;&lt;/h1&gt;
 
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
 $
 </code></pre></div><h3 id="create-a-post-listing">Create a Post Listing</h3>
@@ -1141,38 +1141,38 @@ i&#39;m speechless
 </code></pre></div><p>Notice that the page wasn&rsquo;t created at the top level. It was created in a sub-directory named &lsquo;about-time/'. That name came from our slug. Hugo will use the slug to name the generated content. It&rsquo;s a reasonable default, by the way, but we can learn a few things by fighting it for this file.</p>
 <p>One other thing. Take a look at the home page.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ cat public/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:1313/post/theme/&#34;</span>&gt;creating a new theme&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:1313/about-time/&#34;</span>&gt;about&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:1313/post/second-post/&#34;</span>&gt;second&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
-    &lt;<span style="color:#f92672">h1</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:1313/post/first-post/&#34;</span>&gt;first&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h1</span>&gt;
-&lt;<span style="color:#f92672">script</span>&gt;document.<span style="color:#a6e22e">write</span>(<span style="color:#e6db74">&#39;&lt;script src=&#34;http://&#39;</span>
-        <span style="color:#f92672">+</span> (<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">host</span> <span style="color:#f92672">||</span> <span style="color:#e6db74">&#39;localhost&#39;</span>).<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#39;:&#39;</span>)[<span style="color:#ae81ff">0</span>]
-  <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;</span>
-        <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;script&gt;&#39;</span>)&lt;/<span style="color:#f92672">script</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;&lt;a href=&#34;http://localhost:1313/post/theme/&#34;&gt;creating a new theme&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;a href=&#34;http://localhost:1313/about-time/&#34;&gt;about&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;a href=&#34;http://localhost:1313/post/second-post/&#34;&gt;second&lt;/a&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;a href=&#34;http://localhost:1313/post/first-post/&#34;&gt;first&lt;/a&gt;&lt;/h1&gt;
+&lt;script&gt;document.write(&#39;&lt;script src=&#34;http://&#39;
+        + (location.host || &#39;localhost&#39;).split(&#39;:&#39;)[0]
+  + &#39;:1313/livereload.js?mindelay=10&#34;&gt;&lt;/&#39;
+        + &#39;script&gt;&#39;)&lt;/script&gt;&lt;/body&gt;
+&lt;/html&gt;
 </code></pre></div><p>Notice that the &ldquo;about&rdquo; link is listed with the posts? That&rsquo;s not desirable, so let&rsquo;s change that first.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/index.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
-  &lt;<span style="color:#f92672">h1</span>&gt;posts&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+  &lt;h1&gt;posts&lt;/h1&gt;
   {{ range first 10 .Data.Pages }}
     {{ if eq .Type &#34;post&#34;}}
-      &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+      &lt;h2&gt;&lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ .Title }}&lt;/a&gt;&lt;/h2&gt;
     {{ end }}
   {{ end }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;pages&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;h1&gt;pages&lt;/h1&gt;
   {{ range .Data.Pages }}
     {{ if eq .Type &#34;page&#34; }}
-      &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+      &lt;h2&gt;&lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ .Title }}&lt;/a&gt;&lt;/h2&gt;
     {{ end }}
   {{ end }}
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 </code></pre></div><p>Generate the web site and verify the results. The home page has two sections, posts and pages, and each section has the right set of headings and links in it.</p>
 <p>But, that about page still renders to about-time/index.html.</p>
@@ -1194,17 +1194,17 @@ i&#39;m speechless
 <h3 id="create-the-header-and-footer-partials">Create the Header and Footer Partials</h3>
 <p>In Hugo, a partial is a sugar-coated template. Normally a template reference has a path specified. Partials are different. Hugo searches for them along a TODO defined search path. This makes it easier for end-users to override the theme&rsquo;s presentation.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/partials/header.html
-<span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
-&lt;<span style="color:#f92672">html</span>&gt;
-&lt;<span style="color:#f92672">head</span>&gt;
- &lt;<span style="color:#f92672">title</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">title</span>&gt;
-&lt;/<span style="color:#f92672">head</span>&gt;
-&lt;<span style="color:#f92672">body</span>&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;{{ .Title }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 :wq
 
 $ vi themes/zafta/layouts/partials/footer.html
-&lt;/<span style="color:#f92672">body</span>&gt;
-&lt;/<span style="color:#f92672">html</span>&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 :wq
 </code></pre></div><h3 id="update-the-home-page-template-to-use-the-partials">Update the Home Page Template to Use the Partials</h3>
 <p>The most noticeable difference between a template call and a partials call is the lack of path:</p>
@@ -1216,17 +1216,17 @@ $ vi themes/zafta/layouts/partials/footer.html
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/index.html
 {{ partial &#34;header.html&#34; . }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;posts&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;h1&gt;posts&lt;/h1&gt;
   {{ range first 10 .Data.Pages }}
     {{ if eq .Type &#34;post&#34;}}
-      &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+      &lt;h2&gt;&lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ .Title }}&lt;/a&gt;&lt;/h2&gt;
     {{ end }}
   {{ end }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;pages&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;h1&gt;pages&lt;/h1&gt;
   {{ range .Data.Pages }}
     {{ if or (eq .Type &#34;page&#34;) (eq .Type &#34;about&#34;) }}
-      &lt;<span style="color:#f92672">h2</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ .Permalink }}&#34;</span>&gt;{{ .Type }} - {{ .Title }} - {{ .RelPermalink }}&lt;/<span style="color:#f92672">a</span>&gt;&lt;/<span style="color:#f92672">h2</span>&gt;
+      &lt;h2&gt;&lt;a href=&#34;{{ .Permalink }}&#34;&gt;{{ .Type }} - {{ .Title }} - {{ .RelPermalink }}&lt;/a&gt;&lt;/h2&gt;
     {{ end }}
   {{ end }}
 
@@ -1237,7 +1237,7 @@ $ vi themes/zafta/layouts/partials/footer.html
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/_default/single.html
 {{ partial &#34;header.html&#34; . }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
   {{ .Content }}
 
 {{ partial &#34;footer.html&#34; . }}
@@ -1252,8 +1252,8 @@ $ vi themes/zafta/layouts/partials/footer.html
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/_default/single.html
 {{ partial &#34;header.html&#34; . }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
-  &lt;<span style="color:#f92672">h2</span>&gt;{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}&lt;/<span style="color:#f92672">h2</span>&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;h2&gt;{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}&lt;/h2&gt;
   {{ .Content }}
 
 {{ partial &#34;footer.html&#34; . }}
@@ -1267,7 +1267,7 @@ $ vi themes/zafta/layouts/partials/footer.html
 $ vi themes/zafta/layouts/_default/single.html
 {{ partial &#34;header.html&#34; . }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
   {{ .Content }}
 
 {{ partial &#34;footer.html&#34; . }}
@@ -1276,8 +1276,8 @@ $ vi themes/zafta/layouts/_default/single.html
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">$ vi themes/zafta/layouts/post/single.html
 {{ partial &#34;header.html&#34; . }}
 
-  &lt;<span style="color:#f92672">h1</span>&gt;{{ .Title }}&lt;/<span style="color:#f92672">h1</span>&gt;
-  &lt;<span style="color:#f92672">h2</span>&gt;{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}&lt;/<span style="color:#f92672">h2</span>&gt;
+  &lt;h1&gt;{{ .Title }}&lt;/h1&gt;
+  &lt;h2&gt;{{ .Date.Format &#34;Mon, Jan 2, 2006&#34; }}&lt;/h2&gt;
   {{ .Content }}
 
 {{ partial &#34;footer.html&#34; . }}
@@ -1598,17 +1598,15 @@ $ vi themes/zafta/layouts/_default/single.html
     </a>
 
 
-<a href="https://dvesti.github.io/site-hugo/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
-    class="iconfont" title="rss" target="_blank">
-    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="30" height="30">
-  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
-</svg>
-
-  </a>
-   
+ 
 </div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.5/lunr.min.js"
+  integrity="sha256-uScRgGrInD2VnPNpjmlQtB2XRVLczyyZvrTkYi+e31U="
+  crossorigin="anonymous"
+></script>
+<script src="https://dvesti.github.io/site-hugo/js/search.js"></script>
 
 <div class="copyright">
   <span class="power-by">

@@ -34,7 +34,7 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 
 
 
-<meta name="generator" content="Hugo 0.71.0" />
+<meta name="generator" content="Hugo 0.68.3" />
 
 
 <link rel="canonical" href="https://dvesti.github.io/site-hugo/post/jane-theme-preview/" />
@@ -517,9 +517,9 @@ $$</p>
 <p>In markdown source file, math block is <em>LaTeX</em> expression wrapped by ‘$$’ mark:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">$$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} <span style="color:#960050;background-color:#1e0010">&amp;</span> \mathbf{j} <span style="color:#960050;background-color:#1e0010">&amp;</span> \mathbf{k} \\
-\frac{\partial X}{\partial u} <span style="color:#960050;background-color:#1e0010">&amp;</span>  \frac{\partial Y}{\partial u} <span style="color:#960050;background-color:#1e0010">&amp;</span> 0 \\
-\frac{\partial X}{\partial v} <span style="color:#960050;background-color:#1e0010">&amp;</span>  \frac{\partial Y}{\partial v} <span style="color:#960050;background-color:#1e0010">&amp;</span> 0 \\
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
 \end{vmatrix}
 $$
 </code></pre></div><h2 id="tables">Tables</h2>
@@ -533,7 +533,7 @@ $$
 | <span style="font-weight:bold">**Strong**</span>        | <span style="color:#e6db74">`**Strong**`</span>        | <span style="color:#e6db74">`&lt;strong&gt;&lt;/strong&gt;`</span> |
 | <span style="color:#e6db74">`code`</span>            | ``code``            | <span style="color:#e6db74">`&lt;code&gt;&lt;/code&gt;`</span>      |
 | <span style="color:#f92672">~~Strikethrough~~</span> | <span style="color:#e6db74">`~~Strikethrough~~`</span> | <span style="color:#e6db74">`&lt;del&gt;&lt;/del`</span>         |
-| &lt;<span style="color:#f92672">u</span>&gt;Underline&lt;/<span style="color:#f92672">u</span>&gt;  | <span style="color:#e6db74">`&lt;u&gt;underline&lt;/u&gt;`</span>  | <span style="color:#e6db74">`&lt;u&gt;&lt;/u&gt;`</span>            |
+| &lt;u&gt;Underline&lt;/u&gt;  | <span style="color:#e6db74">`&lt;u&gt;underline&lt;/u&gt;`</span>  | <span style="color:#e6db74">`&lt;u&gt;&lt;/u&gt;`</span>            |
 </code></pre></div><table>
 <thead>
 <tr>
@@ -979,17 +979,15 @@ And then define the link:
     </a>
 
 
-<a href="https://dvesti.github.io/site-hugo/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
-    class="iconfont" title="rss" target="_blank">
-    <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="30" height="30">
-  <path d="M819.157333 1024C819.157333 574.592 449.408 204.8 0 204.8V0c561.706667 0 1024 462.293333 1024 1024h-204.842667zM140.416 743.04a140.8 140.8 0 0 1 140.501333 140.586667A140.928 140.928 0 0 1 140.074667 1024C62.72 1024 0 961.109333 0 883.626667s62.933333-140.544 140.416-140.586667zM678.784 1024h-199.04c0-263.210667-216.533333-479.786667-479.744-479.786667V345.173333c372.352 0 678.784 306.517333 678.784 678.826667z"></path>
-</svg>
-
-  </a>
-   
+ 
 </div>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.5/lunr.min.js"
+  integrity="sha256-uScRgGrInD2VnPNpjmlQtB2XRVLczyyZvrTkYi+e31U="
+  crossorigin="anonymous"
+></script>
+<script src="https://dvesti.github.io/site-hugo/js/search.js"></script>
 
 <div class="copyright">
   <span class="power-by">
