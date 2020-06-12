@@ -102,4 +102,4 @@ defaultContentLanguage = "en"           # Default language to use
 
   [outputs]
     post = [ "HTML", "JSON"]
-	 page = [ "HTML", "JSON"]
+	 page = [ "HTML"]
