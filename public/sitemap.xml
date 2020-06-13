@@ -396,4 +396,9 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/search/</loc>
+    <priority>0</priority>
+  </url>
+  
 </urlset>

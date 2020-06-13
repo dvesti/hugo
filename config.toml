@@ -78,7 +78,7 @@ defaultContentLanguage = "en"           # Default language to use
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+  customJS = ['fuse.min.js','jquery.mark.min.js','search.js']              # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
     a-email = "mailto:your@email.com"
@@ -102,4 +102,4 @@ defaultContentLanguage = "en"           # Default language to use
     s-mastodon = "http://localhost:1313"
 
  [outputs]
-    post = ["JSON", "HTML"]
+   home = ["HTML", "RSS", "JSON"]
