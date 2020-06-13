@@ -52,8 +52,14 @@ defaultContentLanguage = "en"           # Default language to use
 [[menu.main]]
   name = "Search"
   weight = 50
-  identifier = "search"
-  url = "/search/"
+ # identifier = "search"
+  url = "/search"
+  
+[[menu.main]]
+  name = "О нас"
+  weight = 50
+ # identifier = "search"
+  url = "/about"
 
 
 [params]
@@ -104,6 +110,5 @@ defaultContentLanguage = "en"           # Default language to use
  [outputs]
    home = ["HTML", "RSS", "JSON"]
 	page = [ "HTML"]
-   section = ["JSON", "HTML"]
-
+   
    
