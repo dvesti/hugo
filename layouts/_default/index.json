@@ -1,5 +1,5 @@
-{{- $index := slice -}}
-{{- range where .Site.RegularPages "Type" "not in"  (slice "jf2feed" "json") -}}
-  {{- $index = $index | append (dict "title" .Title "ref" .Permalink "tags" .Params.tags "content" .Plain) -}}
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- $.Scratch.Add "index" (dict "title" .Title "subtitle" .Params.subtitle "description" .Params.description "tags" .Params.tags "image" .Params.image "content" .Plain "permalink" .Permalink) -}}
 {{- end -}}
-{{- $index | jsonify -}}
+{{- $.Scratch.Get "index" | jsonify -}}

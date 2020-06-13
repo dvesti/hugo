@@ -103,3 +103,4 @@ defaultContentLanguage = "en"           # Default language to use
 
  [outputs]
    home = ["HTML", "RSS", "JSON"]
+	page = [ "HTML"]
