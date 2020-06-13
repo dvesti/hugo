@@ -342,6 +342,18 @@ cd public &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &amp
     </item>
     
     <item>
+      <title>О нас</title>
+      <link>https://dvesti.github.io/site-hugo/page/about/</link>
+      <pubDate>Fri, 07 Jun 2019 20:22:57 +0200</pubDate>
+      
+      <guid>https://dvesti.github.io/site-hugo/page/about/</guid>
+      
+        <description>&lt;p&gt;тяф&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
       <title>Math Preview</title>
       <link>https://dvesti.github.io/site-hugo/post/math-preview/</link>
       <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
@@ -3269,24 +3281,6 @@ Liquid::Template.register_tag(&#39;image&#39;, Jekyll::ImageTag)
 &lt;p&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Want to see something else added? &lt;!-- raw HTML omitted --&gt;Open an issue.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-</description>
-      
-    </item>
-    
-    <item>
-      <title>What&#39;s Jekyll?</title>
-      <link>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</link>
-      <pubDate>Tue, 31 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/post/2013-12-31-whats-jekyll/</guid>
-      
-        <description>&lt;p&gt;тяф
-&lt;a href=&#34;http://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&#34;https://github.com/mojombo/jekyll/blob/master/README.markdown&#34;&gt;the project&amp;rsquo;s readme&lt;/a&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Jekyll is a simple, blog aware, static site generator. It takes a template directory [&amp;hellip;] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It&amp;rsquo;s an immensely useful tool and one we encourage you to use here with Hyde.&lt;/p&gt;
-&lt;p&gt;Find out more by &lt;a href=&#34;https://github.com/mojombo/jekyll&#34;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
       
     </item>

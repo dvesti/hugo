@@ -93,6 +93,13 @@
   </url>
   
   <url>
+    <loc>https://dvesti.github.io/site-hugo/page/about/</loc>
+    <lastmod>2019-06-07T20:22:57+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://dvesti.github.io/site-hugo/categories/docs/</loc>
     <lastmod>2019-03-05T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
