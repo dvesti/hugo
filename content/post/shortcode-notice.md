@@ -56,9 +56,9 @@ A info disclaimer
 {{%/* /notice */%}}
 ```
 
-{{% notice info %}}
+{{%/* notice info */%}}
 An information disclaimer
-{{% /notice %}}
+{{%/* /notice */%}}
 
 ## warning
 
