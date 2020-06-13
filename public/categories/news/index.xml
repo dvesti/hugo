@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>News on Jane - A super concise theme for Hugo</title>
-    <link>https://dvesti.github.io/site-hugo/categories/news/</link>
+    <link>https://dvesti.github.io/categories/news/</link>
     <description>Recent content in News on Jane - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate>
     
-	<atom:link href="https://dvesti.github.io/site-hugo/categories/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dvesti.github.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Приветствие</title>
-      <link>https://dvesti.github.io/site-hugo/post/2020-05-14-privet/</link>
+      <link>https://dvesti.github.io/post/2020-05-14-privet/</link>
       <pubDate>Thu, 14 May 2020 18:05:23 +0300</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/2020-05-14-privet/</guid>
+      <guid>https://dvesti.github.io/post/2020-05-14-privet/</guid>
       <description>&lt;p&gt;Всех приветствую 14 мая 2020!&lt;br&gt;
 И 18-го &amp;ndash; тоже!&lt;br&gt;
 и уже 20-е&lt;br&gt;
@@ -27,10 +27,10 @@
     
     <item>
       <title>Привет из XXI века</title>
-      <link>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</link>
+      <link>https://dvesti.github.io/post/2020-05-13-privetstvie/</link>
       <pubDate>Tue, 12 May 2020 21:44:45 +0300</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</guid>
+      <guid>https://dvesti.github.io/post/2020-05-13-privetstvie/</guid>
       <description>Kумушки от камушек - 2020</description>
     </item>
     
