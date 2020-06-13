@@ -1,7 +1,5 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-	{{- if or (and (not .Draft) (not .Params.private)) -}}
-    	{{- $.Scratch.Add "index" (dict "date" .Date.UTC.Unix "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
-    {{- end -}}	
+{{- $index := slice -}}
+{{- range where .Site.RegularPages "Type" "not in"  (slice "jf2feed" "json") -}}
+  {{- $index = $index | append (dict "title" .Title "ref" .Permalink "tags" .Params.tags "content" .Plain) -}}
 {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{{- $index | jsonify -}}
