@@ -69,7 +69,7 @@ defaultContentLanguage = "ru"           # Default language to use
 [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
     weight = 60
-    id = "002186711602136249422:q1gkomof_em"
+    id = "002744767378160621811:wizhxqeiera"
     title = "Search"
 
 [params]
