@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>preview · Jane - A super concise theme for Hugo</title>
+  <title>搜索 - Jane - A super concise theme for Hugo</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -23,7 +23,8 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="xianmin" />
-  <meta name="description" content="Hugo theme jane example site." />
+  <meta name="description" content="This file exists solely to respond to /search URL with the related search layout template. No content shown here is rendered, all content is based in the template layouts/page/search.html Setting a very low sitemap priority will tell search engines this is not important content. This implementation uses Fusejs, jquery and mark.js Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&amp;ldquo;HTML&amp;rdquo;, &amp;ldquo;JSON&amp;rdquo;]" />
+
   <meta name="keywords" content="Hugo, theme, jane" />
 
 
@@ -34,8 +35,8 @@
 <meta name="generator" content="Hugo 0.68.3" />
 
 
-<link rel="canonical" href="https://dvesti.github.io/site-hugo/tags/preview/" />
-<link href="/site-hugo/tags/preview/index.xml" rel="alternate" type="application/rss+xml" title="Jane - A super concise theme for Hugo" />
+<link rel="canonical" href="https://dvesti.github.io/site-hugo/ch-search/" />
+
 
 
 
@@ -58,15 +59,21 @@
 
 
 
-<meta property="og:title" content="preview" />
-<meta property="og:description" content="Hugo theme jane example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://dvesti.github.io/site-hugo/tags/preview/" />
-<meta property="og:updated_time" content="2019-03-04T16:01:23+08:00" />
-<meta itemprop="name" content="preview">
-<meta itemprop="description" content="Hugo theme jane example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="preview"/>
-<meta name="twitter:description" content="Hugo theme jane example site."/>
+<meta property="og:title" content="搜索" />
+<meta property="og:description" content="This file exists solely to respond to /search URL with the related search layout template. No content shown here is rendered, all content is based in the template layouts/page/search.html Setting a very low sitemap priority will tell search engines this is not important content. This implementation uses Fusejs, jquery and mark.js Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dvesti.github.io/site-hugo/ch-search/" />
+
+<meta itemprop="name" content="搜索">
+<meta itemprop="description" content="This file exists solely to respond to /search URL with the related search layout template. No content shown here is rendered, all content is based in the template layouts/page/search.html Setting a very low sitemap priority will tell search engines this is not important content. This implementation uses Fusejs, jquery and mark.js Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]">
+
+<meta itemprop="wordCount" content="142">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="搜索"/>
+<meta name="twitter:description" content="This file exists solely to respond to /search URL with the related search layout template. No content shown here is rendered, all content is based in the template layouts/page/search.html Setting a very low sitemap priority will tell search engines this is not important content. This implementation uses Fusejs, jquery and mark.js Initial setup Search depends on additional output content type of JSON in config.toml ``` [outputs] home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -383,7 +390,7 @@
 
       </li>
     
-        <li class="menu-item">
+        <li class="menu-item active">
         
           
           
@@ -422,143 +429,118 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
+          <article class="post bg-white">
   
+  <header class="post-header">
+    <h1 class="post-title">搜索</h1>
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">Тег: preview</h2>
-      </div>
+    <div class="post-meta">
+      <time datetime="0001-01-01" class="post-time">
+        0001-01-01
+      </time>
+    </div>
+  </header>
+
+  
+  
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Оглавление</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#initial-setup">Initial setup</a></li>
+    <li><a href="#searching-additional-fileds">Searching additional fileds</a>
+      <ul>
+        <li><a href="#edit-layouts_defaultindexjson">Edit layouts/_default/index.JSON</a></li>
+        <li><a href="#edit-fusejs-options-to-search">Edit fuse.js options to Search</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+
+  
+  <div class="post-content">
+      <p>This file exists solely to respond to /search URL with the related <code>search</code> layout template.</p>
+<p>No content shown here is rendered, all content is based in the template layouts/page/search.html</p>
+<p>Setting a very low sitemap priority will tell search engines this is not important content.</p>
+<p>This implementation uses Fusejs, jquery and mark.js</p>
+<h2 id="initial-setup">Initial setup</h2>
+<p>Search depends on additional output content type of JSON in config.toml
+```
+[outputs]
+home = [&ldquo;HTML&rdquo;, &ldquo;JSON&rdquo;]
+```</p>
+<h2 id="searching-additional-fileds">Searching additional fileds</h2>
+<p>To search additional fields defined in front matter, you must add it in 2 places.</p>
+<h3 id="edit-layouts_defaultindexjson">Edit layouts/_default/index.JSON</h3>
+<p>This exposes the values in /index.json
+i.e. add <code>category</code>
+```
+&hellip;
+&ldquo;contents&rdquo;:{{ .Content | plainify | jsonify }}
+{{ if .Params.tags }},
+&ldquo;tags&rdquo;:{{ .Params.tags | jsonify }}{{end}},
+&ldquo;categories&rdquo; : {{ .Params.categories | jsonify }},
+&hellip;
+```</p>
+<h3 id="edit-fusejs-options-to-search">Edit fuse.js options to Search</h3>
+<p><code>static/js/search.js</code>
+```
+keys: [
+&ldquo;title&rdquo;,
+&ldquo;contents&rdquo;,
+&ldquo;tags&rdquo;,
+&ldquo;categories&rdquo;
+]
+```</p>
+
+  </div>
+
+  
+  
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Автор</span>
+    <span class="item-content">xianmin</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+      0001-01-01
+      
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">Лицензия</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+
+  
+  
+</article>
+
+
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
     
-  
 
   
-    <div class="archive-post">
-      <time datetime="2019-03-04" class="archive-post-time">
-        2019-03-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/math-preview/" class="archive-post-link">
-          Math Preview
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2018-03-06" class="archive-post-time">
-        2018-03-06
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/jane-theme-preview.zh-cn/" class="archive-post-link">
-          Jane 主题预览
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2018-03-04" class="archive-post-time">
-        2018-03-04
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/shortcodes-preview/" class="archive-post-link">
-          Shortcodes Preview
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2018-03-03" class="archive-post-time">
-        2018-03-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/shortcode-notice/" class="archive-post-link">
-          Shortcodes Notice Preview
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2018-03-03" class="archive-post-time">
-        2018-03-03
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/image-preview/" class="archive-post-link">
-          Image Preview
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2018-01-01" class="archive-post-time">
-        2018-01-01
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/jane-theme-preview/" class="archive-post-link">
-          Jane Theme Preview
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2017-08-31" class="archive-post-time">
-        2017-08-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/english-preview/" class="archive-post-link">
-          English Creating a New Theme
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2017-08-30" class="archive-post-time">
-        2017-08-30
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/this-is-a-very-long-title/" class="archive-post-link">
-          This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2011-08-30" class="archive-post-time">
-        2011-08-30
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/syntax-highlighting/" class="archive-post-link">
-          Syntax Highlighting
-        </a>
-      </span>
-    </div>
-  
-</section>
-
-
-
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-
-
-
 
         </div>
       </div>
