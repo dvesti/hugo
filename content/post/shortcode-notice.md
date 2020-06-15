@@ -7,7 +7,12 @@ tags: ["preview", "shortcodes", "tag-6"]
 categories: ["docs", "shortcodes", "index"]
 ---
 
+Не все _шорккоды_ работают корректно. Скорее всего из-за их отсутствия: будем искать и исправлять пост.
+
+Нерабочие:
+
 ## normal use
+
 `Note` example:
 
 ```shortcode
@@ -17,9 +22,9 @@ A notice disclaimer
 ```
 
 **Result:**
-{{%/* notice note */%}}
+{{% notice note %}}
 A notice disclaimer
-{{%/* /notice */%}}
+{{% /notice %}}
 
 
 You could **custom title** :
@@ -31,9 +36,9 @@ A notice disclaimer
 {{%/* /notice */%}}
 ```
 
-{{%/* notice note 笔记 */%}}
+{{% notice note 笔记 %}}
 A notice disclaimer
-{{%/* /notice */%}}
+{{% /notice %}}
 
 
 ## tip
@@ -44,9 +49,9 @@ A tip disclaimer
 {{%/* /tip */%}}
 ```
 
-{{/* notice tip */}}
+{{% notice tip %}}
 A tip disclaimer
-{{</* /notice */>}}
+{{% /notice %}}
 
 
 ## info
@@ -56,18 +61,18 @@ A info disclaimer
 {{%/* /notice */%}}
 ```
 
-{{%/* notice info */%}}
+{{% notice info %}}
 An information disclaimer
-{{%/* /notice */%}}
+{{% /notice %}}
+
 
 ## warning
-
 ```shortcode
 {{%/* notice warning */%}}
 A warning disclaimer
 {{%/* /notice */%}}
 ```
 
-{{%/* notice warning */%}}
+{{% notice warning %}}
 An warning disclaimer
-{{%/* /notice */%}}
+{{% /notice %}}

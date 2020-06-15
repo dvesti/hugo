@@ -4,7 +4,7 @@ baseURL = "https://dvesti.github.io/site-hugo"
 # And see https://gohugo.io/getting-started/configuration/ .
 
 #baseURL = "http://localhost:1313/"
-title = "Jane - A super concise theme for Hugo"
+title = "Мои друзья: Jane и Hugo"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"  #"hugo-lithium-theme" #"jane"
@@ -17,13 +17,19 @@ disqusShortname = ""      # disqus_shortname
 googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
+# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
+pygmentsCodeFences = true # Enable syntax highlighting with GitHub flavoured code fences
+pygmentsUseClasses = true # Use CSS classes to format highlighted code
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "linenos=table"
+
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "ru"           # Default language to use
 [languages.ru]
   languageCode = "ru"
 
 [author]                  # essential                     # 必需
-  name = "xianmin"
+  name = "Dvesti"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -31,22 +37,23 @@ defaultContentLanguage = "ru"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "This is Home"
+  name = "Главная"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "Archives"
+  name = "Архив"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "Tags"
+  name = "Тэги"
   weight = 30
+  id = "Tags"
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "Categories"
+  name = "Категории"
   weight = 40
   identifier = "categories"
   url = "/categories/"
@@ -70,7 +77,7 @@ defaultContentLanguage = "ru"           # Default language to use
     enable = true
     weight = 60
     id = "002744767378160621811:wizhxqeiera"
-    title = "Search"
+    title = "Поиск"
 
 [params]
   since = "2017"            # Site creation time          # 站点建立时间
@@ -78,9 +85,9 @@ defaultContentLanguage = "ru"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "Jane"        # default: the title value    # 默认值: 上面设置的title值
+  logoTitle = "Блог Dvesti"        # default: the title value    # 默认值: 上面设置的title值
   keywords = ["Hugo", "theme","jane"]
-  description = "Hugo theme jane example site."
+  description = "Блог настоящего"
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -97,7 +104,7 @@ defaultContentLanguage = "ru"           # Default language to use
   customJS = ['fuse.min.js','jquery.mark.min.js','search.js']              # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
+    a-email = "mailto:dvesti@hot.ee"
     b-stack-overflow = "http://localhost:1313"
     c-twitter = "http://localhost:1313"
     d-facebook = "http://localhost:1313"
@@ -121,5 +128,3 @@ defaultContentLanguage = "ru"           # Default language to use
 #   home = ["HTML", "RSS", "JSON"]
 #	page = [ "HTML"]
   # section = ["JSON", "HTML"]
-   
-   
