@@ -50,11 +50,11 @@ defaultContentLanguage = "ru"           # Default language to use
   weight = 40
   identifier = "categories"
   url = "/categories/"
-[[menu.main]]
-  name = "Search"
-  weight = 50
- # identifier = "search"
-  url = "/search"
+#[[menu.main]]
+# name = "Search"
+#  weight = 50
+#  identifier = "search"
+#  url = "/search"
   
 [[menu.main]]
   name = "О нас"
@@ -62,10 +62,14 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/about"
 
-  [params.search]
-    url = "/search/"
-    img = "/images/search.svg"
+ # [params.search]
+ #   url = "/search/"
+ #   img = "/images/search.svg"
 
+[params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    id = "002186711602136249422:q1gkomof_em"
+    title = "Search"
 
 [params]
   since = "2017"            # Site creation time          # 站点建立时间
