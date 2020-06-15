@@ -19,7 +19,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "ru"           # Default language to use
-[languages.en]
+[languages.ru]
   languageCode = "ru"
 
 [author]                  # essential                     # 必需
@@ -112,9 +112,9 @@ defaultContentLanguage = "ru"           # Default language to use
     r-codeforces = "http://localhost:1313"
     s-mastodon = "http://localhost:1313"
 
- [outputs]
-   home = ["HTML", "RSS", "JSON"]
-	page = [ "HTML"]
+# [outputs]
+#   home = ["HTML", "RSS", "JSON"]
+#	page = [ "HTML"]
   # section = ["JSON", "HTML"]
    
    
