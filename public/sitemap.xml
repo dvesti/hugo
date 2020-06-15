@@ -418,11 +418,6 @@
   </url>
   
   <url>
-    <loc>https://dvesti.github.io/site-hugo/search/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://dvesti.github.io/site-hugo/ch-search/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
