@@ -344,4 +344,16 @@ To use this feature, first, please enable it in `Preference` Panel -> `Markdown`
 
 To trigger inline preview for inline math: input “$”, then press `ESC` key, then input TeX command, a preview tooltip will be visible like below:
 
+*HTML* в *MarkDown* -- не работает (есть свои хитрости)
+
 <img src="https://typora.io/img/inline-math.gif" style="zoom:50%;" />
+
+<span style="display:block" class="note">It **works!**</span>
+
+Ниже записано средствами самого *MarkDown*
+
+```md
+![Картинка](https://typora.io/img/inline-math.gif)
+```
+
+![Картинка](https://typora.io/img/inline-math.gif)
