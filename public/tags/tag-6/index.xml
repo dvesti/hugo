@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tag-6 on Jane - A super concise theme for Hugo</title>
+    <title>tag-6 on Мои друзья: Jane и Hugo</title>
     <link>https://dvesti.github.io/site-hugo/tags/tag-6/</link>
-    <description>Recent content in tag-6 on Jane - A super concise theme for Hugo</description>
+    <description>Recent content in tag-6 on Мои друзья: Jane и Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
@@ -59,7 +59,7 @@
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://dvesti.github.io/site-hugo/post/shortcode-notice/</guid>
-      <description>normal use Note example: {{% notice note %}} A notice disclaimer {{% /notice %}} Result: {{% notice note %}} A notice disclaimer {{% /notice %}} You could custom title : {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} {{% notice note 笔记 %}} A notice disclaimer {{% /notice %}} tip {{% notice tip %}} A tip disclaimer {{% /tip %}} {{/* notice tip */}} A</description>
+      <description>Не все шорккоды работают корректно. Скорее всего из-за их отсутствия: будем искат</description>
     </item>
     
   </channel>

@@ -43,7 +43,7 @@ defaultContentLanguage = "ru"           # Default language to use
   url = "/"
 [[menu.main]]
   name = "Архив"
-  weight = 20
+  weight = 40
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
@@ -54,7 +54,7 @@ defaultContentLanguage = "ru"           # Default language to use
   url = "/tags/"
 [[menu.main]]
   name = "Категории"
-  weight = 40
+  weight = 20
   identifier = "categories"
   url = "/categories/"
 #[[menu.main]]
@@ -101,7 +101,7 @@ defaultContentLanguage = "ru"           # Default language to use
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = ['fuse.min.js','jquery.mark.min.js','search.js']              # if ['custom.js'], load '/static/js/custom.js' file
+  customJS = []  #['fuse.min.js','jquery.mark.min.js','search.js']              # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
     a-email = "mailto:dvesti@hot.ee"

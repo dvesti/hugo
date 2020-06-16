@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>(Hu)go Template Primer - Jane - A super concise theme for Hugo</title>
+  <title>(Hu)go Template Primer - Мои друзья: Jane и Hugo</title>
   
 
 <meta name="renderer" content="webkit" />
@@ -22,7 +22,7 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="xianmin" />
+<meta name="author" content="Dvesti" />
   <meta name="description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates." />
 
@@ -72,7 +72,7 @@ This document is a brief primer on using go templates." />
 This document is a brief primer on using go templates.">
 <meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1488">
+<meta itemprop="wordCount" content="1509">
 
 
 
@@ -92,15 +92,14 @@ This document is a brief primer on using go templates."/>
 
 
 <link rel="stylesheet" type="text/css" href="/site-hugo/css/monokai-sublime.css">
-<script async src="https://cse.google.com/cse.js?cx=002744767378160621811:wizhxqeiera"></script>
-<div class="gcse-search"></div>
+
 
 
 </head>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/site-hugo/" class="logo">Jane</a>
+    <a href="/site-hugo/" class="logo">Блог Dvesti</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -114,28 +113,28 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">This is Home</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">Главная</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Archives</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Архив</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Tags</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Тэги</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Categories</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Категории</a>
           
         
       </li><li class="mobile-menu-item">
@@ -267,7 +266,7 @@ This document is a brief primer on using go templates."/>
     <div class="modal-content">
       <div id="closeSearch" title="Close" class="close">X</div>
       <div class="modal-header">
-        <div class="modal-title">Search</div>
+        <div class="modal-title">Поиск</div>
       </div>
       <div class="modal-body">
           <script>
@@ -296,7 +295,7 @@ This document is a brief primer on using go templates."/>
     <div class="logo-wrapper">
   <a href="/site-hugo/" class="logo">
     
-      Jane
+      Блог Dvesti
     
   </a>
 </div>
@@ -309,7 +308,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">This is Home</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">Главная</a>
           
 
         
@@ -320,7 +319,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Archives</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Архив</a>
           
 
         
@@ -331,7 +330,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Tags</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Тэги</a>
           
 
         
@@ -342,7 +341,7 @@ This document is a brief primer on using go templates."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Categories</a>
+            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Категории</a>
           
 
         
@@ -662,16 +661,31 @@ benefit from having the table of contents provided. Sometimes the TOC just
 doesn&rsquo;t make a lot of sense. We&rsquo;ve defined a variable in our front matter
 of some pages to turn off the TOC from being displayed.</p>
 <p>Here is the example front matter:</p>
-<pre><code>---
-title: &quot;Permalinks&quot;
-date: &quot;2013-11-18&quot;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">---
+title: &#34;Permalinks&#34;
+date: &#34;2013-11-18&#34;
 aliases:
-  - &quot;/doc/permalinks/&quot;
-groups: [&quot;extras&quot;]
+  - &#34;/doc/permalinks/&#34;
+groups: [&#34;extras&#34;]
 groups_weight: 30
 notoc: true
 ---
-</code></pre><p>Here is the corresponding code inside of the template:</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>Here is the corresponding code inside of the template:</p>
 <pre><code>  {{ if not .Params.notoc }}
     &lt;div id=&quot;toc&quot; class=&quot;well col-md-4 col-sm-6&quot;&gt;
     {{ .TableOfContents }}
@@ -682,35 +696,77 @@ notoc: true
 <p>In your top-level configuration file (eg, <code>config.yaml</code>) you can define site
 parameters, which are values which will be available to you in chrome.</p>
 <p>For instance, you might declare:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#66d9ef">params</span>:
-  <span style="color:#66d9ef">CopyrightHTML</span>: <span style="color:#e6db74">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span>
-  <span style="color:#66d9ef">TwitterUser</span>: <span style="color:#e6db74">&#34;spf13&#34;</span>
-  <span style="color:#66d9ef">SidebarRecentLimit</span>: <span style="color:#ae81ff">5</span>
-</code></pre></div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">params</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="k">CopyrightHTML</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">TwitterUser</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;spf13&#34;</span><span class="w">
+</span><span class="w">  </span><span class="k">SidebarRecentLimit</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+</span></code></pre></td></tr></table>
+</div>
+</div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
 provided if the <code>CopyrightHTML</code> parameter is provided, and if it is given,
 you would declare it to be HTML-safe, so that the HTML entity is not escaped
 again.  This would let you easily update just your top-level config file each
 January 1st, instead of hunting through your templates.</p>
-<pre><code>{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
-&lt;div class=&quot;text-center&quot;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{if .Site.Params.CopyrightHTML}}&lt;footer&gt;
+&lt;div class=&#34;text-center&#34;&gt;{{.Site.Params.CopyrightHTML | safeHtml}}&lt;/div&gt;
 &lt;/footer&gt;{{end}}
-</code></pre><p>An alternative way of writing the &ldquo;if&rdquo; and then referencing the same value
+</code></pre></td></tr></table>
+</div>
+</div><p>An alternative way of writing the &ldquo;if&rdquo; and then referencing the same value
 is to use &ldquo;with&rdquo; instead. With rebinds the context <code>.</code> within its scope,
 and skips the block if the variable is absent:</p>
-<pre><code>{{with .Site.Params.TwitterUser}}&lt;span class=&quot;twitter&quot;&gt;
-&lt;a href=&quot;https://twitter.com/{{.}}&quot; rel=&quot;author&quot;&gt;
-&lt;img src=&quot;/images/twitter.png&quot; width=&quot;48&quot; height=&quot;48&quot; title=&quot;Twitter: {{.}}&quot;
- alt=&quot;Twitter&quot;&gt;&lt;/a&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{with .Site.Params.TwitterUser}}&lt;span class=&#34;twitter&#34;&gt;
+&lt;a href=&#34;https://twitter.com/{{.}}&#34; rel=&#34;author&#34;&gt;
+&lt;img src=&#34;/images/twitter.png&#34; width=&#34;48&#34; height=&#34;48&#34; title=&#34;Twitter: {{.}}&#34;
+ alt=&#34;Twitter&#34;&gt;&lt;/a&gt;
 &lt;/span&gt;{{end}}
-</code></pre><p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
+</code></pre></td></tr></table>
+</div>
+</div><p>Finally, if you want to pull &ldquo;magic constants&rdquo; out of your layouts, you can do
 so, such as in this example:</p>
-<pre><code>&lt;nav class=&quot;recent&quot;&gt;
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;nav class=&#34;recent&#34;&gt;
   &lt;h1&gt;Recent Posts&lt;/h1&gt;
   &lt;ul&gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-    &lt;li&gt;&lt;a href=&quot;{{.RelPermalink}}&quot;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;{{.RelPermalink}}&#34;&gt;{{.Title}}&lt;/a&gt;&lt;/li&gt;
   {{end}}&lt;/ul&gt;
 &lt;/nav&gt;
-</code></pre>
+</code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
@@ -718,10 +774,10 @@ so, such as in this example:</p>
 <div class="post-copyright">
   <p class="copyright-item">
     <span class="item-title">Автор</span>
-    <span class="item-content">xianmin</span>
+    <span class="item-content">Dvesti</span>
   </p>
   <p class="copyright-item">
-    <span class="item-title">LastMod</span>
+    <span class="item-title">Дата</span>
     <span class="item-content">
       2014-04-02
       
@@ -811,7 +867,7 @@ so, such as in this example:</p>
       <div class="icon-links">
   
   
-    <a href="mailto:your@email.com" rel="me noopener" class="iconfont"
+    <a href="mailto:dvesti@hot.ee" rel="me noopener" class="iconfont"
       title="email" >
       <svg class="icon" viewBox="0 0 1451 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -1069,7 +1125,7 @@ so, such as in this example:</p>
 
       </i>
     </span><span class="author">
-        xianmin
+        Dvesti
         
       </span></span>
 
