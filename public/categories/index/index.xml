@@ -80,7 +80,13 @@
       <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
       <guid>https://dvesti.github.io/site-hugo/post/shortcode-notice/</guid>
-      <description>Не все шорккоды работают корректно. Скорее всего из-за их отсутствия: будем искат</description>
+      <description>Не все шорккоды работают корректно. Скорее всего из-за их отсутствия: будем искать и исправлять пост.
+Дополнено: Поменял % % на &amp;lt; &amp;gt; и дело пошло&amp;hellip;
+normal use Note example:
+1 2 3  {{&amp;lt; notice note &amp;gt;}} &amp;lt;p&amp;gt;A notice disclaimer&amp;lt;/p&amp;gt; {{&amp;lt; /notice &amp;gt;}}   Result:
+note  A notice disclaimer
+ You could custom title :
+1 2 3  {{&amp;lt; notice note Примечание &amp;gt;}} &amp;lt;p&amp;gt;A notice disclaimer&amp;lt;/p&amp;gt; {{&amp;lt; /notice &amp;gt;}}   Примечание  A notice disclaimer</description>
     </item>
     
     <item>
