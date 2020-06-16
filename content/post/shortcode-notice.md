@@ -9,70 +9,67 @@ categories: ["docs", "shortcodes", "index"]
 
 Не все _шорккоды_ работают корректно. Скорее всего из-за их отсутствия: будем искать и исправлять пост.
 
-Нерабочие:
+**Дополнено**: Поменял `% %` на `< >` и дело пошло...  
 
 ## normal use
 
 `Note` example:
 
 ```shortcode
-{{%/* notice note */%}}
-A notice disclaimer
-{{%/* /notice */%}}
+{{</* notice note */>}}
+<p>A notice disclaimer</p>
+{{</* /notice */>}}
 ```
 
 **Result:**
-{{% notice note %}}
-A notice disclaimer
-{{% /notice %}}
 
+{{< notice note >}}
+<p>A notice disclaimer</p>
+{{< /notice >}}
 
 You could **custom title** :
 
-
 ```shortcode
-{{%/* notice note 笔记 */%}}
-A notice disclaimer
-{{%/* /notice */%}}
+{{</* notice note Примечание */>}}
+<p>A notice disclaimer</p>
+{{</* /notice */>}}
 ```
 
-{{% notice note 笔记 %}}
-A notice disclaimer
-{{% /notice %}}
+{{< notice note Примечание >}}
+<p>A notice disclaimer</p>
+{{< /notice >}}
 
 
 ## tip
 
 ```shortcode
-{{%/* notice tip */%}}
-A tip disclaimer
-{{%/* /tip */%}}
+{{</* notice tip */>}}
+<p>A tip disclaimer</p>
+{{</* /notice */>}}
 ```
 
-{{% notice tip %}}
-A tip disclaimer
-{{% /notice %}}
-
+{{< notice tip >}}
+<p>A tip disclaimer</p>
+{{< /notice >}}
 
 ## info
 ```shortcode
-{{%/* notice info */%}}
-A info disclaimer
-{{%/* /notice */%}}
+{{</* notice info */>}}
+<p>A info disclaimer</p>
+{{</* /notice */>}}
 ```
 
-{{% notice info %}}
-An information disclaimer
-{{% /notice %}}
-
+{{< notice info >}}
+<p>An information disclaimer</p>
+{{< /notice >}}
 
 ## warning
 ```shortcode
-{{%/* notice warning */%}}
-A warning disclaimer
-{{%/* /notice */%}}
+{{</* notice warning */>}}
+<p>A warning disclaimer</p>
+{{</* /notice */>}}
 ```
 
-{{% notice warning %}}
-An warning disclaimer
-{{% /notice %}}
+{{< notice warning >}}
+<p>An warning disclaimer</p>
+{{< /notice >}}
