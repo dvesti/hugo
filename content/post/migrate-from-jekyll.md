@@ -32,7 +32,7 @@ should become
                 logo.png
 
 Additionally, you'll want any files that should reside at the root (such as `CNAME`) to be moved to `static`.
-
+<!--more-->
 ## Create your Hugo configuration file
 Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the [Hugo configuration documentation](/overview/configuration/) for details.
 

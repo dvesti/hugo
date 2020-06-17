@@ -20,6 +20,8 @@ contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="n
 mathjax: true
 ---
 
-主题预览,内容有待填充。  
+主题预览,内容有待填充.
 
-Поднятый пост  
+Поднятый пост
+<!--more-->
+Ещё более поднятый (под катом)

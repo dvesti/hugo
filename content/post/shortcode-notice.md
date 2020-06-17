@@ -26,7 +26,7 @@ categories: ["docs", "shortcodes", "index"]
 {{< notice note >}}
 <p>A notice disclaimer</p>
 {{< /notice >}}
-
+<!--more-->
 You could **custom title** :
 
 ```shortcode
