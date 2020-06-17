@@ -1,5 +1,5 @@
 ---
-title: "Jane 主题预览"
+title: "Jane 主题预览 - Тест"
 date: 2018-03-06T16:01:23+08:00
 lastmod: 2018-03-07T16:01:23+08:00
 draft: true
@@ -20,4 +20,6 @@ contentCopyright: '<a href="https://github.com/gohugoio/hugoBasicExample" rel="n
 mathjax: true
 ---
 
-主题预览,内容有待填充。
+主题预览,内容有待填充。  
+
+Поднятый пост  
