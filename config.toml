@@ -69,9 +69,9 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/about"
 
- # [params.search]
- #   url = "/search/"
- #   img = "/images/search.svg"
+  [params.search]
+    url = "/search/"
+    img = "/images/search.svg"
 
 [params.search.google]    # google custom search, see https://cse.google.com
     enable = true
