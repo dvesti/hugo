@@ -69,7 +69,9 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/about"
 
-[params.search]
+#[params.search]
+[[menu.main]]
+  name = "Поиск"
   url = "/search/"
   img = "/images/search.svg"
 

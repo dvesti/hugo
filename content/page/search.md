@@ -4,111 +4,117 @@ date: 2019-06-07T20:22:57+02:00
 disable_comments: true
 ---
 
-<script src="https://unpkg.com/lunr/lunr.js"></script>
-<script type="text/javascript">
+<body>
+    Search:
+    <input id="search" type="text">
+    <br> Results:
+    <ul id="results">
+    </ul>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+       <!--<script type="text/javascript" src="js/vendor/lunr.min.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+    <script type="text/javascript">
+    var lunrIndex,
+        $results,
+        pagesIndex;
 
-// define globale variables
-var idx, searchInput, searchResults = null
-var documents = []
+    // Initialize lunrjs using our generated index file
+    function initLunr() {
+        // First retrieve the index file
+        $.getJSON("js/lunr/PagesIndex.json")
+            .done(function(index) {
+                pagesIndex = index;
+                console.log("index:", pagesIndex);
 
-function renderSearchResults(results){
+                // Set up lunrjs by declaring the fields we use
+                // Also provide their boost level for the ranking
+                lunrIndex = lunr(function() {
+                    this.field("title", {
+                        boost: 10
+                    });
+                    this.field("tags", {
+                        boost: 5
+                    });
+                    this.field("content");
 
-    if (results.length > 0) {
+                    // ref is the result item identifier (I chose the page URL)
+                    this.ref("href");
+                });
 
-        // show max 10 results
-        if (results.length > 9){
-            results = results.slice(0,10)
-        }
-
-        // reset search results
-        searchResults.innerHTML = ''
-
-        // append results
-        results.forEach(result => {
-        
-            // create result item
-            var article = document.createElement('article')
-            article.innerHTML = `
-            <a href="${result.ref}"><h3 class="title">${documents[result.ref].title}</h3></a>
-            <p><a href="${result.ref}">${result.ref}</a></p>
-            <br>
-            `
-            searchResults.appendChild(article)
-        })
-
-    // if results are empty
-    } else {
-        searchResults.innerHTML = '<p>No results found.</p>'
-    }
-}
-
-function registerSearchHandler() {
-
-    // register on input event
-    searchInput.oninput = function(event) {
-
-        // remove search results if the user empties the search input field
-        if (searchInput.value == '') {
-            
-            searchResults.innerHTML = ''
-        } else {
-            
-            // get input value
-            var query = event.target.value
-
-            // run fuzzy search
-            var results = idx.search(query + '*')
-
-            // render results
-            renderSearchResults(results)
-        }
-    }
-
-    // set focus on search input and remove loading placeholder
-    searchInput.focus()
-    searchInput.placeholder = ''
-}
-
-window.onload = function() {
-
-    // get dom elements
-    searchInput = document.getElementById('search-input')
-    searchResults = document.getElementById('search-results')
-
-    // request and index documents
-    fetch('/post/index.json', {
-        method: 'get'
-    }).then(
-        res => res.json()
-    ).then(
-        res => {
-
-            // index document
-            idx = lunr(function() {
-                this.ref('url')
-                this.field('title')
-                this.field('content')
-
-                res.forEach(function(doc) {
-                    this.add(doc)
-                    documents[doc.url] = {
-                        'title': doc.title,
-                        'content': doc.content,
-                    }
-                }, this)
+                // Feed lunr with each file and let lunr actually index them
+                pagesIndex.forEach(function(page) {
+                    lunrIndex.add(page);
+                });
             })
+            .fail(function(jqxhr, textStatus, error) {
+                var err = textStatus + ", " + error;
+                console.error("Error getting Hugo index flie:", err);
+            });
+    }
 
-            // data is loaded, next register handler
-            registerSearchHandler()
+    // Nothing crazy here, just hook up a listener on the input field
+    function initUI() {
+        $results = $("#results");
+        $("#search").keyup(function() {
+            $results.empty();
+
+            // Only trigger a search when 2 chars. at least have been provided
+            var query = $(this).val();
+            if (query.length < 2) {
+                return;
+            }
+
+            var results = search(query);
+
+            renderResults(results);
+        });
+    }
+
+    /**
+     * Trigger a search in lunr and transform the result
+     *
+     * @param  {String} query
+     * @return {Array}  results
+     */
+    function search(query) {
+        // Find the item in our index corresponding to the lunr one to have more info
+        // Lunr result: 
+        //  {ref: "/section/page1", score: 0.2725657778206127}
+        // Our result:
+        //  {title:"Page1", href:"/section/page1", ...}
+        return lunrIndex.search(query).map(function(result) {
+                return pagesIndex.filter(function(page) {
+                    return page.href === result.ref;
+                })[0];
+            });
+    }
+
+    /**
+     * Display the 10 first results
+     *
+     * @param  {Array} results to display
+     */
+    function renderResults(results) {
+        if (!results.length) {
+            return;
         }
-    ).catch(
-        err => {
-            searchResults.innerHTML = `<p>${err}</p>`
-        }
-    )
-}
-</script>
 
-<input id="search-input" type="text" placeholder="Loading..." name="search">
+        // Only show the ten first results
+        results.slice(0, 10).forEach(function(result) {
+            var $result = $("<li>");
+            $result.append($("<a>", {
+                href: result.href,
+                text: "» " + result.title
+            }));
+            $results.append($result);
+        });
+    }
 
-<section id="search-results" class="search"></section>
+    // Let's get started
+    initLunr();
+
+    $(document).ready(function() {
+        initUI();
+    });
+    </script>
+</body>
