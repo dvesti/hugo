@@ -69,15 +69,15 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/about"
 
-  [params.search]
-    url = "/search/"
-    img = "/images/search.svg"
+[params.search]
+  url = "/search/"
+  img = "/images/search.svg"
 
-[params.search.google]    # google custom search, see https://cse.google.com
-    enable = true
-    weight = 60
-    id = "002744767378160621811:wizhxqeiera"
-    title = "Поиск"
+#[params.search.google]    # google custom search, see https://cse.google.com
+#    enable = true
+#    weight = 60
+#    id = "002744767378160621811:wizhxqeiera"
+#    title = "Поиск"
 
 [params]
   since = "2017"            # Site creation time          # 站点建立时间
