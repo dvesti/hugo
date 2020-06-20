@@ -8,8 +8,10 @@ author: "Antuan"
 ---
 
 ![Котомодель](https://www.nanote.ru/files/kotomodel.jpg)
-<!--mode-->
+<!--more-->
 **Когда на улице метель  
 Мурлыкает Котомодель:  
 И не страшна пороша,  
 Когда со мною... Коша...**  
+
+[Источник](https://www.nanote.ru/2012/01/kotomodel#more)
