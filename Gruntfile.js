@@ -72,7 +72,7 @@ module.exports = function(grunt) {
             return pageIndex;
         };
 
-        grunt.file.write("site/static/js/lunr/PagesIndex.json", JSON.stringify(indexPages()));
+        grunt.file.write("hugo/static/js/lunr/PagesIndex.json", JSON.stringify(indexPages()));
         grunt.log.ok("Index built");
     });
 };
