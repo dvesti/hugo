@@ -1,0 +1,22 @@
+[{
+   "title": "Тема Jane A",
+   "href": "/post/2020-05-13-a.md",
+   "content": " Установил тему **Джейн -- Jane**
+
+   Изменил начертание и размер шрифта, потом изменю остальное: главное, чтобы самому нравилось.
+   
+   Добавил в Конфиг данные, чтобы было похоже на оригинал и Плюс подсмотрел у других сайтов, которые ориентированы не на отображение кода, а на обычный Блог. "
+}, {
+   "title": "English Creating a New Theme",
+   "tags": ["preview", "English", "tag-2"],
+   "href": "/post/english-preview.md",
+   "content": " This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I'll explain how Hugo uses templates and how you can organize your templates to create a theme. I won't cover using CSS to style your theme. "
+}, {
+   "title": "Jane 主题预览 - Тест",
+   "href": "/post/jane-theme-preview.zh-cn.md",
+   "content": " 主题预览,内容有待填充.
+
+   Поднятый пост
+   <!--more-->
+   Ещё более поднятый (под катом) "
+}]
