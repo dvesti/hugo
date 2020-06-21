@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/dvesti/hugo#readme",
   "dependencies": {
+    "fuse.js": "^6.2.1",
     "hugo-lunr": "0.0.4",
     "lunr-languages": "^1.4.0"
   },
