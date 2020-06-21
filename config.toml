@@ -7,7 +7,7 @@ baseURL = "https://dvesti.github.io/site-hugo"
 title = "Блог Dvesti"
 enableRobotsTXT = true
 enableEmoji = true
-theme = ["hugo-search-fuse-js", "jane"]  #"hugo-lithium-theme" #"jane"
+theme = ["jane"]  #"hugo-lithium-theme" #"jane"
 # themesDir = ""
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
@@ -70,10 +70,10 @@ defaultContentLanguage = "ru"           # Default language to use
   url = "/about"
 
 #[params.search]
-[[menu.main]]
-  name = "Поиск"
-  url = "/search/"
-  img = "/images/search.svg"
+#[[menu.main]]
+#  name = "Поиск"
+#  url = "/search/"
+#  img = "/images/search.svg"
 
 #[params.search.google]    # google custom search, see https://cse.google.com
 #    enable = true
@@ -81,11 +81,11 @@ defaultContentLanguage = "ru"           # Default language to use
 #    id = "002744767378160621811:wizhxqeiera"
 #    title = "Поиск"
 
-[params.search]    # google custom search, see https://cse.google.com
-    enable = true
-    weight = 70
+#[params.search]    # google custom search, see https://cse.google.com
+#    enable = true
+#    weight = 70
 #    id = "002744767378160621811:wizhxqeiera"
-    title = "Поиск"
+#   title = "Поиск"
 
 [params]
   since = "2017"            # Site creation time          # 站点建立时间
@@ -111,7 +111,7 @@ defaultContentLanguage = "ru"           # Default language to use
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = []  #['fuse.min.js','jquery.mark.min.js','search.js']              # if ['custom.js'], load '/static/js/custom.js' file
+  customJS = ['fuse.min.js','jquery.mark.min.js','search.js'] #[]                # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
     a-email = "mailto:dvesti@hot.ee"
