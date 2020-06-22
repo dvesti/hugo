@@ -1,102 +1,244 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Eddie Webb</title>
-    <link>https://example.com/</link>
-    <description>Recent content in Home on Eddie Webb</description>
+    <title>Home on Блог Dvesti</title>
+    <link>https://dvesti.github.io/site-hugo/</link>
+    <description>Recent content in Home on Блог Dvesti</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ru</language>
     <lastBuildDate>Sat, 10 Feb 2018 18:56:13 -0500</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://dvesti.github.io/site-hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Atlassian Deployment Triggers</title>
-      <link>https://example.com/projects/contributions/deploy-triggers/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/contributions/deploy-triggers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/projects/contributions/deploy-triggers/</guid>
-      <description>Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/contributions/deploy-triggers/</guid>
+      
+        <description>&lt;p&gt;Addressed pretty significant page load performance issue founde in larger deployments. Eliminates uses of intensive backend query, replacing it with an asynchronous API call against a lucene index. This change reduces page load from from 2+ minutes to nearly instant, with an incredibly responsive UI.&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Organically DevOps: Building Quality and Security into the Software Supply Chain at Liberty Mutual</title>
-      <link>https://example.com/publications/alldaydevops/</link>
+      <link>https://dvesti.github.io/site-hugo/publications/alldaydevops/</link>
       <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/publications/alldaydevops/</guid>
-      <description>This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:
- Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.</description>
+      <guid>https://dvesti.github.io/site-hugo/publications/alldaydevops/</guid>
+      
+        <description>&lt;p&gt;This talk looked at Liberty Mutual’s transformation to Continuous Integration, Continuous Delivery, and DevOps. For a large, heavily regulated industry, this task can not only be daunting, but viewed by many as impossible. Often, organizations try to reduce the friction through micro-fixes, but Eddie’s team asked how to change the culture to reduce the friction and concluded with the following final points:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Don’t mandate DevOps. Give employees the chance to master their discipline with examples to set and follow.&lt;/li&gt;
+&lt;li&gt;Favor deep end-to-end accomplishments over broad but incremental steps forward. Focus on taking the right teams far before encouraging broad adoption.&lt;/li&gt;
+&lt;li&gt;Centralize the platforms and tools that your teams shouldn’t be thinking about. Provide foundational services/commodities and let teams stay on purpose.&lt;/li&gt;
+&lt;li&gt;Incorporate contributions from everyone; don’t stifle autonomy. Stay open to new ways of working.&lt;/li&gt;
+&lt;li&gt;Challenge security policies, but respect intentions. Find new ways to enforce concerns without abandoning precaution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/FsfKsqI07jM&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+      
     </item>
     
     <item>
       <title>Added Docker Build Status Badge to shields.io</title>
-      <link>https://example.com/projects/contributions/shields-docker/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/contributions/shields-docker/</link>
       <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
       
-      <guid>https://example.com/projects/contributions/shields-docker/</guid>
-      <description>Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc). Support for docker was missing the current build health, and was a pretty trivial addition.</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/contributions/shields-docker/</guid>
+      
+        <description>&lt;p&gt;Shields.io is a massive library of badges that can be inserted into project README&amp;rsquo;s or websites displaying various statuses (code coverage, health, version, etc).  Support for docker was missing the current build health, and was a pretty trivial addition.&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Schema.org Structured Data documentation fixes</title>
-      <link>https://example.com/projects/contributions/schema-org/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/contributions/schema-org/</link>
       <pubDate>Tue, 07 Jan 2020 17:08:21 +0000</pubDate>
       
-      <guid>https://example.com/projects/contributions/schema-org/</guid>
-      <description>While adding Structured Data to a client&amp;rsquo;s website I found some example JSON that was invalid. Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/contributions/schema-org/</guid>
+      
+        <description>&lt;p&gt;While adding &lt;em&gt;Structured Data&lt;/em&gt; to a client&amp;rsquo;s website I found some example JSON that was invalid.  Simple contribution to cleanup the user documentation providing syntactically valid JSON documents.&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>BOSH release for Bamboo &amp; Remote Agents</title>
-      <link>https://example.com/projects/creations/bosh-agents/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/creations/bosh-agents/</link>
       <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
       
-      <guid>https://example.com/projects/creations/bosh-agents/</guid>
-      <description>BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip;is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it. The releases manages the health of services and will automatically provision, start/stop processes across the various services.</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/creations/bosh-agents/</guid>
+      
+        <description>&lt;p&gt;BOSH (Bosh Outer SHell) &amp;ldquo;&amp;hellip;&lt;!-- raw HTML omitted --&gt; is an open source tool for release engineering, deployment, lifecycle management, and monitoring of distributed systems.&lt;!-- raw HTML omitted --&gt;&amp;rdquo; And it&amp;rsquo;s amazingly powerful. This examples uses BOSH to provision an Alassian vendor app running on JDK along with the support Postgres database and agents to support it.  The releases manages the health of services and will automatically provision, start/stop processes across the various services.&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Forcing Visits to use SSL</title>
-      <link>https://example.com/blog/force-ssl/</link>
+      <link>https://dvesti.github.io/site-hugo/blog/force-ssl/</link>
       <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
       
-      <guid>https://example.com/blog/force-ssl/</guid>
-      <description>Intro Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. If your passing around passwords or other sensitive info you should really implement SSL. SSL provides 2 main perks to your visitors.
- First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets. Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;rdquo; attack.</description>
+      <guid>https://dvesti.github.io/site-hugo/blog/force-ssl/</guid>
+      
+        <description>&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
+&lt;p&gt;Doesn&amp;rsquo;t matter whether it&amp;rsquo;s a CakePHP app for a client, your own personal CMS, or any other web based application. &lt;strong&gt;If your passing around passwords or other sensitive info you should really implement SSL.&lt;/strong&gt; SSL provides 2 main perks to your visitors.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First it encrypts all communication that flies across the web. This prevents curious or devious billies from getting your secrets.&lt;/li&gt;
+&lt;li&gt;Secondly it ensures to the user that your server is in fact who it claims, and not a nasty &amp;lsquo;man in the middle&amp;rdquo; attack.&lt;/li&gt;
+&lt;li&gt;Finally it gives your site that touch of class&amp;hellip;. which of course a classy person like yourself relies on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you implement SSL certificates on your server you&amp;rsquo;ll want to &lt;strong&gt;require secure connections&lt;/strong&gt; using Apache&amp;rsquo;s rewrite module. Now I won&amp;rsquo;t dwell on the creation and signing of certificates, its already well documented.  If your just starting out though,heres a few links I recommend;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.tc.umn.edu/~brams006/selfsign.html&#34; title=&#34;Creating and Signing your own SSL Certificate&#34;&gt;Creating self-signed certificates&lt;/a&gt; (free, but should only be used internally or for testing, users will; see an &amp;lsquo;Untrusted&amp;rdquo; warning)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;ct=res&amp;amp;cd=10&amp;amp;url=http%3A%2F%2Fwww.lsu.edu%2Fpki%2FSSL_Certificate_Apache.pdf&amp;amp;ei=Z8FcSbDRGaCY8gTdk7GHDQ&amp;amp;usg=AFQjCNELddGd6jW1_Dv1X-CaocEVa4rV2A&amp;amp;sig2=FQMNaM_RlhngJW3MSYiQzw&#34; title=&#34;Generating a Certificate Signing Request&#34;&gt;Requesting a CA Signed certificate&lt;/a&gt; (not free, but the final certificate is trusted and seamless for users)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The second link uses the schools internal CA, you will need to pay a public CA like Entrust or Verisign. &lt;strong&gt;All of this information is aimed at &amp;lsquo;nix or solaris servers running apache&lt;/strong&gt;. Why? cause a production windows server is laughable :-p&lt;/p&gt;
+&lt;h2 id=&#34;now-that-you-have-a-certificate-whats-next&#34;&gt;Now that you have a certificate, whats next?&lt;/h2&gt;
+&lt;p&gt;So there you are you have a shiny new Certificate and Server key, how do you force visitors to your apache driven site to use the SSL? You copied the certificates into the appropite locations right? And you have made the needed changes in httpd.conf right? So now when you view &lt;a href=&#34;https://example.com&#34;&gt;https://example.com&lt;/a&gt; you see a &amp;lsquo;trusted&amp;rsquo; warning or your site right? If No to any of these than &lt;a href=&#34;http://www.sitepoint.com/article/securing-apache-2-server-ssl/&#34; title=&#34;Securing Apcche Server with SSL&#34;&gt;this article&lt;/a&gt; does a pretty good job of outlining those steps.&lt;/p&gt;
+&lt;h2 id=&#34;the-ssl-works-how-do-i-force-connections-to-use-it&#34;&gt;The SSL Works, How do I force connections to use it?&lt;/h2&gt;
+&lt;p&gt;First you need to decide if you want to force every page on your site to use SSL, or only a particular sub-domain, or maybe just your admin directory.  Since the overhead is minimal there is no harm is forcing the entire domain to leverage SSL, but if it is a self-signed certificate for your personal use than you&amp;rsquo;ll most certainly want to restrict its use to your own areas. This prevents users from seeing that nasty warning &amp;ldquo;This server is not trusted&amp;rdquo; You&amp;rsquo;ll know if your using SSL because the url prefix changes from http to https (s for secure).&lt;/p&gt;
+&lt;h3 id=&#34;forcing-entire-domain-to-use-ssl&#34;&gt;Forcing entire domain to use SSL&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;You want any visit, any where to use ssl&lt;/strong&gt;. This probably the simplest solution. Create or append to your htaccess file in the top directory of your server. Some people use a port check (80 is typically http, while 443 is https) but if you have alernate configs or the user just adds :8080 to the end of the url this method is useless. Instead check whether the https environmental variable is set, if not then redirect.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{SERVER_NAME}$1 \[R,L\]
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;forcing-sub-domains-to-use-ssl&#34;&gt;Forcing sub-domains to use SSL&lt;/h3&gt;
+&lt;p&gt;Maybe &lt;strong&gt;you only want mysecretarea.example.com to use SSL&lt;/strong&gt;, that&amp;rsquo;s easy enough. Its the same premise as above, but you move the htaccess file into the directory that corresponds to the subdomain. Also change the second line like below;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://mysecretarea.%{SERVER_NAME}$1 \[R,L\]
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;forcing-a-directory-to-use-ssl&#34;&gt;Forcing a directory to use SSL&lt;/h3&gt;
+&lt;p&gt;This method cn get a little hairier if your using aliases or redirects on top of this one. You&amp;rsquo;ll need to consider what order the commands are read. The basic principle is like so.  &lt;strong&gt;You want all visits to example.com/admin to use ssl.&lt;/strong&gt; Create a htaccess file in the parent directory.  Again will check for the https variable, but this time we also check for the sub-directory to be in the path.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;RewriteCond %{HTTPS} !=on
+RewriteRule ^/admin/(.*)$ https://%{SERVER_NAME}/admin/$1 \[R,L\]
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
     </item>
     
     <item>
       <title>Atlassian Marketplace Plugins</title>
-      <link>https://example.com/projects/creations/marketplace/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/creations/marketplace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/projects/creations/marketplace/</guid>
-      <description>Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/creations/marketplace/</guid>
+      
+        <description>&lt;p&gt;Multiple plugins used by thousands of teams that provide enhanced functionality of Atlassian’s core products (primarily JIRA and Bamboo) to enrich CI/CD capabilities, DevOps automation, or productivity. Functionality spans user interface, web services and persistence.&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Docker image for Bitbucket CI/CD Pipelines  &#34;shipit&#34;</title>
-      <link>https://example.com/projects/creations/docker-marketplace/</link>
+      <link>https://dvesti.github.io/site-hugo/projects/creations/docker-marketplace/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/projects/creations/docker-marketplace/</guid>
-      <description>Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace.Executes integration/AUT level tests against all stated compatible versions for the productUploads generated artifact to Atlassian marketplaceProvides corresponding metadata indicating version, release notes, and compatibility</description>
+      <guid>https://dvesti.github.io/site-hugo/projects/creations/docker-marketplace/</guid>
+      
+        <description>&lt;p&gt;Provides required dependencies and additional utilities to simplify and codify the process of building, testing and delivering Atlassian plugins all the way to the live marketplace.&lt;!-- raw HTML omitted --&gt; &lt;!-- raw HTML omitted --&gt;Executes integration/AUT level tests against all stated compatible versions for the product&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Uploads generated artifact to Atlassian marketplace&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;Provides corresponding metadata indicating version, release notes, and compatibility&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+</description>
+      
     </item>
     
     <item>
       <title>Search Results</title>
-      <link>https://example.com/search/</link>
+      <link>https://dvesti.github.io/site-hugo/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/search/</guid>
-      <description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml
-[outputs] home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+      <guid>https://dvesti.github.io/site-hugo/search/</guid>
+      
+        <description>&lt;p&gt;This file exists solely to respond to /search URL with the related &lt;code&gt;search&lt;/code&gt; layout template.&lt;/p&gt;
+&lt;p&gt;No content shown here is rendered, all content is based in the template layouts/page/search.html&lt;/p&gt;
+&lt;p&gt;Setting a very low sitemap priority will tell search engines this is not important content.&lt;/p&gt;
+&lt;p&gt;This implementation uses Fusejs, jquery and mark.js&lt;/p&gt;
+&lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;
+&lt;p&gt;Search  depends on additional output content type of JSON in config.toml&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;[outputs]
+  home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;searching-additional-fileds&#34;&gt;Searching additional fileds&lt;/h2&gt;
+&lt;p&gt;To search additional fields defined in front matter, you must add it in 2 places.&lt;/p&gt;
+&lt;h3 id=&#34;edit-layouts_defaultindexjson&#34;&gt;Edit layouts/_default/index.JSON&lt;/h3&gt;
+&lt;p&gt;This exposes the values in /index.json
+i.e. add &lt;code&gt;category&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;...
+  &amp;#34;contents&amp;#34;:{{ .Content | plainify | jsonify }}
+  {{ if .Params.tags }},
+  &amp;#34;tags&amp;#34;:{{ .Params.tags | jsonify }}{{end}},
+  &amp;#34;categories&amp;#34; : {{ .Params.categories | jsonify }},
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;edit-fusejs-options-to-search&#34;&gt;Edit fuse.js options to Search&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;static/js/search.js&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;keys: [
+  &amp;#34;title&amp;#34;,
+  &amp;#34;contents&amp;#34;,
+  &amp;#34;tags&amp;#34;,
+  &amp;#34;categories&amp;#34;
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+      
     </item>
     
   </channel>
