@@ -45,6 +45,7 @@
   </header>
 
   <div id="mobile-panel">
+  {{ block "main" . }}
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
@@ -61,11 +62,12 @@
  <script src="/site-hugo/js/fastsearch.js"></script>
 
     </main>
-
+{{ end }}
+{{ block "footer" . }}
     <footer id="footer" class="footer">
       {{ partial "footer.html" . }}
     </footer>
-
+{{ end }}
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont">
         {{/* icon up */}}

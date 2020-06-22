@@ -65,7 +65,7 @@ defaultContentLanguage = "ru"           # Default language to use
   
 [[menu.main]]
   name = "О нас"
-  weight = 50
+  weight = 60
  # identifier = "search"
   url = "/about"
 
@@ -75,11 +75,11 @@ defaultContentLanguage = "ru"           # Default language to use
 #  url = "/search/"
 #  img = "/images/search.svg"
 
-#[params.search.google]    # google custom search, see https://cse.google.com
-#    enable = true
-#    weight = 60
-#    id = "002744767378160621811:wizhxqeiera"
-#    title = "Поиск"
+[params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    weight = 70
+    id = "002744767378160621811:wizhxqeiera"
+    title = "Поиск"
 
 #[params.search]    # google custom search, see https://cse.google.com
 #    enable = true
