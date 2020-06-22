@@ -7,7 +7,7 @@ baseURL = "https://dvesti.github.io/site-hugo"
 title = "Блог Dvesti"
 enableRobotsTXT = true
 enableEmoji = true
-theme = "hugo-resume" #["jane"]  #"hugo-lithium-theme" #"jane"
+theme = ["jane"]  #"hugo-resume" #["jane"]  #"hugo-lithium-theme" #"jane"
 # themesDir = ""
 
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文

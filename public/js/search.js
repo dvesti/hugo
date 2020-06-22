@@ -1,172 +1,132 @@
-"use strict";
-var searchFn = function () {
-    var lastTerm = "You are likely to be eaten by a grue.";
-    var stopwords = ["i", "me", "my", "we", "our", "you", "it",
-        "its", "this", "that", "am", "is", "are", "was", "be",
-        "has", "had", "do", "a", "an", "the", "but", "if", "or", "as",
-        "of", "at", "by", "for", "with", "to", "then", "no", "not",
-        "so", "too", "can", "and", "but"];
-    var normalizer = document.createElement("textarea");
-    var normalize = function (input) {
-        normalizer.innerHTML = input;
-        var inputDecoded = normalizer.value;
-        return " " + inputDecoded.trim().toLowerCase().replace(/[^0-9a-z ]/gi, " ").replace(/\s+/g, " ") + " ";
-    }
-    var limit = 30;
-    var minChars = 2;
-    var searching = false;
-    var render = function (results) {
-        results.sort(function (a, b) { return b.weight - a.weight; });
-        for (var i = 0; i < results.length && i < limit; i += 1) {
-            var result = results[i].item;
-            var openAnchor = "<a href=\"" + result.permalink + "\" " +
-                "alt=\"" + result.showTitle + "\">";
-            var resultPane = "<div class=\"container\">" +
-                "<div class=\"row\">" +
-                openAnchor + result.showTitle + "</a></div>" +
-                "<div class=\"row\">" +
-                "<div class=\"col-12 col-md-4 col-lg-2\">" +
-                openAnchor + "<img src=\"" + result.image + "\" alt=\"" + result.showTitle + "\" class=\"rounded w-100\"></a></div>" +
-                ("<div class=\"col-12 col-md-8 col-lg-10\"><small>" + result.showDescription + "</small></div>") +
-                "</div></div>";
-            $("#results").append(resultPane);
-        }
-    };
-    var checkTerms = function (terms, weight, target) {
-        var weightResult = 0;
-        terms.forEach(function (term) {
-            if (~target.indexOf(term.term)) {
-                var idx = target.indexOf(term.term);
-                while (~idx) {
-                    weightResult += term.weight * weight;
-                    idx = target.indexOf(term.term, idx + 1);
-                }
-            }
-        });
-        return weightResult;
-    };
-    var search = function (terms) {
-        var results = [];
-        searchHost.index.forEach(function (item) {
-            if (item.tags) {
-                var weight_1 = 0;
-                terms.forEach(function (term) {
-                    if (item.title.startsWith(term.term)) {
-                        weight_1 += term.weight * 32;
-                    }
-                });
-                weight_1 += checkTerms(terms, 1, item.content);
-                weight_1 += checkTerms(terms, 2, item.description);
-                weight_1 += checkTerms(terms, 2, item.subtitle);
-                item.tags.forEach(function (tag) {
-                    weight_1 += checkTerms(terms, 4, tag);
-                });
-                weight_1 += checkTerms(terms, 16, item.title);
-                if (weight_1) {
-                    results.push({
-                        weight: weight_1,
-                        item: item
-                    });
-                }
-            }
-        });
-        if (results.length) {
-            var resultsMessage = results.length + " items found.";
-            if (results.length > limit) {
-                resultsMessage += " Showing first " + limit + " results.";
-            }
-            $("#results").html("<p>" + resultsMessage + "</p>");
-            render(results);
-        }
-        else {
-            $("#results").html('<p>No items found.</p>');
-        }
-    };
-    var runSearch = function () {
-        if (searching) {
-            return;
-        }
-        var term = normalize($("#searchBox").val()).trim();
-        if (term === lastTerm) {
-            return;
-        }
-        lastTerm = term;
-        if (term.length < minChars) {
-            $("#results").html('<p>No items found.</p>');
-            $("#btnGo").attr("disabled", true);
-            return;
-        }
-        $("#btnGo").removeAttr("disabled");
-        searching = true;
-        var startSearch = new Date();
-        $("#results").html('<p>Processing search...</p>');
-        var terms = term.split(" ");
-        var termsTree = [];
-        for (var i = 0; i < terms.length; i += 1) {
-            for (var j = i; j < terms.length; j += 1) {
-                var weight = Math.pow(2, j - i);
-                var str = "";
-                for (var k = i; k <= j; k += 1) {
-                    str += (terms[k] + " ");
-                }
-                var newTerm = str.trim();
-                if (newTerm.length >= minChars && stopwords.indexOf(newTerm) < 0) {
-                    termsTree.push({
-                        weight: weight,
-                        term: " " + str.trim() + " "
-                    });
-                }
-            }
-        }
-        search(termsTree);
-        searching = false;
-        var endSearch = new Date();
-        $("#results").append("<p><small>Search took " + (endSearch - startSearch) + "ms.</small></p>");
-    };
-    var initSearch = function () {
-        $("#searchBox").keyup(function () {
-            runSearch();
-        });
-        $("#btnGo").click(function () {
-            runSearch();
-            var loc = window.location.href.split("#")[0];
-            loc = loc + "#" + "resultsArea";
-            window.location.href = loc;
-        });
-        runSearch();
-    };
-    $("#searchBox").hide();
-    $("#btnGo").hide();
-    var searchHost = {};
-    $.getJSON("/index.json", function (results) {
-        searchHost.index = [];
-        var dup = {};
-        results.forEach(function (result) {
-            if (result.tags && !dup[result.permalink]) {
-                var res = {};
-                res.showTitle = result.title;
-                res.showDescription = result.description;
-                res.title = normalize(result.title);
-                res.subtitle = normalize(result.subtitle);
-                res.description = normalize(result.description);
-                res.content = normalize(result.content);
-                var newTags_1 = [];
-                result.tags.forEach(function (tag) {
-                    return newTags_1.push(normalize(tag));
-                });
-                res.tags = newTags_1;
-                res.permalink = result.permalink;
-                res.image = result.image;
-                searchHost.index.push(res);
-                dup[result.permalink] = true;
-            }
-        });
-        $("#loading").hide();
-        $("#btnGo").show();
-        $("#searchBox").show()
-            .removeAttr("disabled")
-            .focus();
-        initSearch();
-    });
+summaryInclude=60;
+var fuseOptions = {
+  shouldSort: true,
+  includeMatches: true,
+  threshold: 0.0,
+  tokenize:true,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    {name:"title",weight:0.8},
+    {name:"contents",weight:0.5},
+    {name:"tags",weight:0.3},
+    {name:"categories",weight:0.3}
+  ]
 };
-window.addEventListener("DOMContentLoaded", searchFn);
+
+
+var searchQuery = param("s");
+if(searchQuery){
+    // searchQuery = $("#search-query").val(searchQuery);
+  var inputBox = document.getElementById('search-query');
+  inputBox.value = searchQuery || "";
+  executeSearch(searchQuery, false);
+}else {
+  $('#search-results').append("<p class=\"search-results-empty\">Please enter a word or phrase above, or see <a href=\"/tags/\">all tags</a>.</p>"); 
+}
+
+
+function executeInlineSearch(){
+    $(".search-results-empty").remove();
+    $(".search-results-summary").remove();
+ //   $('#search-results')
+    var query = document.getElementById("search-query").value;
+    
+    if(query){
+        executeSearch(query, true);
+    }else {
+        $('#search-results').append("<p class=\"search-results-empty\">Please enter a word or phrase above, or see <a href=\"/tags/\">all tags</a>.</p>"); 
+    }
+}
+
+function executeSearch(searchQuery, clear_list){
+  $.getJSON( "/index.json", function( data ) {
+    var pages = data;
+    var fuse = new Fuse(pages, fuseOptions);
+    var result = fuse.search(searchQuery);
+    if(result.length > 0){
+      populateResults(result);
+    }else{
+        if (clear_list) {
+          $(".search-results-empty").remove();
+        }
+        $('#search-results').append("<p class=\"search-results-empty\">No matches found</p>");
+    }
+  });
+}
+
+function populateResults(result){
+  searchQuery = document.getElementById("search-query").value;
+  $.each(result,function(key,value){
+    var contents= value.item.contents;
+    var snippet = "";
+    var snippetHighlights=[];
+    var tags =[];
+    if( fuseOptions.tokenize ){
+      snippetHighlights.push(searchQuery);
+    }else{
+      $.each(value.matches,function(matchKey,mvalue){
+        if(mvalue.key == "tags" || mvalue.key == "categories" ){
+          snippetHighlights.push(mvalue.value);
+        }else if(mvalue.key == "contents"){
+          start = mvalue.indices[0][0]-summaryInclude>0?mvalue.indices[0][0]-summaryInclude:0;
+          end = mvalue.indices[0][1]+summaryInclude<contents.length?mvalue.indices[0][1]+summaryInclude:contents.length;
+          snippet += contents.substring(start,end);
+          snippetHighlights.push(mvalue.value.substring(mvalue.indices[0][0],mvalue.indices[0][1]-mvalue.indices[0][0]+1));
+        }
+      });
+    }
+
+    if(snippet.length<1){
+      snippet += contents.substring(0,summaryInclude*2);
+    }
+      //pull template from hugo templarte definition
+      var templateDefinition = $('#search-result-template').html();
+      //replace values
+      var tags = ""
+      if (value.item.tags){
+          value.item.tags.forEach(function(element) {
+              tags = tags + "<a href='/tags/"+ element +"'>" + "#" + element + "</a> " 
+          });
+      }
+      
+    var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:tags,categories:value.item.categories,snippet:snippet});
+    $('#search-results').append(output);
+
+    $.each(snippetHighlights,function(snipkey,snipvalue){
+      $("#summary-"+key).mark(snipvalue);
+    });
+
+  });
+}
+
+function param(name) {
+    return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+}
+
+function render(templateString, data) {
+  var conditionalMatches,conditionalPattern,copy;
+  conditionalPattern = /\$\{\s*isset ([a-zA-Z]*) \s*\}(.*)\$\{\s*end\s*}/g;
+  //since loop below depends on re.lastInxdex, we use a copy to capture any manipulations whilst inside the loop
+  copy = templateString;
+  while ((conditionalMatches = conditionalPattern.exec(templateString)) !== null) {
+    if(data[conditionalMatches[1]]){
+      //valid key, remove conditionals, leave contents.
+      copy = copy.replace(conditionalMatches[0],conditionalMatches[2]);
+    }else{
+      //not valid, remove entire section
+      copy = copy.replace(conditionalMatches[0],'');
+    }
+  }
+  templateString = copy;
+  //now any conditionals removed we can do simple substitution
+  var key, find, re;
+  for (key in data) {
+    find = '\\$\\{\\s*' + key + '\\s*\\}';
+    re = new RegExp(find, 'g');
+    templateString = templateString.replace(re, data[key]);
+  }
+  return templateString;
+}
