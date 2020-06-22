@@ -74,6 +74,8 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/static/about"
 
+[params.search]
+client = "fuse"
 #[params.search]
 #[[menu.main]]
 #  name = "Поиск"
