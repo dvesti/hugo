@@ -67,5 +67,11 @@
     </div>
   </div>
   {{ partial "scripts.html" . }}
+
+  {{ block "footerscripts" . }}
+{{ end }}
+
+{{ block "footerfiles" . }}
+{{ end }}
 </body>
 </html>
