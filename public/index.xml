@@ -5940,22 +5940,13 @@ $
       <guid>https://dvesti.github.io/site-hugo/static/search/</guid>
       
         <description>
-
-&lt;script&gt;
-     if (window.devConsent.consent === true) {
-          var block = document.getElementsByTagName(&#34;ins&#34;)[0];
-          var adScript = document.createElement(&#34;script&#34;);
-          adScript.setAttribute(&#34;async&#34;, {});
-          adScript.setAttribute(&#34;src&#34;, &#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;);
-          block.parentElement.appendChild(adScript);
-          (adsbygoogle = window.adsbygoogle || []).push({});
-     }
-&lt;/script&gt;
-&lt;p id=&#34;loading&#34;&gt;Loading search data...&lt;/p&gt;
-&lt;label for=&#34;searchBox&#34;&gt;Enter your search below to find content on this blog:&lt;/label&gt;
-&lt;input disabled placeholder=&#34;Enter search text&#34; type=&#34;text&#34; name=&#34;searchBox&#34; id=&#34;searchBox&#34; class=&#34;w-100&#34;/&gt;
-&lt;div id=&#34;results&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;sidebar-section&#34;&gt;
+    &lt;input id=&#34;search-query&#34; placeholder=&#34;Search&#34; /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;search-results&#34; style=&#34;display:none;&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;sidebars&#34;&gt;
 &lt;script src=&#34;https://dvesti.github.io/site-hugo/site-hugo/js/search.js&#34;&gt;&lt;/script&gt;
+&lt;/div&gt;
 </description>
       
     </item>

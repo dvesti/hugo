@@ -37,8 +37,7 @@ It makes use of a variety of open source projects including:
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
       <guid>https://dvesti.github.io/site-hugo/static/search/</guid>
-      <description>if (window.devConsent.consent === true) {var block = document.getElementsByTagName(&#34;ins&#34;)[0];var adScript = document.createElement(&#34;script&#34;);adScript.setAttribute(&#34;async&#34;, {});adScript.setAttribute(&#34;src&#34;, &#34;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js&#34;);block.parentElement.appendChild(adScript);(adsbygoogle = window.adsbygoogle || []).push({});}Loading search data...
-Enter your search below to find content on this blog: </description>
+      <description> </description>
     </item>
     
   </channel>
