@@ -44,21 +44,21 @@
     {{ partial "header.html" . }}
   </header>
 
+{{ block "main" . }}{{ end }}
   <div id="mobile-panel">
-  {{ block "main" . }}
-    <main id="main" class="main bg-llight">
+      <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
           {{ block "content" . }}{{ end }}
         </div>
       </div>
     </main>
-{{ end }}
-{{ block "footer" . }}
+
+{{ block "footer" . }}{{ end }}
     <footer id="footer" class="footer">
       {{ partial "footer.html" . }}
     </footer>
-{{ end }}
+
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont">
         {{/* icon up */}}
@@ -67,9 +67,6 @@
     </div>
   </div>
   {{ partial "scripts.html" . }}
-
-  {{ block "footerscripts" . }}
-{{ end }}
 
 {{ block "footerfiles" . }}
 {{ end }}

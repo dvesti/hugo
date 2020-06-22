@@ -46,6 +46,11 @@ defaultContentLanguage = "ru"           # Default language to use
   weight = 40
   identifier = "archives"
   url = "/post/"
+  [[menu.main]]
+  name = "Архивы"
+  weight = 40
+  identifier = "archive"
+  url = "/static/archive"
 [[menu.main]]
   name = "Тэги"
   weight = 30
@@ -61,13 +66,13 @@ defaultContentLanguage = "ru"           # Default language to use
  name = "Search"
   weight = 50
   identifier = "search"
-  url = "/search"
+  url = "/static/search"
   
 [[menu.main]]
   name = "О нас"
   weight = 60
  # identifier = "search"
-  url = "/about"
+  url = "/static/about"
 
 #[params.search]
 #[[menu.main]]
@@ -135,6 +140,6 @@ defaultContentLanguage = "ru"           # Default language to use
  #   s-mastodon = "http://localhost:1313"
 
  [outputs]
-   home = ["HTML", "RSS", "JSON"]
-#	page = [ "HTML"]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]
   # section = ["JSON", "HTML"]
