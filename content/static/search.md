@@ -7,7 +7,7 @@ lastmod: 2019-06-24T10:43:10-07:00
 description: "Search across blog posts."
 
 aliases:
-    - "/search"
+    - "/static/search"
 ---
-{{<staticsearch>}}
+{{< staticsearch >}}
 
