@@ -380,6 +380,14 @@
 
   </header>
 
+  <div class="sidebar-section">
+    <input id="search-query" placeholder="Search" />
+</div>
+<div id="search-results" style="display:none;"></div>
+<div id="sidebars">
+    ...
+</div>
+
 
   <div id="mobile-panel">
       <main id="main" class="main bg-llight">
@@ -389,8 +397,47 @@
 <section id="archive" class="archive">
     
       <div class="collection-title">
+        <h2 class="archive-year">2018</h2>
+      </div>
+
+    <div class="archive-post">
+      <time datetime="2018-03-01" class="archive-post-time">
+        2018-03-01
+      </time>
+      <span class="archive-post-title">
+        <a href="/site-hugo/post/doc-footnote-preview/" class="archive-post-link">
+          Jane-Theme Footnote Preview
+        </a>
+      </span>
+    </div>
+    
+
+    <div class="archive-post">
+      <time datetime="2018-01-01" class="archive-post-time">
+        2018-01-01
+      </time>
+      <span class="archive-post-title">
+        <a href="/site-hugo/post/jane-theme-preview/" class="archive-post-link">
+          Jane Theme Preview
+        </a>
+      </span>
+    </div>
+    
+      <div class="collection-title">
         <h2 class="archive-year">2017</h2>
       </div>
+
+    <div class="archive-post">
+      <time datetime="2017-08-31" class="archive-post-time">
+        2017-08-31
+      </time>
+      <span class="archive-post-title">
+        <a href="/site-hugo/post/english-preview/" class="archive-post-link">
+          English Creating a New Theme
+        </a>
+      </span>
+    </div>
+    
 
     <div class="archive-post">
       <time datetime="2017-08-30" class="archive-post-time">
@@ -476,36 +523,6 @@
           Example content
         </a>
       </span>
-    </div>
-    
-      <div class="collection-title">
-        <h2 class="archive-year">2013</h2>
-      </div>
-
-    <div class="archive-post">
-      <time datetime="2013-12-31" class="archive-post-time">
-        2013-12-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/2013-12-31-whats-jekyll/" class="archive-post-link">
-          What&#39;s Jekyll?
-        </a>
-      </span>
-    </div>
-    
-      <div class="collection-title">
-        <h2 class="archive-year">2011</h2>
-      </div>
-
-    <div class="archive-post">
-      <time datetime="2011-08-30" class="archive-post-time">
-        2011-08-30
-      </time>
-      <span class="archive-post-title">
-        <a href="/site-hugo/post/syntax-highlighting/" class="archive-post-link">
-          Syntax Highlighting
-        </a>
-      </span>
     </div></section>
 
 
@@ -537,6 +554,10 @@
       
       <li  class="active" >
         <a href="/site-hugo/post/page/2/">2</a>
+      </li>
+      
+      <li >
+        <a href="/site-hugo/post/page/3/">3</a>
       </li>
       
     </ul>
@@ -677,4 +698,5 @@
 
 
 </body>
+<script src="/js/search.js"></script>
 </html>

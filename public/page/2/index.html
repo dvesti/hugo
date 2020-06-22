@@ -380,6 +380,14 @@
 
   </header>
 
+  <div class="sidebar-section">
+    <input id="search-query" placeholder="Search" />
+</div>
+<div id="search-results" style="display:none;"></div>
+<div id="sidebars">
+    ...
+</div>
+
 
   <div id="mobile-panel">
       <main id="main" class="main bg-llight">
@@ -392,6 +400,76 @@
     
   
   
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/site-hugo/post/2020-05-13-privetstvie/">Привет из XXI века</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2020-05-12" class="post-time">
+        2020-05-12
+      </time>
+      <div class="post-category">
+          <a href="https://dvesti.github.io/site-hugo/categories/news/"> News </a>
+          
+        </div>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      Kумушки от камушек - 2020
+    </div>
+    <div class="read-more">
+      <a href="/site-hugo/post/2020-05-13-privetstvie/" class="read-more-link">Читать дальше</a>
+    </div>
+    
+  </div>
+</article>
+
+  
+    <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a class="post-link" href="/site-hugo/post/math-preview/">Math Preview</a>
+    </h1>
+    
+    <div class="post-meta">
+      <time datetime="2019-03-04" class="post-time">
+        2019-03-04
+      </time>
+      <div class="post-category">
+          <a href="https://dvesti.github.io/site-hugo/categories/docs/"> docs </a>
+          <a href="https://dvesti.github.io/site-hugo/categories/math/"> math </a>
+          <a href="https://dvesti.github.io/site-hugo/categories/index/"> index </a>
+          
+        </div>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p><a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">KaTeX and MathJax Comparison Demo, currently processed as KaTex</a></p>
+    </div>
+    <div class="read-more">
+      <a href="/site-hugo/post/math-preview/" class="read-more-link">Читать дальше</a>
+    </div>
+    
+  </div>
+</article>
+
   
     <article class="post bg-white">
   <header class="post-header">
@@ -486,47 +564,12 @@
   <header class="post-header">
     <h1 class="post-title">
       
-      <a class="post-link" href="/site-hugo/post/doc-footnote-preview/">Jane-Theme Footnote Preview</a>
+      <a class="post-link" href="/site-hugo/post/shortcode-notice/">Shortcodes Notice Preview</a>
     </h1>
     
     <div class="post-meta">
-      <time datetime="2018-03-01" class="post-time">
-        2018-03-01
-      </time>
-      <div class="post-category">
-          <a href="https://dvesti.github.io/site-hugo/categories/docs/"> docs </a>
-          <a href="https://dvesti.github.io/site-hugo/categories/index/"> index </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Hugo-theme-jane optimized for footnote. When you mouse hover the footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> , footnote content will be displayed.</p>
-    </div>
-    <div class="read-more">
-      <a href="/site-hugo/post/doc-footnote-preview/" class="read-more-link">Читать дальше</a>
-    </div>
-    
-  </div>
-</article>
-
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/site-hugo/post/jane-theme-preview/">Jane Theme Preview</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2018-01-01" class="post-time">
-        2018-01-01
+      <time datetime="2018-03-03" class="post-time">
+        2018-03-03
       </time>
       <div class="post-category">
           <a href="https://dvesti.github.io/site-hugo/categories/docs/"> docs </a>
@@ -543,47 +586,36 @@
   <div class="post-content">
     
     <div class="post-summary">
-      <p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/">Daring Fireball</a>, the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax">here</a>. Its syntax, however, varies between different parsers or editors.</p>
-<p>Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.</p>
-    </div>
-    <div class="read-more">
-      <a href="/site-hugo/post/jane-theme-preview/" class="read-more-link">Читать дальше</a>
-    </div>
+      <p>Не все <em>шорккоды</em> работают корректно. Скорее всего из-за их отсутствия: будем искать и исправлять пост.</p>
+<p><strong>Дополнено</strong>: Поменял <code>% %</code> на <code>&lt; &gt;</code> и дело пошло&hellip;</p>
+<h2 id="normal-use">normal use</h2>
+<p><code>Note</code> example:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">{{&lt; notice note &gt;}}
+&lt;p&gt;A notice disclaimer&lt;/p&gt;
+{{&lt; /notice &gt;}}
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Result:</strong></p>
+<div class="shortcode-notice note">
+  <div class="shortcode-notice-title note">
+    
+      note
     
   </div>
-</article>
+  
+<p>A notice disclaimer</p>
 
-  
-    <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/site-hugo/post/english-preview/">English Creating a New Theme</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2017-08-31" class="post-time">
-        2017-08-31
-      </time>
-      <div class="post-category">
-          <a href="https://dvesti.github.io/site-hugo/categories/english/"> English </a>
-          <a href="https://dvesti.github.io/site-hugo/categories/index/"> index </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <h2 id="introduction">Introduction</h2>
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
+</div>
     </div>
     <div class="read-more">
-      <a href="/site-hugo/post/english-preview/" class="read-more-link">Читать дальше</a>
+      <a href="/site-hugo/post/shortcode-notice/" class="read-more-link">Читать дальше</a>
     </div>
     
   </div>
@@ -629,6 +661,10 @@
       
       <li >
         <a href="/site-hugo/page/4/">4</a>
+      </li>
+      
+      <li >
+        <a href="/site-hugo/page/5/">5</a>
       </li>
       
     </ul>
@@ -769,4 +805,5 @@
 
 
 </body>
+<script src="/js/search.js"></script>
 </html>

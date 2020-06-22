@@ -57,9 +57,9 @@ function search(searchQuery)
 
         if (results.length > 0)
         {
-            searchResults.appendChild(
-                htmlToElement("<div><b>Found: ".concat(results.length, "</b></div>"))
-            );
+            // searchResults.appendChild(
+            //    htmlToElement("<p> <i> <b> Found: ".concat(results.length, "</b> </i></p>"))
+            // );
 
             // populate search results block with excerpts around the matched search query
             results.forEach(function (value, key)
@@ -108,7 +108,7 @@ function search(searchQuery)
         else
         {
             searchResults.appendChild(
-                htmlToElement("<div><b>Nothing found</b></div>")
+                htmlToElement("<p>Nothing found :| </p>")
             );
         }
     });
@@ -146,4 +146,12 @@ function htmlToElement(html)
     html = html.trim();
     template.innerHTML = html;
     return template.content.firstChild;
+}
+
+
+
+function activateSearch()
+{
+    document.getElementById("search-query").classList.remove("search-query-dormant");
+    document.getElementById("search-query").classList.add("search-query-active");
 }
