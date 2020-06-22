@@ -6,287 +6,206 @@
     <description>Recent content in Tags on Блог Dvesti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 07 Jan 2020 17:09:26 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://dvesti.github.io/site-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Docker</title>
-      <link>https://dvesti.github.io/site-hugo/tags/docker/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>image</title>
+      <link>https://dvesti.github.io/site-hugo/tags/image/</link>
+      <pubDate>Fri, 19 Jun 2020 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/docker/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/image/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Java</title>
-      <link>https://dvesti.github.io/site-hugo/tags/java/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>poet</title>
+      <link>https://dvesti.github.io/site-hugo/tags/poet/</link>
+      <pubDate>Fri, 19 Jun 2020 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/java/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/poet/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>JavaScript</title>
-      <link>https://dvesti.github.io/site-hugo/tags/javascript/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>Test</title>
+      <link>https://dvesti.github.io/site-hugo/tags/test/</link>
+      <pubDate>Thu, 14 May 2020 18:05:23 +0300</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/javascript/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/test/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>JSON</title>
-      <link>https://dvesti.github.io/site-hugo/tags/json/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>math</title>
+      <link>https://dvesti.github.io/site-hugo/tags/math/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/json/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/math/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>node.js</title>
-      <link>https://dvesti.github.io/site-hugo/tags/node.js/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>preview</title>
+      <link>https://dvesti.github.io/site-hugo/tags/preview/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/node.js/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/preview/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>REST APIs</title>
-      <link>https://dvesti.github.io/site-hugo/tags/rest-apis/</link>
-      <pubDate>Tue, 07 Jan 2020 17:09:26 +0000</pubDate>
+      <title>tag-6</title>
+      <link>https://dvesti.github.io/site-hugo/tags/tag-6/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/rest-apis/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/tag-6/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atlassian Ecosystem</title>
-      <link>https://dvesti.github.io/site-hugo/tags/atlassian-ecosystem/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>shortcodes</title>
+      <link>https://dvesti.github.io/site-hugo/tags/shortcodes/</link>
+      <pubDate>Tue, 06 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/atlassian-ecosystem/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>BOSH</title>
-      <link>https://dvesti.github.io/site-hugo/tags/bosh/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>tag-7</title>
+      <link>https://dvesti.github.io/site-hugo/tags/tag-7/</link>
+      <pubDate>Sat, 03 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/bosh/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/tag-7/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DevOps</title>
-      <link>https://dvesti.github.io/site-hugo/tags/devops/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>footnote</title>
+      <link>https://dvesti.github.io/site-hugo/tags/footnote/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/devops/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/footnote/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>monit</title>
-      <link>https://dvesti.github.io/site-hugo/tags/monit/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>markdown</title>
+      <link>https://dvesti.github.io/site-hugo/tags/markdown/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/monit/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>python</title>
-      <link>https://dvesti.github.io/site-hugo/tags/python/</link>
-      <pubDate>Sun, 11 Feb 2018 12:41:05 -0500</pubDate>
+      <title>tag-11</title>
+      <link>https://dvesti.github.io/site-hugo/tags/tag-11/</link>
+      <pubDate>Thu, 01 Mar 2018 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/python/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/tag-11/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>agile</title>
-      <link>https://dvesti.github.io/site-hugo/tags/agile/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>English</title>
+      <link>https://dvesti.github.io/site-hugo/tags/english/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/agile/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/english/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Continuous Delivery</title>
-      <link>https://dvesti.github.io/site-hugo/tags/continuous-delivery/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>tag-2</title>
+      <link>https://dvesti.github.io/site-hugo/tags/tag-2/</link>
+      <pubDate>Thu, 31 Aug 2017 15:43:48 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/continuous-delivery/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/tag-2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Continuous Integration</title>
-      <link>https://dvesti.github.io/site-hugo/tags/continuous-integration/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>development</title>
+      <link>https://dvesti.github.io/site-hugo/tags/development/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/continuous-integration/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/development/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Culture</title>
-      <link>https://dvesti.github.io/site-hugo/tags/culture/</link>
-      <pubDate>Tue, 08 Nov 2016 00:00:00 +0000</pubDate>
+      <title>go</title>
+      <link>https://dvesti.github.io/site-hugo/tags/go/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/culture/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>apache</title>
-      <link>https://dvesti.github.io/site-hugo/tags/apache/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <title>golang</title>
+      <link>https://dvesti.github.io/site-hugo/tags/golang/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/apache/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>redirect</title>
-      <link>https://dvesti.github.io/site-hugo/tags/redirect/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <title>templates</title>
+      <link>https://dvesti.github.io/site-hugo/tags/templates/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/redirect/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/templates/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>rewrite</title>
-      <link>https://dvesti.github.io/site-hugo/tags/rewrite/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <title>themes</title>
+      <link>https://dvesti.github.io/site-hugo/tags/themes/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/rewrite/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ssl</title>
-      <link>https://dvesti.github.io/site-hugo/tags/ssl/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <title>hugo</title>
+      <link>https://dvesti.github.io/site-hugo/tags/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/ssl/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>web development</title>
-      <link>https://dvesti.github.io/site-hugo/tags/web-development/</link>
-      <pubDate>Thu, 01 Jan 2009 14:09:10 +0000</pubDate>
+      <title>jekyll</title>
+      <link>https://dvesti.github.io/site-hugo/tags/jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/web-development/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Atlassian Developer Ecosystem</title>
-      <link>https://dvesti.github.io/site-hugo/tags/atlassian-developer-ecosystem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Syntax Highlighting</title>
+      <link>https://dvesti.github.io/site-hugo/tags/syntax-highlighting/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/atlassian-developer-ecosystem/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/syntax-highlighting/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Bamboo</title>
-      <link>https://dvesti.github.io/site-hugo/tags/bamboo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>tag-5</title>
+      <link>https://dvesti.github.io/site-hugo/tags/tag-5/</link>
+      <pubDate>Tue, 30 Aug 2011 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/tags/bamboo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bash/shell</title>
-      <link>https://dvesti.github.io/site-hugo/tags/bash/shell/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/bash/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bitbucket</title>
-      <link>https://dvesti.github.io/site-hugo/tags/bitbucket/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/bitbucket/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CI/CD pipelines</title>
-      <link>https://dvesti.github.io/site-hugo/tags/ci/cd-pipelines/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/ci/cd-pipelines/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Confluence</title>
-      <link>https://dvesti.github.io/site-hugo/tags/confluence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/confluence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>JIRA</title>
-      <link>https://dvesti.github.io/site-hugo/tags/jira/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/jira/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jQuery</title>
-      <link>https://dvesti.github.io/site-hugo/tags/jquery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/jquery/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Maven</title>
-      <link>https://dvesti.github.io/site-hugo/tags/maven/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/maven/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spring</title>
-      <link>https://dvesti.github.io/site-hugo/tags/spring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/spring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>xml/xslt</title>
-      <link>https://dvesti.github.io/site-hugo/tags/xml/xslt/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/tags/xml/xslt/</guid>
+      <guid>https://dvesti.github.io/site-hugo/tags/tag-5/</guid>
       <description></description>
     </item>
     
