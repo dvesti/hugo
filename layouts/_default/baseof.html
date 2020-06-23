@@ -51,6 +51,15 @@
       <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
+
+         <div class="sidebar-section">
+    <input id="search-query" placeholder="Search" />
+</div>
+<div id="search-results" style="display:none;"></div>
+<div id="sidebars">
+    ...
+</div>
+
           {{ block "content" . }}{{ end }}
         </div>
       </div>

@@ -230,6 +230,16 @@ We&rsquo;ll start with creating a new site with a very basic template. Then we&r
       <div id="closeSearch" title="Close" class="close">X</div>
       <div class="modal-header">
         <div class="modal-title">Поиск</div>
+
+      <div class="sidebar-section">
+    <input id="search-query" placeholder="Search" />
+</div>
+<div id="search-results" style="display:none;"></div>
+<div id="sidebars">
+    ...
+</div> 
+
+
       </div>
       <div class="modal-body">
           <script>
@@ -2229,14 +2239,6 @@ $ vi themes/zafta/layouts/_default/single.html
 
   </a>
    
-</div>
-
-<div class="sidebar-section">
-    <input id="search-query" placeholder="Search" />
-</div>
-<div id="search-results" style="display:none;"></div>
-<div id="sidebars">
-    ...
 </div>
 
 <div class="copyright">
