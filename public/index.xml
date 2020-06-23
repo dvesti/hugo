@@ -5719,34 +5719,18 @@ $
       
       <guid>https://dvesti.github.io/site-hugo/static/search11/</guid>
       
-        <description>&lt;div id=&#34;search-results&#34;&gt;&lt;/div&gt;
-&lt;script id=&#34;search-result-template&#34; type=&#34;text/x-js-template&#34;&gt;
-    &lt;div id=&#34;summary-${key}&#34;&gt;
-        &lt;h3&gt;&lt;a href=&#34;${link}&#34;&gt;${title}&lt;/a&gt;&lt;/h3&gt;
-        &lt;p&gt;${snippet}&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/script&gt;
-
-</description>
+        <description></description>
       
     </item>
     
     <item>
       <title>Search Results</title>
-      <link>https://dvesti.github.io/site-hugo/search/</link>
+      <link>https://dvesti.github.io/site-hugo/search00/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/search/</guid>
+      <guid>https://dvesti.github.io/site-hugo/search00/</guid>
       
-        <description>&lt;div id=&#34;search-results&#34;&gt;&lt;/div&gt;
-&lt;script id=&#34;search-result-template&#34; type=&#34;text/x-js-template&#34;&gt;
-    &lt;div id=&#34;summary-${key}&#34;&gt;
-        &lt;h3&gt;&lt;a href=&#34;${link}&#34;&gt;${title}&lt;/a&gt;&lt;/h3&gt;
-        &lt;p&gt;${snippet}&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/script&gt;
-
-</description>
+        <description></description>
       
     </item>
     
