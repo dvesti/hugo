@@ -413,20 +413,20 @@
 
 <section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto" >
-    <form action="https://dvesti.github.io/site-hugo/search" onkeyup="executeInlineSearch()">
-       <input id="search-query" placeholder="Search..." name="s" autocomplete="off" search autofocus/>
+    <form action="https://dvesti.github.io/site-hugo/search">
+      <input id="search-query" name="s"/>
     </form>
     <div id="search-results">
-     <h3 class="search-results-title">Matching pages</h3>
+     <h3>Matching pages</h3>
     </div>
   </div>
 </section>
 
 <script id="search-result-template" type="text/x-js-template">
-    <div class="search-results-summary" id="summary-${key}">
-      <h4><a class="search-item" href="${link}">${title}</a></h4>
-      <p>${snippet}  ... <a class="search-item-more" href="${link}">[more]</a></p>
-      ${ isset tags }<p>${tags}</p>${ end }
+    <div id="summary-${key}">
+      <h4><a href="${link}">${title}</a></h4>
+      <p>${snippet}</p>
+      ${ isset tags }<p>Tags: ${tags}</p>${ end }
       ${ isset categories }<p>Categories: ${categories}</p>${ end }
     </div>
 </script>
