@@ -46,7 +46,7 @@ defaultContentLanguage = "ru"           # Default language to use
   weight = 40
   identifier = "archives"
   url = "/post/"
-  [[menu.main]]
+[[menu.main]]
   name = "Архивы"
   weight = 40
   identifier = "archive"
@@ -62,11 +62,11 @@ defaultContentLanguage = "ru"           # Default language to use
   weight = 20
   identifier = "categories"
   url = "/categories/"
-[[menu.main]]
- name = "Search"
-  weight = 50
-  identifier = "search"
-  url = "/static/search"
+#[[menu.main]]
+# name = "Search"
+#  weight = 50
+#  identifier = "search"
+#  url = "/static/search"
   
 [[menu.main]]
   name = "О нас"
@@ -79,6 +79,7 @@ defaultContentLanguage = "ru"           # Default language to use
 #[params.search]
 [[menu.main]]
   name = "Поиск"
+  weight = 50
   url = "/search"
   img = "/images/search.svg"
 
@@ -124,7 +125,7 @@ defaultContentLanguage = "ru"           # Default language to use
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = ['fuse.min.js','jquery.mark.min.js','search.js'] #[]                # if ['custom.js'], load '/static/js/custom.js' file
+  customJS = ["fuse.min.js","jquery.mark.min.js","search.js"] #[]                # if ['custom.js'], load '/static/js/custom.js' file
 
  # [params.social]                                         # 社交链接
  #   a-email = "mailto:dvesti@hot.ee"
