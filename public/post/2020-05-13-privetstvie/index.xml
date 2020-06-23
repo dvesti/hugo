@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Привет из XXI века on Блог Dvesti</title>
+    <link>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</link>
+    <description>Recent content in Привет из XXI века on Блог Dvesti</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Tue, 12 May 2020 21:44:45 +0300</lastBuildDate>
+    
+	<atom:link href="https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

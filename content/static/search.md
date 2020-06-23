@@ -9,5 +9,5 @@ description: "Search across blog posts."
 aliases:
     - "/static/search"
 ---
-{{< staticsearch >}}
+
 

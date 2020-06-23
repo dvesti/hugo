@@ -88,6 +88,12 @@ defaultContentLanguage = "ru"           # Default language to use
     id = "002744767378160621811:wizhxqeiera"
     title = "Поиск"
 
+[params.search]    # google custom search, see https://cse.google.com
+    enable = true
+    weight = 80
+   # id = "002744767378160621811:wizhxqeiera"
+    title = "Поиск2"    
+
 #[params.search]    # google custom search, see https://cse.google.com
 #    enable = true
 #    weight = 70
