@@ -74,16 +74,16 @@ defaultContentLanguage = "ru"           # Default language to use
  # identifier = "search"
   url = "/static/about"
 
-[params.search]
-client = "fuse"
 #[params.search]
-#[[menu.main]]
-#  name = "Поиск"
-#  url = "/search/"
-#  img = "/images/search.svg"
+# client = "fuse"
+#[params.search]
+[[menu.main]]
+  name = "Поиск"
+  url = "/search/"
+  img = "/images/search.svg"
 
 [params.search.google]    # google custom search, see https://cse.google.com
-    enable = true
+    enable = false #true
     weight = 70
     id = "002744767378160621811:wizhxqeiera"
     title = "Поиск"
@@ -118,7 +118,7 @@ client = "fuse"
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
-  customJS = ['fuse.min.js','jquery.mark.min.js','search.js'] #[]                # if ['custom.js'], load '/static/js/custom.js' file
+  customJS = [] #['fuse.min.js','jquery.mark.min.js','search.js'] #[]                # if ['custom.js'], load '/static/js/custom.js' file
 
  # [params.social]                                         # 社交链接
  #   a-email = "mailto:dvesti@hot.ee"
