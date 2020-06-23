@@ -79,11 +79,11 @@ defaultContentLanguage = "ru"           # Default language to use
 #[params.search]
 [[menu.main]]
   name = "Поиск"
-  url = "/search/"
+  url = "/search"
   img = "/images/search.svg"
 
 [params.search.google]    # google custom search, see https://cse.google.com
-    enable = false #true
+    enable = true
     weight = 70
     id = "002744767378160621811:wizhxqeiera"
     title = "Поиск"
