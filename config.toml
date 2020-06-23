@@ -152,3 +152,4 @@ defaultContentLanguage = "ru"           # Default language to use
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "RSS"]
   # section = ["JSON", "HTML"]
+  post = ["HTML", "RSS", "JSON"]
