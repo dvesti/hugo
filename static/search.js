@@ -42,7 +42,7 @@ function executeInlineSearch(){
 }
 
 function executeSearch(searchQuery, clear_list){
-  $.getJSON( "/index.json", function( data ) {
+  $.getJSON( "/tipuesearch_content.json", function( data ) {
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);
