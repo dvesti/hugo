@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dvesti.github.io/site-hugo/</loc>
-    <lastmod>2020-06-19T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://dvesti.github.io/site-hugo/categories/</loc>
     <lastmod>2020-06-19T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -96,6 +89,20 @@
     <loc>https://dvesti.github.io/site-hugo/page/</loc>
     <lastmod>2019-06-07T20:22:57+02:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/</loc>
+    <lastmod>2019-06-07T20:22:57+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://dvesti.github.io/site-hugo/search/</loc>
+    <lastmod>2019-06-07T20:22:57+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -432,12 +439,6 @@
     <lastmod>2019-06-24T10:43:10-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://dvesti.github.io/site-hugo/search00/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.1</priority>
   </url>
   
 </urlset>

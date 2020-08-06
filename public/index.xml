@@ -6,7 +6,7 @@
     <description>Recent content in Alpaca on Блог Dvesti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 20:22:57 +0200</lastBuildDate>
     
         <atom:link href="https://dvesti.github.io/site-hugo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -132,6 +132,22 @@ hugo
       <guid>https://dvesti.github.io/site-hugo/post/2020-05-13-privetstvie/</guid>
       
         <description>&lt;p&gt;Kумушки от &lt;strong&gt;камушек&lt;/strong&gt; - &lt;em&gt;2020&lt;/em&gt;&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://dvesti.github.io/site-hugo/search/</link>
+      <pubDate>Fri, 07 Jun 2019 20:22:57 +0200</pubDate>
+      
+      <guid>https://dvesti.github.io/site-hugo/search/</guid>
+      
+        <description>&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
 </description>
       
     </item>
@@ -5718,17 +5734,6 @@ $
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
       <guid>https://dvesti.github.io/site-hugo/static/search11/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Search Results</title>
-      <link>https://dvesti.github.io/site-hugo/search00/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dvesti.github.io/site-hugo/search00/</guid>
       
         <description></description>
       
