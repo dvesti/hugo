@@ -1,3 +1,4 @@
+
 summaryInclude=60;
 var fuseOptions = {
   shouldSort: true,
@@ -16,6 +17,7 @@ var fuseOptions = {
   ]
 };
 
+
 var searchQuery = param("s");
 if(searchQuery){
   $("#search-query").val(searchQuery);
@@ -24,8 +26,10 @@ if(searchQuery){
   $('#search-results').append("<p>Please enter a word or phrase above</p>");
 }
 
+
+
 function executeSearch(searchQuery){
-  $.getJSON( "/tipuesearch_content.json", function( data ) {
+  $.getJSON( "/index.json", function( data ) {
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
     var result = fuse.search(searchQuery);
@@ -103,3 +107,5 @@ function render(templateString, data) {
   }
   return templateString;
 }
+
+
