@@ -1,3 +1,6 @@
-{"pages": [{{ range $index, $page := .Site.Pages }}{{ if eq $page.Type "post" }}{{ if $index }},{{ end }}
-   {"title": "{{ $page.Title }}",  "text": "{{ $page.Params.description }}", "tags": "{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }} {{ end }}{{ $tag }}{{ end }}", "url": "{{ .Site.BaseURL }}{{ $page.RelPermalink }}"}{{ end }}{{ end }}
+{"pages": [{{- $.Scratch.Add "index" slice -}}
+   {{- range .Site.RegularPages -}}
+       {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+   {{- end -}}
+   {{- $.Scratch.Get "index" | jsonify -}}
 ]}
