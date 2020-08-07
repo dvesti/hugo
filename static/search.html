@@ -90,13 +90,14 @@ $(document).ready(function() {
 <script type="text/javascript" src="https://dvesti.github.io/Pelican/theme/tipuesearch/tipuesearch_set.js"></script>
 <script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
 <script> 
+var $j = jQuery.noConflict();
 $(document).ready(function() {
      $('#tipue_search_input').tipuesearch({
          'mode' : 'json',
          'show': 10,
          'newWindow': false,
          'showURL': false,
-         'contentLocation': '/tipuesearch_content.json'
+         'contentLocation': '{{ SITEURL }}/tipuesearch_content.json'
      });
 });
 </script>
