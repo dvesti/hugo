@@ -1,4 +1,4 @@
-var tipuesearch = {"pages": [
+{"pages": [
    {"title": "Jane 主题预览 - Тест",  "text": "<no value>", "tags": "preview shortcodes tag-6", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/jane-theme-preview.zh-cn/"},
    {"title": "Posts",  "text": "<no value>", "tags": "", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/"},
    {"title": "Котомодель",  "text": "<no value>", "tags": "image poet", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/kotomodel/"},
@@ -22,4 +22,4 @@ var tipuesearch = {"pages": [
    {"title": "Example content",  "text": "<no value>", "tags": "", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/2014-01-01-example-content/"},
    {"title": "What's Jekyll?",  "text": "<no value>", "tags": "", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/2013-12-31-whats-jekyll/"},
    {"title": "Syntax Highlighting",  "text": "<no value>", "tags": "preview Syntax Highlighting tag-5", "url": "https://dvesti.github.io/site-hugo/site-hugo/post/syntax-highlighting/"}
-]};
+]}
