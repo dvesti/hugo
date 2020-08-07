@@ -26,7 +26,7 @@ if (searchQuery) {
 
 
 function executeSearch(searchQuery) {
-    fetch("/index.json")
+    fetch("/tipuesearch_content.json")
         .then(response => response.json())
         .then(data => {
             data = data.map(d => {
