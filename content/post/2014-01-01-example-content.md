@@ -1,6 +1,7 @@
 ---
 Title: "Example content"
 date: 2014-01-01
+summary: "Это то, что будет до спойлера - spoiler - example blog post"
 ---
 
 <div class="message">
