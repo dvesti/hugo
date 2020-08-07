@@ -1,3 +1,0 @@
-{"pages": [{{ range $index, $page := .Site.Pages }}{{ if eq $page.Type "post" }}{{ if $index }},{{ end }}
-   {"title": "{{ $page.Title }}",  "text": "{{ $page.Params.description }}", "tags": "{{ range $tindex, $tag := $page.Params.tags }}{{ if $tindex }} {{ end }}{{ $tag }}{{ end }}", "url": "{{ .Site.BaseURL }}{{ $page.RelPermalink }}"}{{ end }}{{ end }}
-]}
