@@ -40,7 +40,7 @@ function search(searchQuery)
     searchResults.style.display = "block";
 
     // load your index file
-    getJSON("/index.json", function (contents)
+    getJSON("/tipuesearch_content.json", function (contents)
     {
         var results = [];
         let regex = new RegExp(searchQuery, "i");
