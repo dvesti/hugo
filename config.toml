@@ -63,11 +63,11 @@ defaultContentLanguage = "ru"           # Default language to use
   identifier = "categories"
   url = "/categories/"
 
-#[[menu.main]]
-# name = "Search"
-#  weight = 50
-#  identifier = "search"
-#  url = "/static/search"
+[[menu.main]]
+ name = "Search"
+  weight = 50
+  identifier = "search"
+  url = "/static/search"
   
 [[menu.main]]
   name = "О нас"
