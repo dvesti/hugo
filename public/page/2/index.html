@@ -41,14 +41,14 @@
 
 
 
-<meta property="og:title" content="Alpaca" />
+<meta property="og:title" content="tom0727&#39;s blog" />
 <meta property="og:description" content="tom0727的博客" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tom0727.github.io/" />
 
-<meta itemprop="name" content="Alpaca">
+<meta itemprop="name" content="tom0727&#39;s blog">
 <meta itemprop="description" content="tom0727的博客"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Alpaca"/>
+<meta name="twitter:title" content="tom0727&#39;s blog"/>
 <meta name="twitter:description" content="tom0727的博客"/>
 
 <!--[if lte IE 9]>
@@ -86,8 +86,6 @@
         <li class="mobile-menu-item">About</li>
       </a><a href="/search/">
         <li class="mobile-menu-item">Search</li>
-      </a><a href="">
-        <li class="mobile-menu-item">docs</li>
       </a>
   </ul>
 </nav>
@@ -111,8 +109,6 @@
         <a class="menu-item-link" href="/about/">About</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/search/">Search</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="">docs</a>
       </li>
   </ul>
 </nav>
@@ -124,276 +120,210 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/doc-footnote-preview/">Jane-Theme Footnote Preview</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/022-%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/">树链剖分</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2018-03-01 </span>
+      <span class="post-time"> 2021-03-06 </span>
       <div class="post-category">
-          <a href="/categories/docs/"> docs </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>Hugo-theme-jane optimized for footnote. When you mouse hover the footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> , footnote content will be displayed.</p>
+      介绍 树链剖分主要用于将 树上修改/查询 通过 DFS序 变成 区间修改/查询，然后利用 线段树 进行修改/查询。 我们可以用模版来举个例子： 题意 已知一棵包含
     </div>
     <div class="read-more">
-      <a href="/post/doc-footnote-preview/" class="read-more-link">Read more...</a>
+      <a href="/post/022-%E6%A0%91%E9%93%BE%E5%89%96%E5%88%86/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/jane-theme-preview/">Jane Theme Preview</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/021-lca/">最近公共祖先 LCA</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2018-01-01 </span>
+      <span class="post-time"> 2021-03-06 </span>
       <div class="post-category">
-          <a href="/categories/docs/"> docs </a>
-          <a href="/categories/shortcodes/"> shortcodes </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/" target="_blank">Daring Fireball</a>, the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">here</a>. Its syntax, however, varies between different parsers or editors.</p>
-<p>Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.</p>
+      介绍 给定一棵有根树（不一定为binary tree），求两个节点的最近公共祖先？ 算法 LCA的思路和ST表比较相似，都是利用了倍增思想，大概流程
     </div>
     <div class="read-more">
-      <a href="/post/jane-theme-preview/" class="read-more-link">Read more...</a>
+      <a href="/post/021-lca/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/english-preview/">English Creating a New Theme</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/020-%E4%B8%89%E5%88%86%E6%B3%95/">三分法</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2017-08-31 </span>
+      <span class="post-time"> 2021-03-05 </span>
       <div class="post-category">
-          <a href="/categories/english/"> English </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="introduction">Introduction</h2>
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
+      介绍 三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 二次函数 的最值。 以搜索二次函数最值为例，假如有一个二次函数存在最大值
     </div>
     <div class="read-more">
-      <a href="/post/english-preview/" class="read-more-link">Read more...</a>
+      <a href="/post/020-%E4%B8%89%E5%88%86%E6%B3%95/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/this-is-a-very-long-title/">This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/019-luogu-p5664/">Luogu P5664 Emiya家今天的饭（计数，dp）</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2017-08-30 </span>
+      <span class="post-time"> 2021-03-05 </span>
       <div class="post-category">
-          <a href="/categories/english/"> English </a>
-          <a href="/categories/index/"> index </a>
-          <a href="/categories/test/"> test </a>
+          <a href="/categories/%E9%A2%98%E8%A7%A3/"> 题解 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title
+      题目链接 https://www.luogu.com.cn/problem/P5664 题意 有 $n$ 种烹饪方法，$m$ 种主要食材。每道菜都只用 恰好一种 烹饪方法和主要食材，同时对于 每种烹饪方法 $i$ 和 主要食材 $j$，有 $a_{ij}$ 种不同的
     </div>
     <div class="read-more">
-      <a href="/post/this-is-a-very-long-title/" class="read-more-link">Read more...</a>
+      <a href="/post/019-luogu-p5664/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/018-luogu-p1450/">Luogu P1450 硬币购物（计数，容斥）</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-09-28 </span>
+      <span class="post-time"> 2021-03-04 </span>
       <div class="post-category">
-          <a href="/categories/development/"> Development </a>
-          <a href="/categories/golang/"> golang </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E9%A2%98%E8%A7%A3/"> 题解 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="introduction">Introduction</h2>
-<p>This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.</p>
-<p>We&rsquo;ll start with creating a new site with a very basic template. Then we&rsquo;ll add in a few pages and posts. With small variations on that, you will be able to create many different types of web sites.</p>
+      题目链接 https://www.luogu.com.cn/problem/P1450 题意 共有 $4$ 种硬币。面值分别为 $c_1,c_2,c_3,c_4$ 某人去商店买东西，去了 $n$ 次，对于每次购买，他带了 $d_i$ 枚的 第 $i$ 种硬币，想购买价值为 $s$ 东西（不设找零）。请
     </div>
     <div class="read-more">
-      <a href="/post/creating-a-new-theme/" class="read-more-link">Read more...</a>
+      <a href="/post/018-luogu-p1450/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/017-%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/">组合数学</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-04-02 </span>
+      <span class="post-time"> 2021-03-02 </span>
       <div class="post-category">
-          <a href="/categories/development/"> Development </a>
-          <a href="/categories/golang/"> golang </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>Hugo uses the excellent <a href="http://golang.org/" target="_blank">go</a> <a href="http://golang.org/pkg/html/template/" target="_blank">html/template</a> library for
-its template engine. It is an extremely lightweight engine that provides a very
-small amount of logic. In our experience that it is just the right amount of
-logic to be able to create a good static website. If you have used other
-template systems from different languages or frameworks you will find a lot of
-similarities in go templates.</p>
-<p>This document is a brief primer on using go templates. The <a href="http://golang.org/pkg/html/template/" target="_blank">go docs</a>
-provide more details.</p>
+      记录一些组合数学的公式。 公式 组合数 $C(n,m)$ $C_n^0 = C_n^n = 1$ $C_n^k = C_{n-1}^k + C_{n-1}^{k-1}$ $C_n^k = \frac{n!}{k!(n-k)!}$ 注：$0! = 1, (0!)^{-1} = 1$ 证明公式2 $n$ 个中选 $k$ 个， 考虑 $n$ 个元素中的第一个元素： 如果它
     </div>
     <div class="read-more">
-      <a href="/post/goisforlovers/" class="read-more-link">Read more...</a>
+      <a href="/post/017-%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/016-at-abc127f/">Atcoder ABC 127F（对顶堆动态维护中位数）</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-04-02 </span>
+      <span class="post-time"> 2021-03-01 </span>
       <div class="post-category">
-          <a href="/categories/development/"> Development </a>
-          <a href="/categories/golang/"> golang </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E9%A2%98%E8%A7%A3/"> 题解 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
-<p>Goto <a href="https://github.com/spf13/hugo/releases" target="_blank">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+      题目链接 https://atcoder.jp/contests/abc127/tasks/abc127_f 题意 初始时有个函数 $f(x) = 0$，现在有 $Q$ 个询问，询问有两种： 1 a b：令 $f(x) = f(x) + |x-a| + b$ 2：求 $x$ 使得 $f(x)$ 最小，并求出这个 $f(x)$ 的最小值 题解 $f(x)$ 必然
     </div>
     <div class="read-more">
-      <a href="/post/hugoisforlovers/" class="read-more-link">Read more...</a>
+      <a href="/post/016-at-abc127f/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/015-at-abc127e/">Atcoder ABC 127E（数学，计数，概率）</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-03-10 </span>
+      <span class="post-time"> 2021-02-28 </span>
       <div class="post-category">
-          <a href="/categories/development/"> Development </a>
-          <a href="/categories/golang/"> golang </a>
-          <a href="/categories/index/"> index </a>
+          <a href="/categories/%E9%A2%98%E8%A7%A3/"> 题解 </a>
           </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
-<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
-With Jekyll, something that looked like</p>
-<pre><code>▾ &lt;root&gt;/
-    ▾ images/
-        logo.png
-</code></pre>
-<p>should become</p>
-<pre><code>▾ &lt;root&gt;/
-    ▾ static/
-        ▾ images/
-            logo.png
-</code></pre>
-<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+      题目链接 https://atcoder.jp/contests/abc127/tasks/abc127_e 题意 给定一个矩阵，包含 $N \times M$ 个格子，现在从中选出 $K \leq N \times M$ 个不同的格子，记为 $(x_1,y_1), (x_2, y_2), &hellip; , (x_K, y_K)$ ，记 $cost = \sum\limits_{i=1}^{K-1}\sum\limits_{j=i+1}^{K}(|x_i-x_j| + |y_i-y_j|)$ 求：对于所有不同的 $K$ 个格子
     </div>
     <div class="read-more">
-      <a href="/post/migrate-from-jekyll/" class="read-more-link">Read more...</a>
+      <a href="/post/015-at-abc127e/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2014-01-02-introducing-lanyon/">Introducing Lanyon</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/014-at-abc162e/">Atcoder ABC 162E（数学，计数）</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-01-02 </span>
-      
+      <span class="post-time"> 2021-02-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E9%A2%98%E8%A7%A3/"> 题解 </a>
+          </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <p>Lanyon is an unassuming <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places content first by tucking away navigation in a hidden drawer. It&rsquo;s based on <a href="http://getpoole.com" target="_blank">Poole</a>, the Jekyll butler.</p>
-<h3 id="built-on-poole">Built on Poole</h3>
-<p>Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. Poole, and every theme built on it (like Lanyon here) includes the following:</p>
-<ul>
-<li>Complete Jekyll setup included (layouts, config, <a href="/404">404</a>, <a href="/index.xml">RSS feed</a>, posts, and <a href="/about">example page</a>)</li>
-<li>Mobile friendly design and development</li>
-<li>Easily scalable text and component sizing with <code>rem</code> units in the CSS</li>
-<li>Support for a wide gamut of HTML elements</li>
-<li>Related posts (time-based, because Jekyll) below each post</li>
-<li>Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)</li>
-</ul>
+      题目链接 https://atcoder.jp/contests/abc162/tasks/abc162_e 题意 给定 $2 \leq N \leq 10^5, 2 \leq K \leq 10^5$，现有长度为 $N$ 的序列 $\{ a_1, a_2, &hellip;, a_N \}$，其中 $1 \leq a_i \leq K$ 这样的序列总共有 $K^N$ 个，求所有这些序列的 $\sum \
     </div>
     <div class="read-more">
-      <a href="/post/2014-01-02-introducing-lanyon/" class="read-more-link">Read more...</a>
+      <a href="/post/014-at-abc162e/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/2014-01-01-example-content/">Example content</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/013-%E6%9C%80%E5%B0%8F%E7%8E%AF/">最小环</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2014-01-01 </span>
-      
+      <span class="post-time"> 2021-02-25 </span>
+      <div class="post-category">
+          <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
+          </div>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <div class="message">
-  Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
-</div>
-<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-<blockquote>
-<p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-<h2 id="inline-html-elements">Inline HTML elements</h2>
-<p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">Mozilla Developer Network</a>.</p>
-<ul>
-<li><strong>To bold text</strong>, use <code>&lt;strong&gt;</code>.</li>
-<li><em>To italicize text</em>, use <code>&lt;em&gt;</code>.</li>
-<li>Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use <code>&lt;abbr&gt;</code>, with an optional <code>title</code> attribute for the full phrase.</li>
-<li>Citations, like <cite>— Mark otto</cite>, should use <code>&lt;cite&gt;</code>.</li>
-<li><del>Deleted</del> text should use <code>&lt;del&gt;</code> and <ins>inserted</ins> text should use <code>&lt;ins&gt;</code>.</li>
-<li>Superscript <sup>text</sup> uses <code>&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code>&lt;sub&gt;</code>.</li>
-</ul>
-<p>Most of these elements are styled by browsers with few modifications on our part.</p>
+      定义 最小环：指图中的一个环，它不包含任何更小的环。 在无向图中，最小的最小环为3个节点。在有向图中，最小的最小环为2个节点。（不考虑self-
     </div>
     <div class="read-more">
-      <a href="/post/2014-01-01-example-content/" class="read-more-link">Read more...</a>
+      <a href="/post/013-%E6%9C%80%E5%B0%8F%E7%8E%AF/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

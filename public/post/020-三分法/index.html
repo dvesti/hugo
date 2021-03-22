@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>三分法 - tom0727&#39;s blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="tom0727" /><meta name="description" content="介绍 三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 二次函数 的最值。 以搜索二次函数最值为例，假如有一个二次函数存在最大值" /><meta name="keywords" content="tom0727, blog, huzhenwei, 胡振为" />
+
+
+<meta name="baidu-site-verification" content="tom0727" />
+<meta name="google-site-verification" content="tom0727" />
+
+
+<meta name="generator" content="Hugo 0.81.0 with theme even" />
+
+
+<link rel="canonical" href="https://tom0727.github.io/post/020-%E4%B8%89%E5%88%86%E6%B3%95/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.9b1611645c0c018b222dea949d7fd9911aee1040f537ee4ea59489a85328e02b.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="三分法" />
+<meta property="og:description" content="介绍 三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 二次函数 的最值。 以搜索二次函数最值为例，假如有一个二次函数存在最大值" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tom0727.github.io/post/020-%E4%B8%89%E5%88%86%E6%B3%95/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-05T22:20:54&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-05T22:20:54&#43;08:00" />
+
+<meta itemprop="name" content="三分法">
+<meta itemprop="description" content="介绍 三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 二次函数 的最值。 以搜索二次函数最值为例，假如有一个二次函数存在最大值"><meta itemprop="datePublished" content="2021-03-05T22:20:54&#43;08:00" />
+<meta itemprop="dateModified" content="2021-03-05T22:20:54&#43;08:00" />
+<meta itemprop="wordCount" content="763">
+<meta itemprop="keywords" content="三分搜索," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="三分法"/>
+<meta name="twitter:description" content="介绍 三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 二次函数 的最值。 以搜索二次函数最值为例，假如有一个二次函数存在最大值"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">tom0727&#39;s blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Post</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/search/">
+        <li class="mobile-menu-item">Search</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">tom0727&#39;s blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Post</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/search/">Search</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">三分法</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-03-05 </span>
+        <div class="post-category">
+            <a href="/categories/%E7%AE%97%E6%B3%95/"> 算法 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#介绍">介绍</a></li>
+        <li><a href="#例题">例题</a>
+          <ul>
+            <li><a href="#例1-洛谷p3382httpswwwluogucomcnproblemp3382">例1 <a href="https://www.luogu.com.cn/problem/P3382">洛谷P3382</a></a></li>
+            <li><a href="#例2-cf1355ehttpscodeforcescomproblemsetproblem1355e">例2 <a href="https://codeforces.com/problemset/problem/1355/E">CF1355E</a></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="介绍">介绍</h2>
+<p>三分法 (tenary search) 和 二分法(binary search) 类似，只不过三分法可以用于搜索一个 <strong>二次函数</strong> 的最值。</p>
+<p>以搜索二次函数最值为例，假如有一个二次函数存在最大值。</p>
+<p>要搜索这个最大值，可以令 $mid = \frac{l+r}{2}$，然后令 $lmid = mid - eps$，$rmid = mid + eps$，然后比较一下 $f(lmid)$ 和 $f(rmid)$ 的大小。</p>
+<ol>
+<li>$f(lmid) &lt; f(rmid)$：最大值一定在 $[lmid, r]$ 之间。</li>
+<li>$f(lmid) &gt; f(rmid)$：最大值一定在 $[l, rmid]$ 之间。</li>
+</ol>
+<blockquote>
+<p>证明：假如 $f(lmid) &lt; f(rmid)$，那么如果最大值在 $lmid$ 的左边则必然不可能，因为 $rmid$ 离最大值比 $lmid$ 更远。另外一种情况亦然。</p>
+</blockquote>
+<h2 id="例题">例题</h2>
+<h3 id="例1-洛谷p3382httpswwwluogucomcnproblemp3382">例1 <a href="https://www.luogu.com.cn/problem/P3382" target="_blank">洛谷P3382</a></h3>
+<div class="admonition question">
+  <p class="admonition-title">题意</p>
+<p>给定一个 $N$ 次函数，保证 $[l,r]$ 内存在一个点 $x$，使得 $[l,x]$ 单调增，$[x,r]$ 单调减，求 $x$</p>
+</div>
+<details class="admonition note"><summary class="admonition-title">代码</summary>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+using namespace std;
+
+const double eps = (double)1e-7;
+int n;
+double l,r;
+double arr[16];
+
+double get(double x) {
+    double res = 0;
+    double cur = 1.0;
+    for (int i = 1; i &lt;= n+1; i++) {
+        res += cur * arr[i];
+        cur *= x;
+    }
+    return res;
+}
+
+int main() {
+    cin &gt;&gt; n;
+    cin &gt;&gt; l &gt;&gt; r;
+    for (int i = n+1; i &gt;= 1; i--) cin &gt;&gt; arr[i];
+
+    double low = l, high = r;
+
+    while (high - low &gt; 5e-7) {
+        double mid = (low + high) * 0.5;
+        double lmid = mid - eps, rmid = mid + eps;
+        if (get(lmid) &lt; get(rmid)) low = lmid;
+        else high = rmid;
+    }
+    printf(&quot;%.7f\n&quot;, low);
+}
+</code></pre>
+</details>
+<h3 id="例2-cf1355ehttpscodeforcescomproblemsetproblem1355e">例2 <a href="https://codeforces.com/problemset/problem/1355/E" target="_blank">CF1355E</a></h3>
+<div class="admonition question">
+  <p class="admonition-title">题意</p>
+<p>有 $N$ 个柱子，高度分别为 $h_1, h_2, &hellip; h_N$。现在有3种操作：</p>
+<ol>
+<li>令一个柱子的高度+1，cost为 $A$</li>
+<li>令一个柱子的高度-1，cost为 $R$</li>
+<li>令一个柱子的高度+1，且令另外一个柱子的高度-1，cost为 $M$</li>
+</ol>
+<p>求最小的cost使得所有柱子高度相等？</p>
+<p>其中 $1 \leq N \leq 10^5, 0 \leq h_i \leq 10^9$</p>
+</div>
+<details class="admonition note"><summary class="admonition-title">题解</summary>
+<p>如果我们枚举最终的高度 $h$，对于每一个 $h$ 都可以在 $\log(N)$ 的时间内计算出来对应的 $cost$。</p>
+<p>然后我们会发现，随着 $h$ 的增加，$cost$ 是一个二次函数，具有一个最小值。（证明略）</p>
+<p>所以就可以使用三分搜索了！</p>
+<blockquote>
+<p>因为三分搜索的边界不太好处理，所以可以限定一个范围，在范围之内就停止搜索开始暴力枚举。</p>
+</blockquote>
+<p>搜索的部分代码：</p>
+<pre><code class="language-cpp">ll low = 1, high = 1e9;
+while (high - low &gt;= 10) {
+    ll mid = (low + high) &gt;&gt; 1;
+    ll lmid = mid-1, rmid = mid+1;
+    ll lv = solve(lmid), rv = solve(rmid);
+    if (lv &gt; rv) low = lmid;
+    else high = rmid;
+}
+
+for (ll p = low; p &lt;= high; p++) {
+    ll r = solve(p);
+    ans = min(ans, r);
+}
+</code></pre>
+</details>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">tom0727</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-03-05
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></span>
+  </p>
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E4%B8%89%E5%88%86%E6%90%9C%E7%B4%A2/">三分搜索</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/021-lca/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">最近公共祖先 LCA</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/019-luogu-p5664/">
+            <span class="next-text nav-default">Luogu P5664 Emiya家今天的饭（计数，dp）</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="tom0727/tom0727.github.io"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:huzhenweitom@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/tom0727" class="iconfont icon-github" title="github"></a>
+  <a href="https://tom0727.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">tom0727</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.2517c0eb67172a0bae917de4af59b10ca2531411a009d4c0b82f5685259e5771.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-tom0727', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>
