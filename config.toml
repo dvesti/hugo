@@ -1,5 +1,5 @@
 newContentEditor = ""
-baseURL = "https://tom0727.github.io"
+baseURL = "https://dvesti.github.io/hugo" #"https://tom0727.github.io"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "tom0727's blog"
@@ -17,7 +17,7 @@ pygmentsCodefences = false
 hasCJKLanguage = true     # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 paginate = 10                                              # 首页每页显示的文章数
 disqusShortname = ""      # disqus_shortname
-googleAnalytics = "UA-tom0727"      # UA-XXXXXXXX-X
+googleAnalytics = # "UA-tom0727"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
@@ -66,7 +66,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   since = "2021"            # Site creation time          # 站点建立时间
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
-  gitRepo = "https://github.com/tom0727/hugo-blog"
+  gitRepo = # "https://github.com/tom0727/hugo-blog"
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   # logoTitle = "Even"        # default: the title value    # 默认值: 上面设置的title值
@@ -141,15 +141,15 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-  [params.utterances]       # https://utteranc.es/
-    owner = "tom0727"              # Your GitHub ID
-    repo = "tom0727.github.io"               # The repo to store comments
+ # [params.utterances]       # https://utteranc.es/
+ #   owner = "tom0727"              # Your GitHub ID
+ #   repo = "tom0727.github.io"               # The repo to store comments
 
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
+#  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+#    owner = ""              # Your GitHub ID
+#    repo = ""               # The repo to store comments
+#    clientId = ""           # Your client ID
+#    clientSecret = ""       # Your client secret
 
   # Valine.
   # You can get your appid and appkey from https://leancloud.cn
