@@ -1,4 +1,4 @@
-baseURL = "https://dvesti.github.io/site-hugo"
+baseURL = ""
 # This is a simple configuration.
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
