@@ -1,148 +1,120 @@
-var sidebars = document.getElementById("sidebars");
-var searchResults = document.getElementById("search-results");
-var searchInput = document.getElementById("search-query");
+summaryInclude = 80;
+var fuseOptions = {
+  shouldSort: true,
+  includeMatches: true,
+  threshold: 0.1,
+  tokenize:true,
+  location: 0,
+  distance: 100000,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    {name:"title",weight:0.9},
+    {name:"contents",weight:0.8},
+    {name:"tags",weight:0.5},
+    {name:"categories",weight:0.3}
+  ]
+};
 
-// the length of the excerpts
-var contextDive = 40;
-
-var timerUserInput = false;
-searchInput.addEventListener("keyup", function()
-{
-    // don't start searching every time a key is pressed,
-    // wait a bit till users stops typing
-    if (timerUserInput) { clearTimeout(timerUserInput); }
-    timerUserInput = setTimeout(
-        function()
-        {
-            search(searchInput.value.trim());
-        },
-        500
-    );
-});
-
-function search(searchQuery)
-{
-    // clear previous search results
-    while (searchResults.firstChild)
-    {
-        searchResults.removeChild(searchResults.firstChild);
-    }
-
-    // ignore empty and short search queries
-    if (searchQuery.length === 0 || searchQuery.length < 3)
-    {
-        searchResults.style.display = "none";
-        sidebars.style.display = "block";
-        return;
-    }
-
-    sidebars.style.display = "none";
-    searchResults.style.display = "block";
-
-    // load your index file
-    getJSON("/tipuesearch_content.json", function (contents)
-    {
-        var results = [];
-        let regex = new RegExp(searchQuery, "i");
-        // iterate through posts and collect the ones with matches
-        contents.forEach(function(post)
-        {
-            // here you can also search in tags, categories
-            // or whatever you put into the index.json layout
-            if (post.title.match(regex) || post.content.match(regex))
-            {
-                results.push(post);
-            }
-        });
-
-        if (results.length > 0)
-        {
-            searchResults.appendChild(
-                htmlToElement("<div><b>Found: ".concat(results.length, "</b></div>"))
-            );
-
-            // populate search results block with excerpts around the matched search query
-            results.forEach(function (value, key)
-            {
-                let firstIndexOf = value.content.toLowerCase().indexOf(searchQuery.toLowerCase());
-                let lastIndexOf = firstIndexOf + searchQuery.length;
-                let spaceIndex = firstIndexOf - contextDive;
-                if (spaceIndex > 0)
-                {
-                    spaceIndex = value.content.indexOf(" ", spaceIndex) + 1;
-                    if (spaceIndex < firstIndexOf) { firstIndexOf = spaceIndex; }
-                    else { firstIndexOf = firstIndexOf - contextDive / 2; }
-                }
-                else
-                {
-                    firstIndexOf = 0;
-                }
-                let lastSpaceIndex = lastIndexOf + contextDive;
-                if (lastSpaceIndex < value.content.length)
-                {
-                    lastSpaceIndex = value.content.indexOf(" ", lastSpaceIndex);
-                    if (lastSpaceIndex !== -1) { lastIndexOf = lastSpaceIndex; }
-                    else { lastIndexOf = lastIndexOf + contextDive / 2; }
-                }
-                else
-                {
-                    lastIndexOf = value.content.length - 1;
-                }
-
-                let summary = value.content.substring(firstIndexOf, lastIndexOf);
-                if (firstIndexOf !== 0) { summary = "...".concat(summary); }
-                if (lastIndexOf !== value.content.length - 1) { summary = summary.concat("..."); }
-
-                let div = "".concat("<div id=\"search-summary-", key, "\">")
-                    .concat("<h4 class=\"post-title\"><a href=\"", value.permalink, "\">", value.title, "</a></h4>")
-                    .concat("<p>", summary, "</p>")
-                    .concat("</div>");
-                searchResults.appendChild(htmlToElement(div));
-
-                // optionaly highlight the search query in excerpts using mark.js
-                new Mark(document.getElementById("search-summary-" + key))
-                    .mark(searchQuery, { "separateWordSearch": false });
-            });
-        }
-        else
-        {
-            searchResults.appendChild(
-                htmlToElement("<div><b>Nothing found</b></div>")
-            );
-        }
+function executeSearch(){
+  $('#search-results').html('正在搜索中...');
+  searchContent = $('#search-content')[0].value;
+  if (searchContent){
+    $.getJSON( "/index.json", function( data ) {
+      var pages = data;
+      var fuse = new Fuse(pages, fuseOptions);
+      var result = fuse.search(searchContent);
+      if(result.length > 0){
+        populateResults(result, searchContent);
+      }else{
+        $('#search-results').html("<p>没有找到您想要的结果。要不试试缩短关键词？</p>");
+      }
     });
+  } else {
+    $('#search-results').html("<p>请在上方输入关键词进行搜索</p>");
+  }
 }
 
-function getJSON(url, fn)
-{
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.onload = function ()
-    {
-        if (xhr.status === 200)
-        {
-            fn(JSON.parse(xhr.responseText));
-        }
-        else
-        {
-            console.error(
-                "Some error processing ".concat(url, ": ", xhr.status)
-                );
-        }
-    };
-    xhr.onerror = function ()
-    {
-        console.error("Connection error: ".concat(xhr.status));
-    };
-    xhr.send();
+function populateResults(result, searchContent){
+  $('#search-results').html('');
+  $.each(result,function(key,value){
+    var contents= value.item.contents;
+    var snippet = "";
+    var snippetHighlights = [searchContent];
+
+    var s1 = contents.toLocaleLowerCase();
+    var s2 = searchContent.toLocaleLowerCase();
+    var pos = s1.indexOf(s2);
+    if (pos != -1) {
+      start = pos - summaryInclude;
+      end = pos + searchContent.length + summaryInclude;
+      if (start < 0) start = 0;
+      if (end > contents.length) end = contents.length;
+      snippet = contents.substring(start, end);
+    }
+
+    $.each(value.matches,function(matchKey,mvalue) {
+      start = mvalue.indices[0][0] - summaryInclude;
+      end = mvalue.indices[0][1] + summaryInclude + 1;
+      if (start < 0) start = 0;
+      if (end > mvalue.value.length) end = mvalue.value.length;
+      if (pos == -1 && mvalue.key == "contents") {
+        snippet += mvalue.value.substring(start,end);
+      }
+      snippetHighlights.push(mvalue.value.substring(mvalue.indices[0][0],mvalue.indices[0][1] + 1));
+    });
+
+    if(snippet.length<1){
+      snippet += contents.substring(0,summaryInclude*2);
+    }
+    //pull template from hugo templarte definition
+    var templateDefinition = $('#search-result-template').html();
+    //replace values
+    var output = render(templateDefinition,{key:key,title:value.item.title,link:value.item.permalink,tags:value.item.tags,categories:value.item.categories,snippet:snippet, date:value.item.date.split('T')[0]});
+
+    $('#search-results').append(output);
+
+    $.each(snippetHighlights,function(snipkey,snipvalue){
+      new Mark(document.getElementById("summary-" + key)).mark(snipvalue);
+    });
+  });
 }
 
-// it is faster (more convenient)
-// to generate an element from the raw HTML code
-function htmlToElement(html)
-{
-    let template = document.createElement("template");
-    html = html.trim();
-    template.innerHTML = html;
-    return template.content.firstChild;
+function param(name) {
+    return decodeURIComponent((location.search.split(name + '=')[1] || '').split('&')[0]).replace(/\+/g, ' ');
+}
+
+function render(templateString, data) {
+  var conditionalMatches,conditionalPattern,copy;
+  conditionalPattern = /\$\{\s*isset ([a-zA-Z]*) \s*\}(.*)\$\{\s*end\s*}/g;
+  //since loop below depends on re.lastInxdex, we use a copy to capture any manipulations whilst inside the loop
+  copy = templateString;
+  while ((conditionalMatches = conditionalPattern.exec(templateString)) !== null) {
+    if(data[conditionalMatches[1]]){
+      //valid key, remove conditionals, leave contents.
+      copy = copy.replace(conditionalMatches[0],conditionalMatches[2]);
+    }else{
+      //not valid, remove entire section
+      copy = copy.replace(conditionalMatches[0],'');
+    }
+  }
+  templateString = copy;
+  //now any conditionals removed we can do simple substitution
+
+  if (data.tags) {
+    var tagsHtml = '<footer class="post-footer"><div class="post-tags">';
+    for (var i = 0; i < data.tags.length; ++i) {
+      tagsHtml += '<a href="/tags/' + data.tags[i] + '">' + data.tags[i] + '</a>';
+    }
+    tagsHtml += '</div></footer>';
+    data.tags = tagsHtml;
+  }
+
+  var key, find, re;
+  for (key in data) {
+    find = '\\$\\{\\s*' + key + '\\s*\\}';
+    re = new RegExp(find, 'g');
+    templateString = templateString.replace(re, data[key]);
+  }
+  return templateString;
 }
