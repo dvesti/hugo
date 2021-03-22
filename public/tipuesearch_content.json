@@ -1,0 +1,5 @@
+   {{- $.Scratch.Add "tipuesearch_content" slice -}}
+   {{- range .Site.RegularPages -}}
+       {{- $.Scratch.Add "tipuesearch_content" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+   {{- end -}}
+   {{- $.Scratch.Get "tipuesearch_content" | jsonify -}}

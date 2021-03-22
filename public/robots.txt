@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://dvesti.github.io/site-hugo/sitemap.xml
+Sitemap: sitemap.xml

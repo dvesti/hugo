@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Statics on Блог Dvesti</title>
-    <link>https://dvesti.github.io/site-hugo/static/</link>
+    <link>/static/</link>
     <description>Recent content in Statics on Блог Dvesti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate>
-    
-	<atom:link href="https://dvesti.github.io/site-hugo/static/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate><atom:link href="/static/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>О нас</title>
-      <link>https://dvesti.github.io/site-hugo/static/about/</link>
+      <link>/static/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/static/about/</guid>
+      <guid>/static/about/</guid>
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
@@ -24,19 +20,19 @@ It makes use of a variety of open source projects including:
     
     <item>
       <title>Developer for Life Archive</title>
-      <link>https://dvesti.github.io/site-hugo/static/archive/</link>
+      <link>/static/archive/</link>
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/static/archive/</guid>
+      <guid>/static/archive/</guid>
       <description> Все сообщения Тэги Категории  </description>
     </item>
     
     <item>
       <title>Search Developer for Life</title>
-      <link>https://dvesti.github.io/site-hugo/static/search11/</link>
+      <link>/static/search11/</link>
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/static/search11/</guid>
+      <guid>/static/search11/</guid>
       <description></description>
     </item>
     

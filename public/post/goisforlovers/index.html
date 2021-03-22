@@ -33,19 +33,16 @@ This document is a brief primer on using go templates. The go docs provide more 
 
 
 
-<meta name="generator" content="Hugo 0.74.1" />
+<meta name="generator" content="Hugo 0.81.0" />
 
 
-<link rel="canonical" href="https://dvesti.github.io/site-hugo/post/goisforlovers/" />
-
-
-
-
-
-<link rel="icon" href="/site-hugo/favicon.ico" />
+<link rel="canonical" href="/post/goisforlovers/" />
 
 
 
+
+
+<link rel="icon" href="/favicon.ico" />
 
 
 
@@ -54,7 +51,10 @@ This document is a brief primer on using go templates. The go docs provide more 
 
 
 
-<link rel="stylesheet" href="/site-hugo/sass/jane.min.884ca83fc58fc584708c67ad3fb976e1d221879832f95a7f340ee9f005ee9a8f.css" integrity="sha256-iEyoP8WPxYRwjGetP7l24dIhh5gy&#43;Vp/NA7p8AXumo8=" media="screen" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="/sass/jane.min.f5c4902ffb1cbc9996b3db0bfa3775c6f76ff39f1d5c75ccbc475e9700df9f32.css" integrity="sha256-9cSQL/scvJmWs9sL&#43;jd1xvdv858dXHXMvEdelwDfnzI=" media="screen" crossorigin="anonymous">
 
 
 
@@ -70,9 +70,10 @@ similarities in go templates.
 This document is a brief primer on using go templates. The go docs
 provide more details." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dvesti.github.io/site-hugo/post/goisforlovers/" />
-<meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
-<meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" />
+<meta property="og:url" content="/post/goisforlovers/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2014-04-02T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2014-04-02T00:00:00&#43;00:00" />
+
 <meta itemprop="name" content="(Hu)go Template Primer">
 <meta itemprop="description" content="Hugo uses the excellent go html/template library for
 its template engine. It is an extremely lightweight engine that provides a very
@@ -81,13 +82,9 @@ logic to be able to create a good static website. If you have used other
 template systems from different languages or frameworks you will find a lot of
 similarities in go templates.
 This document is a brief primer on using go templates. The go docs
-provide more details.">
-<meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
+provide more details."><meta itemprop="datePublished" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-04-02T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="1509">
-
-
-
 <meta itemprop="keywords" content="go,golang,templates,themes,development," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="(Hu)go Template Primer"/>
 <meta name="twitter:description" content="Hugo uses the excellent go html/template library for
@@ -114,7 +111,7 @@ provide more details."/>
 <link rel="stylesheet" type="text/css" href="/site-hugo/css/custom.css">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
 
-<script src="https://dvesti.github.io/site-hugo/js/mark.js"></script>
+<script src="js/mark.js"></script>
 
 
   <script src="/js/mark.js"></script>
@@ -122,7 +119,7 @@ provide more details."/>
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/site-hugo/" class="logo">Блог Dvesti</a>
+    <a href="/" class="logo">Блог Dvesti</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -136,56 +133,56 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">Главная</a>
+            <a class="menu-item-link" href="/">Главная</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Категории</a>
+            <a class="menu-item-link" href="/categories/">Категории</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Тэги</a>
+            <a class="menu-item-link" href="/tags/">Тэги</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Архив</a>
+            <a class="menu-item-link" href="/post/">Архив</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/archive">Архивы</a>
+            <a class="menu-item-link" href="/static/archive">Архивы</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/search">Search</a>
+            <a class="menu-item-link" href="/static/search">Search</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/search.html">Поиск</a>
+            <a class="menu-item-link" href="/search.html">Поиск</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/about">О нас</a>
+            <a class="menu-item-link" href="/static/about">О нас</a>
           
         
       </li><li class="mobile-menu-item">
@@ -193,30 +190,30 @@ provide more details."/>
           
           <div class="mobile-menu-parent">
             <span class="mobile-submenu-open"></span>
-            <a href="https://dvesti.github.io/site-hugo">
+            <a href="">
               docs
             </a>
           </div>
           <ul class="mobile-submenu-list">
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/jane-theme-preview/">Jane Theme Preview</a>
+                <a href="/post/jane-theme-preview/">Jane Theme Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/shortcodes-preview/">Shortcodes Preview</a>
+                <a href="/post/shortcodes-preview/">Shortcodes Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/image-preview/">Image Preview</a>
+                <a href="/post/image-preview/">Image Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/syntax-highlighting/">Syntax Highlighting</a>
+                <a href="/post/syntax-highlighting/">Syntax Highlighting</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/math-preview/">Math Preview</a>
+                <a href="/post/math-preview/">Math Preview</a>
               </li>
             
           </ul>
@@ -281,7 +278,7 @@ provide more details."/>
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/site-hugo/" class="logo">
+  <a href="/" class="logo">
     
       Блог Dvesti
     
@@ -296,7 +293,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/">Главная</a>
+            <a class="menu-item-link" href="/">Главная</a>
           
 
         
@@ -307,7 +304,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/categories/">Категории</a>
+            <a class="menu-item-link" href="/categories/">Категории</a>
           
 
         
@@ -318,7 +315,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/tags/">Тэги</a>
+            <a class="menu-item-link" href="/tags/">Тэги</a>
           
 
         
@@ -329,7 +326,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/post/">Архив</a>
+            <a class="menu-item-link" href="/post/">Архив</a>
           
 
         
@@ -340,7 +337,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/archive">Архивы</a>
+            <a class="menu-item-link" href="/static/archive">Архивы</a>
           
 
         
@@ -351,7 +348,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/search">Search</a>
+            <a class="menu-item-link" href="/static/search">Search</a>
           
 
         
@@ -362,7 +359,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/search.html">Поиск</a>
+            <a class="menu-item-link" href="/search.html">Поиск</a>
           
 
         
@@ -373,7 +370,7 @@ provide more details."/>
         
           
           
-            <a class="menu-item-link" href="https://dvesti.github.io/site-hugo/static/about">О нас</a>
+            <a class="menu-item-link" href="/static/about">О нас</a>
           
 
         
@@ -383,27 +380,27 @@ provide more details."/>
         <li class="menu-item">
         
           
-          <a class="menu-item-link menu-parent" href="https://dvesti.github.io/site-hugo">docs</a>
+          <a class="menu-item-link menu-parent" href="">docs</a>
           <ul class="submenu">
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/jane-theme-preview/">Jane Theme Preview</a>
+                <a href="/post/jane-theme-preview/">Jane Theme Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/shortcodes-preview/">Shortcodes Preview</a>
+                <a href="/post/shortcodes-preview/">Shortcodes Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/image-preview/">Image Preview</a>
+                <a href="/post/image-preview/">Image Preview</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/syntax-highlighting/">Syntax Highlighting</a>
+                <a href="/post/syntax-highlighting/">Syntax Highlighting</a>
               </li>
             
               <li>
-                <a href="https://dvesti.github.io/site-hugo/post/math-preview/">Math Preview</a>
+                <a href="/post/math-preview/">Math Preview</a>
               </li>
             
           </ul>
@@ -418,7 +415,7 @@ provide more details."/>
 
     
       <li class="menu-item">
-              <form action="https://dvesti.github.io/site-hugo/search">
+              <form action="search">
           <input id="search-query" name="s" class="query" type="text" placeholder="Search" autocapitalize="off"
             autocorrect="off" autocomplete="off" spellcheck>
         </form>
@@ -457,9 +454,9 @@ provide more details."/>
           2014-04-02
         </time>
         <div class="post-category">
-            <a href="https://dvesti.github.io/site-hugo/categories/development/"> Development </a>
-            <a href="https://dvesti.github.io/site-hugo/categories/golang/"> golang </a>
-            <a href="https://dvesti.github.io/site-hugo/categories/index/"> index </a>
+            <a href="/categories/development/"> Development </a>
+            <a href="/categories/golang/"> golang </a>
+            <a href="/categories/index/"> index </a>
             
           </div>
         
@@ -705,10 +702,10 @@ parameters, which are values which will be available to you in chrome.</p>
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="k">params</span><span class="p">:</span><span class="w">
-</span><span class="w">  </span><span class="k">CopyrightHTML</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">TwitterUser</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;spf13&#34;</span><span class="w">
-</span><span class="w">  </span><span class="k">SidebarRecentLimit</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
+<pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">params</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">CopyrightHTML</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;Copyright &amp;#xA9; 2013 John Doe. All Rights Reserved.&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">TwitterUser</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;spf13&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">SidebarRecentLimit</span><span class="p">:</span><span class="w"> </span><span class="m">5</span><span class="w">
 </span></code></pre></td></tr></table>
 </div>
 </div><p>Within a footer layout, you might then declare a <code>&lt;footer&gt;</code> which is only
@@ -779,18 +776,18 @@ so, such as in this example:</p>
 
     <footer class="post-footer">
       <div class="post-tags">
-          <a href="https://dvesti.github.io/site-hugo/tags/go/">go</a>
-          <a href="https://dvesti.github.io/site-hugo/tags/golang/">golang</a>
-          <a href="https://dvesti.github.io/site-hugo/tags/templates/">templates</a>
-          <a href="https://dvesti.github.io/site-hugo/tags/themes/">themes</a>
-          <a href="https://dvesti.github.io/site-hugo/tags/development/">development</a>
+          <a href="/tags/go/">go</a>
+          <a href="/tags/golang/">golang</a>
+          <a href="/tags/templates/">templates</a>
+          <a href="/tags/themes/">themes</a>
+          <a href="/tags/development/">development</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/site-hugo/post/creating-a-new-theme/">
+          <a class="prev" href="/post/creating-a-new-theme/">
             
             <i class="iconfont">
               <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
@@ -804,7 +801,7 @@ so, such as in this example:</p>
             <span class="prev-text nav-mobile">Пред.</span>
           </a>
         
-          <a class="next" href="/site-hugo/post/hugoisforlovers/">
+          <a class="next" href="/post/hugoisforlovers/">
             <span class="next-text nav-default">Getting Started with Hugo</span>
             <span class="prev-text nav-mobile">След.</span>
             
@@ -852,7 +849,7 @@ so, such as in this example:</p>
   
 
 
-<a href="https://dvesti.github.io/site-hugo/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -877,7 +874,7 @@ so, such as in this example:</p>
     &copy;
     
       2017 -
-    2020
+    2021
     <span class="heart">
       
       <i class="iconfont">
@@ -915,13 +912,13 @@ so, such as in this example:</p>
     </div>
   </div>
   
-<script type="text/javascript" src="/site-hugo/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/site-hugo/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
 
 
 
 
-<script type="text/javascript" src="/site-hugo/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
 
 
@@ -969,7 +966,7 @@ so, such as in this example:</p>
   
   
 </body>
-<script src="https://dvesti.github.io/site-hugo/js/search.js"></script>
-<script src="https://dvesti.github.io/site-hugo/js/mark.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mark.js"></script>
 <script src="/js/search.js"></script>
 </html>

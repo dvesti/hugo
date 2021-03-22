@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nanote.ru on Блог Dvesti</title>
-    <link>https://dvesti.github.io/site-hugo/categories/nanote.ru/</link>
+    <link>/categories/nanote.ru/</link>
     <description>Recent content in nanote.ru on Блог Dvesti</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate>
-    
-	<atom:link href="https://dvesti.github.io/site-hugo/categories/nanote.ru/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate><atom:link href="/categories/nanote.ru/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Котомодель</title>
-      <link>https://dvesti.github.io/site-hugo/post/kotomodel/</link>
+      <link>/post/kotomodel/</link>
       <pubDate>Fri, 19 Jun 2020 16:01:23 +0800</pubDate>
       
-      <guid>https://dvesti.github.io/site-hugo/post/kotomodel/</guid>
+      <guid>/post/kotomodel/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://www.nanote.ru/files/kotomodel.jpg&#34; alt=&#34;Котомодель&#34;&gt;&lt;/p&gt;</description>
     </item>
     
