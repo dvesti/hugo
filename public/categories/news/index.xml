@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>News on Блог Dvesti</title>
-    <link>http://localhost:1313/categories/news/</link>
-    <description>Recent content in News on Блог Dvesti</description>
+    <title>News on tom0727&#39;s blog</title>
+    <link>https://tom0727.github.io/categories/news/</link>
+    <description>Recent content in News on tom0727&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate><atom:link href="http://localhost:1313/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 14 May 2020 18:05:23 +0300</lastBuildDate><atom:link href="https://tom0727.github.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Приветствие</title>
-      <link>http://localhost:1313/post/2020-05-14-privet/</link>
+      <link>https://tom0727.github.io/post/2020-05-14-privet/</link>
       <pubDate>Thu, 14 May 2020 18:05:23 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/2020-05-14-privet/</guid>
+      <guid>https://tom0727.github.io/post/2020-05-14-privet/</guid>
       <description>&lt;p&gt;Всех приветствую 14 мая 2020!&lt;br&gt;
 И 18-го &amp;ndash; тоже!&lt;br&gt;
 и уже 20-е&lt;br&gt;
@@ -23,10 +23,10 @@
     
     <item>
       <title>Привет из XXI века</title>
-      <link>http://localhost:1313/post/2020-05-13-privetstvie/</link>
+      <link>https://tom0727.github.io/post/2020-05-13-privetstvie/</link>
       <pubDate>Tue, 12 May 2020 21:44:45 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/2020-05-13-privetstvie/</guid>
+      <guid>https://tom0727.github.io/post/2020-05-13-privetstvie/</guid>
       <description>Kумушки от камушек - 2020</description>
     </item>
     

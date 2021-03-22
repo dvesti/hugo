@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Блог Dvesti</title>
-    <link>http://localhost:1313/page/</link>
-    <description>Recent content on Блог Dvesti</description>
+    <title>tom0727&#39;s blog</title>
+    <link>https://tom0727.github.io/page/</link>
+    <description>Recent content on tom0727&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Fri, 07 Jun 2019 20:22:57 +0200</lastBuildDate><atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 07 Jun 2019 20:22:57 +0200</lastBuildDate><atom:link href="https://tom0727.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>О нас</title>
-      <link>http://localhost:1313/page/about/</link>
+      <link>https://tom0727.github.io/page/about/</link>
       <pubDate>Fri, 07 Jun 2019 20:22:57 +0200</pubDate>
       
-      <guid>http://localhost:1313/page/about/</guid>
+      <guid>https://tom0727.github.io/page/about/</guid>
       <description>тяф</description>
     </item>
     

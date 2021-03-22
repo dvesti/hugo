@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nanote.ru on Блог Dvesti</title>
-    <link>http://localhost:1313/categories/nanote.ru/</link>
-    <description>Recent content in nanote.ru on Блог Dvesti</description>
+    <title>nanote.ru on tom0727&#39;s blog</title>
+    <link>https://tom0727.github.io/categories/nanote.ru/</link>
+    <description>Recent content in nanote.ru on tom0727&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/categories/nanote.ru/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 19 Jun 2020 16:01:23 +0800</lastBuildDate><atom:link href="https://tom0727.github.io/categories/nanote.ru/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Котомодель</title>
-      <link>http://localhost:1313/post/kotomodel/</link>
+      <link>https://tom0727.github.io/post/kotomodel/</link>
       <pubDate>Fri, 19 Jun 2020 16:01:23 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/kotomodel/</guid>
+      <guid>https://tom0727.github.io/post/kotomodel/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;https://www.nanote.ru/files/kotomodel.jpg&#34; alt=&#34;Котомодель&#34;&gt;&lt;/p&gt;</description>
     </item>
     

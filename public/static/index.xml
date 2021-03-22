@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statics on Блог Dvesti</title>
-    <link>http://localhost:1313/static/</link>
-    <description>Recent content in Statics on Блог Dvesti</description>
+    <title>Statics on tom0727&#39;s blog</title>
+    <link>https://tom0727.github.io/static/</link>
+    <description>Recent content in Statics on tom0727&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru</language>
-    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate><atom:link href="http://localhost:1313/static/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Aug 2017 21:38:52 +0800</lastBuildDate><atom:link href="https://tom0727.github.io/static/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>О нас</title>
-      <link>http://localhost:1313/static/about/</link>
+      <link>https://tom0727.github.io/static/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/static/about/</guid>
+      <guid>https://tom0727.github.io/static/about/</guid>
       <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
@@ -20,19 +20,19 @@ It makes use of a variety of open source projects including:
     
     <item>
       <title>Developer for Life Archive</title>
-      <link>http://localhost:1313/static/archive/</link>
+      <link>https://tom0727.github.io/static/archive/</link>
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/static/archive/</guid>
+      <guid>https://tom0727.github.io/static/archive/</guid>
       <description> Все сообщения Тэги Категории  </description>
     </item>
     
     <item>
       <title>Search Developer for Life</title>
-      <link>http://localhost:1313/static/search11/</link>
+      <link>https://tom0727.github.io/static/search11/</link>
       <pubDate>Fri, 13 Jun 2003 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/static/search11/</guid>
+      <guid>https://tom0727.github.io/static/search11/</guid>
       <description></description>
     </item>
     

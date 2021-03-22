@@ -1,8 +1,6 @@
 +++
-title = "Search"
+title = "搜索"
+date = 2020-02-07T17:43:21+08:00
 layout = "search"
-outputs = ["html", "json"]
-draft = false
-[sitemap]
-  priority = 0.1
+
 +++
